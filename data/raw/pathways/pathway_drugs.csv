@@ -1,0 +1,25 @@
+pathway_id,pathway_name,drug_name,source
+hsa03440,Homologous recombination,Olaparib,curated
+hsa03440,Homologous recombination,Niraparib,curated
+hsa03440,Homologous recombination,Rucaparib,curated
+hsa03440,Homologous recombination,Talazoparib,curated
+hsa03460,Fanconi anemia pathway,Olaparib,curated
+hsa03460,Fanconi anemia pathway,Cisplatin,curated
+hsa03460,Fanconi anemia pathway,Carboplatin,curated
+hsa04115,p53 signaling pathway,Cisplatin,curated
+hsa04115,p53 signaling pathway,Carboplatin,curated
+hsa04115,p53 signaling pathway,Paclitaxel,curated
+hsa04110,Cell cycle,Palbociclib,curated
+hsa04110,Cell cycle,Ribociclib,curated
+hsa04110,Cell cycle,Paclitaxel,curated
+hsa04151,PI3K-Akt signaling pathway,Alpelisib,curated
+hsa04151,PI3K-Akt signaling pathway,Everolimus,curated
+hsa04151,PI3K-Akt signaling pathway,Idelalisib,curated
+hsa04370,VEGF signaling pathway,Bevacizumab,curated
+hsa04370,VEGF signaling pathway,Cediranib,curated
+hsa04012,ErbB signaling pathway,Erlotinib,curated
+hsa04012,ErbB signaling pathway,Gefitinib,curated
+hsa04012,ErbB signaling pathway,Trastuzumab,curated
+hsa04210,Apoptosis,Cisplatin,curated
+hsa04210,Apoptosis,Paclitaxel,curated
+hsa04010,MAPK signaling pathway,Selumetinib,curated

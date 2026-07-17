@@ -1,0 +1,6 @@
+{
+  "patient_id": "TCGA-25-2399",
+  "drug": "Olaparib",
+  "gnn_score": 0.314873,
+  "explanation": "For patient TCGA-25-2399, Olaparib is being suggested as a candidate treatment worth clinician review due to a nonsense mutation (p.Q2414*) in the ATM gene, which is targeted by Olaparib. This evidence, retrieved from DGIdb, suggests a potential therapeutic benefit of Olaparib for this patient. There is no opposing evidence listed to temper the confidence in this suggestion. The overall evidence strength for this recommendation is limited, with an evidence score of 0.203, indicating that while there is some support, the confidence in the recommendation is not high."
+}

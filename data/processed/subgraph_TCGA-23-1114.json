@@ -1,0 +1,105 @@
+{
+  "patient_id": "TCGA-23-1114",
+  "num_mutated_genes": 3,
+  "num_candidate_drugs": 4,
+  "candidates": [
+    {
+      "drug": "Cisplatin",
+      "supporting_genes": [
+        {
+          "gene": "TP53",
+          "mutation_type": "Splice_Site",
+          "protein_change": "p.X307_splice",
+          "relationship_type": "TARGETED_BY",
+          "evidence_score": 0.675,
+          "evidence_source": "DGIdb",
+          "civic_level": null,
+          "clinical_significance": null
+        },
+        {
+          "gene": "TP53",
+          "mutation_type": "Splice_Site",
+          "protein_change": "p.X307_splice",
+          "relationship_type": "HAS_CLINICAL_EVIDENCE",
+          "evidence_score": 0.475,
+          "evidence_source": "CIViC",
+          "civic_level": "B",
+          "clinical_significance": "Resistance"
+        }
+      ],
+      "max_evidence_score": 0.675,
+      "evidence_sources": [
+        "DGIdb",
+        "CIViC"
+      ]
+    },
+    {
+      "drug": "Carboplatin",
+      "supporting_genes": [
+        {
+          "gene": "TP53",
+          "mutation_type": "Splice_Site",
+          "protein_change": "p.X307_splice",
+          "relationship_type": "TARGETED_BY",
+          "evidence_score": 0.675,
+          "evidence_source": "DGIdb",
+          "civic_level": null,
+          "clinical_significance": null
+        },
+        {
+          "gene": "TP53",
+          "mutation_type": "Splice_Site",
+          "protein_change": "p.X307_splice",
+          "relationship_type": "HAS_CLINICAL_EVIDENCE",
+          "evidence_score": 0.475,
+          "evidence_source": "CIViC",
+          "civic_level": "B",
+          "clinical_significance": "Resistance"
+        }
+      ],
+      "max_evidence_score": 0.675,
+      "evidence_sources": [
+        "DGIdb",
+        "CIViC"
+      ]
+    },
+    {
+      "drug": "Olaparib",
+      "supporting_genes": [
+        {
+          "gene": "BRIP1",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.L372P",
+          "relationship_type": "TARGETED_BY",
+          "evidence_score": 0.675,
+          "evidence_source": "DGIdb",
+          "civic_level": null,
+          "clinical_significance": null
+        }
+      ],
+      "max_evidence_score": 0.675,
+      "evidence_sources": [
+        "DGIdb"
+      ]
+    },
+    {
+      "drug": "Doxorubicin",
+      "supporting_genes": [
+        {
+          "gene": "LRP1B",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.H3241D",
+          "relationship_type": "HAS_CLINICAL_EVIDENCE",
+          "evidence_score": 0.25,
+          "evidence_source": "CIViC",
+          "civic_level": "D",
+          "clinical_significance": "Resistance"
+        }
+      ],
+      "max_evidence_score": 0.25,
+      "evidence_sources": [
+        "CIViC"
+      ]
+    }
+  ]
+}

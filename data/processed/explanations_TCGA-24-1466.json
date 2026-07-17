@@ -1,0 +1,22 @@
+{
+  "patient_id": "TCGA-24-1466",
+  "candidates": [
+    {
+      "drug": "Olaparib",
+      "gnn_score": 0.3975333273410797,
+      "explanation": "Olaparib is being suggested as a candidate treatment for patient TCGA-24-1466 due to the presence of a missense mutation (p.L996F) in the CDK12 gene, which has clinical evidence supporting its sensitivity/response to Olaparib with a moderate evidence score of 0.250. Additionally, a missense mutation (p.K486E) in the PALB2 gene, which is targeted by Olaparib, provides further supporting evidence with an evidence score of 0.203. There is no opposing evidence listed to temper confidence in this suggestion. Overall, the evidence strength for Olaparib as a treatment candidate is limited, primarily due to the moderate to low evidence scores from the supporting paths."
+    }
+  ],
+  "contraindications": [
+    {
+      "drug": "Carboplatin",
+      "gnn_score": -0.3026612401008606,
+      "explanation": "The patient TCGA-24-1466 has a missense mutation (p.R249G) in the TP53 gene, which has clinical evidence suggesting resistance to Carboplatin, as indicated by the opposing evidence path with a score of -0.475 from CIViC. Although there is also supporting evidence from DGIdb with a score of 0.203, the opposing evidence outweighs it due to its direct clinical significance indicating resistance. This opposing evidence flags Carboplatin as a potential contraindication for this patient, warranting cautious review by the clinician. It is essential to note that this is a caution flag, not a guarantee of treatment failure, and further evaluation is necessary to determine the best course of treatment."
+    },
+    {
+      "drug": "Cisplatin",
+      "gnn_score": -0.30582499504089355,
+      "explanation": "The patient TCGA-24-1466 has a TP53 gene with a Missense_Mutation (p.R249G), which has clinical evidence suggesting resistance to Cisplatin, as indicated by the opposing evidence with a score of -0.475 from CIViC. Although there is also supporting evidence from DGIdb with a score of 0.203 indicating that Cisplatin targets this mutation, the opposing evidence outweighs it due to its higher clinical significance and implication of resistance. This flags Cisplatin as a potential contraindication for this patient, warranting cautious review by the clinician. It is essential to note that this is a caution flag, not a guarantee of treatment failure, and further evaluation is necessary to determine the best course of treatment."
+    }
+  ]
+}

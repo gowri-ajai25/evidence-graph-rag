@@ -1,0 +1,34 @@
+[
+  {
+    "patient_id": "TCGA-13-1497",
+    "rank": 1,
+    "drug": "Cisplatin",
+    "max_evidence_score": 0.675,
+    "evidence_sources": [
+      "CIViC",
+      "DGIdb"
+    ],
+    "explanation": "Cisplatin is being considered as a candidate treatment for patient TCGA-13-1497 due to the presence of a frame-shift deletion (p.R333Vfs*12) in the TP53 gene, which is targeted by Cisplatin according to DGIdb. However, CIViC evidence (level B) suggests that this mutation may confer resistance to Cisplatin. Additionally, a missense mutation (p.K412T) in the ASS1 gene is noted, with CIViC evidence (level D) also indicating potential resistance to Cisplatin. The overall evidence strength for Cisplatin as a treatment candidate is limited, based on moderate to low evidence scores (0.675, 0.475, and 0.250) from DGIdb and CIViC sources."
+  },
+  {
+    "patient_id": "TCGA-13-1497",
+    "rank": 2,
+    "drug": "Carboplatin",
+    "max_evidence_score": 0.675,
+    "evidence_sources": [
+      "CIViC",
+      "DGIdb"
+    ],
+    "explanation": "Carboplatin is being considered as a candidate treatment for patient TCGA-13-1497 due to the presence of a TP53 frame-shift deletion (p.R333Vfs*12) mutation, which is targeted by Carboplatin according to DGIdb. However, clinical evidence from CIViC (level B) suggests that this mutation may confer resistance to Carboplatin. Additionally, a missense mutation (p.K412T) in the ASS1 gene, also reported in CIViC (level D), may further contribute to resistance. The overall evidence strength for Carboplatin as a treatment candidate is limited, based on moderate to low evidence scores (0.675, 0.475, and 0.250) from DGIdb and CIViC sources."
+  },
+  {
+    "patient_id": "TCGA-13-1497",
+    "rank": 3,
+    "drug": "Paclitaxel",
+    "max_evidence_score": 0.25,
+    "evidence_sources": [
+      "CIViC"
+    ],
+    "explanation": "For patient TCGA-13-1497, Paclitaxel is being considered as a candidate treatment due to the presence of a missense mutation (p.S379F) in the SYK gene. According to evidence from CIViC, with a moderate evidence level of D, this specific mutation has been associated with clinical resistance to Paclitaxel. However, despite this association, Paclitaxel remains a candidate treatment worthy of clinician review. The evidence supporting this consideration is limited, based on a relatively low evidence score of 0.250 from CIViC."
+  }
+]

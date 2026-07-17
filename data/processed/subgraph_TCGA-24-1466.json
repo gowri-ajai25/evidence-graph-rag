@@ -1,0 +1,105 @@
+{
+  "patient_id": "TCGA-24-1466",
+  "num_mutated_genes": 3,
+  "num_candidate_drugs": 1,
+  "num_contraindications": 2,
+  "candidates": [
+    {
+      "drug": "Olaparib",
+      "supporting_genes": [
+        {
+          "gene": "CDK12",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.L996F",
+          "relationship_type": "HAS_CLINICAL_EVIDENCE",
+          "evidence_score": 0.25,
+          "evidence_source": "CIViC",
+          "civic_level": "D",
+          "clinical_significance": "Sensitivity/Response"
+        },
+        {
+          "gene": "PALB2",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.K486E",
+          "relationship_type": "TARGETED_BY",
+          "evidence_score": 0.203,
+          "evidence_source": "DGIdb",
+          "civic_level": null,
+          "clinical_significance": null
+        }
+      ],
+      "opposing_genes": [],
+      "net_evidence_score": 0.453,
+      "evidence_sources": [
+        "DGIdb",
+        "CIViC"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "drug": "Cisplatin",
+      "supporting_genes": [
+        {
+          "gene": "TP53",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.R249G",
+          "relationship_type": "TARGETED_BY",
+          "evidence_score": 0.203,
+          "evidence_source": "DGIdb",
+          "civic_level": null,
+          "clinical_significance": null
+        }
+      ],
+      "opposing_genes": [
+        {
+          "gene": "TP53",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.R249G",
+          "relationship_type": "HAS_CLINICAL_EVIDENCE",
+          "evidence_score": -0.475,
+          "evidence_source": "CIViC",
+          "civic_level": "B",
+          "clinical_significance": "Resistance"
+        }
+      ],
+      "net_evidence_score": -0.27199999999999996,
+      "evidence_sources": [
+        "DGIdb",
+        "CIViC"
+      ]
+    },
+    {
+      "drug": "Carboplatin",
+      "supporting_genes": [
+        {
+          "gene": "TP53",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.R249G",
+          "relationship_type": "TARGETED_BY",
+          "evidence_score": 0.203,
+          "evidence_source": "DGIdb",
+          "civic_level": null,
+          "clinical_significance": null
+        }
+      ],
+      "opposing_genes": [
+        {
+          "gene": "TP53",
+          "mutation_type": "Missense_Mutation",
+          "protein_change": "p.R249G",
+          "relationship_type": "HAS_CLINICAL_EVIDENCE",
+          "evidence_score": -0.475,
+          "evidence_source": "CIViC",
+          "civic_level": "B",
+          "clinical_significance": "Resistance"
+        }
+      ],
+      "net_evidence_score": -0.27199999999999996,
+      "evidence_sources": [
+        "DGIdb",
+        "CIViC"
+      ]
+    }
+  ]
+}
