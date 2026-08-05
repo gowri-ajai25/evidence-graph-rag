@@ -129,19 +129,11 @@ class SubgraphRetriever:
         candidates = []
         contraindications = []
 
-        candidates = []
-        contraindications = []
-
         for drug, data in drug_data.items():
             data["evidence_sources"] = list(data["evidence_sources"])
 
             # Clamp to [-1, 1], same as train.py does after summing
             data["net_evidence_score"] = max(-1.0, min(1.0, data["net_evidence_score"]))
-
-            # --- DEBUG LINE: paste it here ---
-            if len(data["supporting_genes"]) > 1 or len(data["opposing_genes"]) > 1:
-                print(f"MULTI-GENE CASE: {patient_id} / {drug} — supporting={len(data['supporting_genes'])}, opposing={len(data['opposing_genes'])}, net={data['net_evidence_score']:.4f}")
-            # --- end debug line ---
 
             has_support = len(data["supporting_genes"]) > 0
             has_opposition = len(data["opposing_genes"]) > 0

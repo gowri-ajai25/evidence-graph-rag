@@ -85,10 +85,10 @@ def get_ground_truth(val_patients, idx_to_patient):
             ev = {}
             for c in summary["candidates"]:
                 # use .get() with fallback to handle varying key names
-                score = c.get("max_evidence_score") or c.get("evidence_score") or 0.3
+                score = c.get("net_evidence_score", 0.3)
                 ev[c["drug"]] = score
             for c in summary.get("contraindications", []):
-                score = c.get("min_evidence_score") or c.get("evidence_score") or -0.3
+                score = c.get("net_evidence_score", -0.3)
                 ev[c["drug"]] = score
             evidence_per_patient[p_idx] = ev
 
