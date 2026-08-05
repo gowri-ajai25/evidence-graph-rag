@@ -151,8 +151,7 @@ def main():
 
     print("\n[2/4] Selecting patient...")
     retriever = SubgraphRetriever(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)
-    patients = retriever.list_available_patients(limit=10)
-    target_patient = patients[0]["patient_id"]
+    target_patient = "TCGA-24-2289"
     print(f"   Patient: {target_patient}")
 
     print("\n[3/4] Getting GNN-ranked drugs and evidence subgraph...")

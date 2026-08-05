@@ -229,8 +229,8 @@ def plot_training_curve():
 
     fig, ax = plt.subplots(figsize=(8, 5))
     epochs = list(range(1, len(train_losses) + 1))
-    ax.plot(epochs, train_losses, label="Train loss", color="#2196F3", linewidth=2)
-    ax.plot(epochs, val_losses, label="Validation loss", color="#E91E63", linewidth=2, linestyle="--")
+    ax.plot(epochs, train_losses, label="Train loss", color="#90CAF9", linewidth=2)
+    ax.plot(epochs, val_losses, label="Validation loss", color="#F48FB1", linewidth=2, linestyle="--")
     ax.set_xlabel("Epoch", fontsize=12)
     ax.set_ylabel("MSE Loss", fontsize=12)
     ax.set_title("GNN Training Loss Curve", fontsize=14, fontweight="bold")
@@ -262,7 +262,7 @@ def plot_ranking_metrics(ground_truth, gnn_results, drug_list):
 
     x = np.arange(len(K_VALUES))
     width = 0.25
-    colors = ["#2196F3", "#4CAF50", "#FF9800"]
+    colors = ["#90CAF9", "#A5D6A7", "#FFCC80"]
 
     fig, ax = plt.subplots(figsize=(9, 5))
     for i, (metric, values) in enumerate(metrics.items()):
@@ -301,9 +301,9 @@ def plot_roc_curve(ground_truth, gnn_results, drug_list):
     auc = roc_auc_score(all_y_true, all_y_score)
 
     fig, ax = plt.subplots(figsize=(7, 6))
-    ax.plot(fpr, tpr, color="#2196F3", linewidth=2.5, label=f"GNN ranker (AUC = {auc:.4f})")
-    ax.plot([0, 1], [0, 1], color="#999", linestyle="--", linewidth=1.5, label="Random baseline (AUC = 0.5)")
-    ax.fill_between(fpr, tpr, alpha=0.1, color="#2196F3")
+    ax.plot(fpr, tpr, color="#90CAF9", linewidth=2.5, label=f"GNN ranker (AUC = {auc:.4f})")
+    ax.plot([0, 1], [0, 1], color="#CCCCCC", linestyle="--", linewidth=1.5, label="Random baseline (AUC = 0.5)")
+    ax.fill_between(fpr, tpr, alpha=0.15, color="#90CAF9")
     ax.set_xlabel("False Positive Rate", fontsize=12)
     ax.set_ylabel("True Positive Rate", fontsize=12)
     ax.set_title("ROC Curve — GNN Treatment Ranker", fontsize=14, fontweight="bold")
@@ -345,7 +345,7 @@ def plot_baseline_comparison(ground_truth, gnn_results, evidence_per_patient, dr
                         for p, gt in ground_truth.items()])
 
     methods = ["Random", "Evidence Score", "GNN (ours)"]
-    colors = ["#9E9E9E", "#FF9800", "#2196F3"]
+    colors = ["#CFCFCF", "#FFCC80", "#90CAF9"]
 
     fig, axes = plt.subplots(1, 3, figsize=(14, 5))
     metric_fns = [precision_at_k, recall_at_k, ndcg_at_k]
@@ -372,12 +372,10 @@ def plot_baseline_comparison(ground_truth, gnn_results, evidence_per_patient, dr
         ax.set_ylim(0, 0.65)
         ax.grid(True, axis="y", alpha=0.3)
 
-        patches = [mpatches.Patch(color=c, label=f"K={k}")
-                   for c, k in zip(["#333", "#666", "#999"], K_VALUES)]
+        patches = [mpatches.Patch(color=c, label=f"K={k}") for c, k in zip(["#B0B0B0", "#C8C8C8", "#DDDDDD"], K_VALUES)]
         ax.legend(handles=patches, fontsize=8)
 
-    fig.suptitle("Baseline Comparison: Random vs Evidence Score vs GNN",
-                 fontsize=13, fontweight="bold")
+    fig.suptitle("Baseline Comparison: Random vs Evidence Score vs GNN", fontsize=13, fontweight="bold")
     plt.tight_layout()
     plt.savefig("data/plots/4_baseline_comparison.png", dpi=150, bbox_inches="tight")
     plt.close()
@@ -399,15 +397,14 @@ def plot_score_distribution(ground_truth, gnn_results):
                 negative_scores.append(score)
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.hist(negative_scores, bins=25, alpha=0.7, color="#E53935",
-            label="Non-relevant drugs", density=True)
-    ax.hist(positive_scores, bins=15, alpha=0.8, color="#43A047",
-            label="Relevant drugs (ground truth)", density=True)
+    ax.hist(negative_scores, bins=25, alpha=0.6, color="#EF9A9A",
+        label="Non-relevant drugs", density=True)
+    ax.hist(positive_scores, bins=15, alpha=0.7, color="#A5D6A7",
+        label="Relevant drugs (ground truth)", density=True)
     ax.axvline(0, color="black", linestyle="--", linewidth=1.2, alpha=0.6, label="Score = 0")
     ax.set_xlabel("GNN Predicted Score (tanh)", fontsize=12)
     ax.set_ylabel("Density", fontsize=12)
-    ax.set_title("GNN Score Distribution: Relevant vs Non-relevant Drugs",
-                 fontsize=13, fontweight="bold")
+    ax.set_title("GNN Score Distribution: Relevant vs Non-relevant Drugs", fontsize=13, fontweight="bold")
     ax.legend(fontsize=11)
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
