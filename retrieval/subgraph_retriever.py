@@ -38,6 +38,41 @@ class SubgraphRetriever:
             )
             return [{"patient_id": r["patient_id"], "num_mutated_genes": r["num_mutated_genes"]} for r in result]
 
+    def get_go_terms_for_genes(self, genes, per_gene=5):
+        """
+        Returns {gene: [GO term names]} for the given genes. Biological-process
+        terms come first, and within each category more specific terms (shared
+        by fewer genes) come before generic ones like "protein binding".
+        """
+        genes = list(genes)
+        if not genes:
+            return {}
+        with self.driver.session() as session:
+            counts = {
+                r["id"]: r["n"]
+                for r in session.run(
+                    "MATCH (:Gene)-[:HAS_GO_ANNOTATION]->(t:GOTerm) "
+                    "RETURN t.id AS id, count(*) AS n"
+                )
+            }
+            rows = session.run(
+                """
+                MATCH (g:Gene)-[:HAS_GO_ANNOTATION]->(t:GOTerm)
+                WHERE g.name IN $genes
+                RETURN g.name AS gene, t.id AS id, t.name AS name, t.category AS cat
+                """,
+                genes=genes
+            )
+            per = {}
+            for r in rows:
+                per.setdefault(r["gene"], []).append(
+                    (r["cat"] != "BP", counts.get(r["id"], 0), r["name"])
+                )
+        return {
+            gene: [name for _, _, name in sorted(terms)[:per_gene]]
+            for gene, terms in per.items()
+        }
+
     def get_patient_subgraph(self, patient_id, min_evidence_score=-1.0):
         """
         Retrieves the full evidence-weighted neighborhood for one patient:
@@ -86,11 +121,16 @@ class SubgraphRetriever:
         in train.py, which sum every gene's contribution per drug. Using a
         different formula here previously caused evaluate.py's ground truth
         to diverge from what the model was actually trained to predict.
+
+        Each gene entry also carries its top GO terms ("go_terms") as
+        functional context for explanation; GO does not affect scoring.
         """
         rows = self.get_patient_subgraph(patient_id)
 
         if not rows:
             return None
+
+        go_map = self.get_go_terms_for_genes({r["gene"] for r in rows})
 
         drug_data = {}
         for row in rows:
@@ -114,7 +154,8 @@ class SubgraphRetriever:
                 "evidence_score": score,
                 "evidence_source": row["evidence_source"],
                 "civic_level": row["civic_level"],
-                "clinical_significance": row["clinical_significance"]
+                "clinical_significance": row["clinical_significance"],
+                "go_terms": go_map.get(row["gene"], [])
             }
 
             if score >= 0:

@@ -6,6 +6,9 @@ then retrieves the actual evidence subgraph for each from Neo4j, and prompts
 the LLM to generate a clinician-readable reasoning chain grounded ONLY in
 that retrieved evidence -- never in the GNN's raw score, which is
 uninterpretable to a clinician on its own.
+
+Each gene's Gene Ontology (GO) function terms, retrieved from the knowledge
+graph, are included in the evidence as functional context.
 """
 
 from dotenv import load_dotenv
@@ -87,6 +90,8 @@ def build_evidence_prompt(patient_id, drug_name, supporting_genes, opposing_gene
             line += f" | CIViC level: {g['civic_level']}"
         if g.get("clinical_significance") and g["clinical_significance"] not in (None, "nan", "None"):
             line += f" | Clinical significance: {g['clinical_significance']}"
+        if g.get("go_terms"):
+            line += f" | GO function: {'; '.join(g['go_terms'][:3])}"
         evidence_lines.append(line)
 
     for g in opposing_genes:
@@ -98,6 +103,8 @@ def build_evidence_prompt(patient_id, drug_name, supporting_genes, opposing_gene
         )
         if g.get("clinical_significance") and g["clinical_significance"] not in (None, "nan", "None"):
             line += f" | Clinical significance: {g['clinical_significance']}"
+        if g.get("go_terms"):
+            line += f" | GO function: {'; '.join(g['go_terms'][:3])}"
         evidence_lines.append(line)
 
     evidence_block = "\n".join(evidence_lines)
@@ -119,7 +126,7 @@ def build_evidence_prompt(patient_id, drug_name, supporting_genes, opposing_gene
             f"flag for clinician review, not a guaranteed treatment failure."
         )
 
-    prompt = f"""You are assisting a clinical decision-support system for ovarian cancer treatment recommendation. You must reason ONLY from the structured evidence provided below, retrieved from a biomedical knowledge graph. Do NOT use outside knowledge, do NOT invent citations, and do NOT mention drugs or genes not listed below.
+    prompt = f"""You are assisting a clinical decision-support system for ovarian cancer treatment recommendation. You must reason ONLY from the structured evidence provided below, retrieved from a biomedical knowledge graph. Do NOT use outside knowledge, do NOT invent citations, and do NOT mention drugs or genes not listed below. Where a "GO function" is listed for a gene, you may use it to briefly describe the gene's biological role.
 
 PATIENT: {patient_id}
 DRUG: {drug_name}

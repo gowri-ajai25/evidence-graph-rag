@@ -11,6 +11,9 @@ This connects directly to the project's real components -- no mock data:
       files when a live Groq call isn't wanted, and generates fresh ones
       on demand via a button)
 
+Gene Ontology (GO) function terms retrieved from the knowledge graph are
+shown alongside genes as functional context.
+
 Run from the repo root (not from inside dashboard/):
     streamlit run dashboard/app.py
 """
@@ -163,6 +166,18 @@ def load_cached_explanations(patient_id):
         elif "drug" in payload and "explanation" in payload:
             cache[payload["drug"]] = payload["explanation"]
     return cache
+
+
+def evidence_table(entries):
+    """Evidence table with a GO function column (top 3 GO terms per gene)."""
+    df = pd.DataFrame(entries)
+    if "go_terms" in df.columns:
+        df["GO function"] = df["go_terms"].apply(
+            lambda t: "; ".join(t[:3]) if isinstance(t, list) else ""
+        )
+    else:
+        df["GO function"] = ""
+    return df[["gene", "mutation_type", "evidence_score", "evidence_source", "GO function"]]
 
 
 # ---------------------------------------------------------------------------
@@ -360,6 +375,10 @@ with tab_ranking:
             .drop_duplicates()
             .reset_index(drop=True)
         )
+        go_lookup = retriever.get_go_terms_for_genes(genes_df["gene"].unique())
+        genes_df["GO function"] = genes_df["gene"].map(
+            lambda g: "; ".join(go_lookup.get(g, [])[:3])
+        )
         st.dataframe(genes_df, use_container_width=True, hide_index=True)
 
     st.subheader("Ranked treatments")
@@ -440,10 +459,10 @@ with tab_ranking:
             opposing = evidence.get("opposing_genes", [])
             if supporting:
                 st.markdown("**Supporting evidence**")
-                st.table(pd.DataFrame(supporting)[["gene", "mutation_type", "evidence_score", "evidence_source"]])
+                st.table(evidence_table(supporting))
             if opposing:
                 st.markdown("**Opposing evidence**")
-                st.table(pd.DataFrame(opposing)[["gene", "mutation_type", "evidence_score", "evidence_source"]])
+                st.table(evidence_table(opposing))
 
             st.markdown("**Explanation**")
             state_key = f"explanation_{patient_id}_{drug}"

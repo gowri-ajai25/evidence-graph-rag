@@ -1,13 +1,20 @@
 """
 Exports the Neo4j knowledge graph into a PyTorch Geometric HeteroData object.
 
-Node types: Patient, Gene, Drug
+Node types: Patient, Gene, Drug, Pathway, GOTerm (optional)
 Edge types: 
   - (Patient, HAS_MUTATION, Gene)
   - (Gene, TARGETED_BY, Drug)
   - (Gene, HAS_CLINICAL_EVIDENCE, Drug)
+  - (Gene, INVOLVED_IN, Pathway)
+  - (Pathway, ASSOCIATED_WITH_DRUG, Drug)
+  - (Gene, HAS_GO_ANNOTATION, GOTerm)   <- new, skipped with --no-go
 
 Each edge carries its evidence_score as an edge attribute where available.
+
+Usage:
+  python ranking/export_graph.py            # with GO terms
+  python ranking/export_graph.py --no-go    # baseline graph (no GO)
 """
 
 from dotenv import load_dotenv
@@ -15,6 +22,7 @@ from neo4j import GraphDatabase
 import torch
 from torch_geometric.data import HeteroData
 import os
+import sys
 import pickle
 
 load_dotenv()
@@ -22,6 +30,8 @@ load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USER = os.getenv("NEO4J_USER")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
+
+USE_GO = "--no-go" not in sys.argv
 
 
 def fetch_all_nodes_and_edges(driver):
@@ -66,14 +76,25 @@ def fetch_all_nodes_and_edges(driver):
             """
         ))
 
-    return (patients, genes, drugs, pathways,
+        # GO terms (only if requested)
+        goterms, gene_go_edges = [], []
+        if USE_GO:
+            goterms = [r["id"] for r in session.run("MATCH (t:GOTerm) RETURN t.id AS id")]
+            gene_go_edges = list(session.run(
+                """
+                MATCH (g:Gene)-[r:HAS_GO_ANNOTATION]->(t:GOTerm)
+                RETURN g.name AS gene, t.id AS go_id
+                """
+            ))
+
+    return (patients, genes, drugs, pathways, goterms,
             mutation_edges, targeted_edges, clinical_edges,
-            gene_pathway_edges, pathway_drug_edges)
+            gene_pathway_edges, pathway_drug_edges, gene_go_edges)
 
 
-def build_hetero_data(patients, genes, drugs, pathways,
+def build_hetero_data(patients, genes, drugs, pathways, goterms,
                       mutation_edges, targeted_edges, clinical_edges,
-                      gene_pathway_edges, pathway_drug_edges):
+                      gene_pathway_edges, pathway_drug_edges, gene_go_edges):
 
     data = HeteroData()
 
@@ -82,6 +103,7 @@ def build_hetero_data(patients, genes, drugs, pathways,
     gene_idx = {g: i for i, g in enumerate(genes)}
     drug_idx = {d: i for i, d in enumerate(drugs)}
     pathway_idx = {pw: i for i, pw in enumerate(pathways)}
+    go_idx = {t: i for i, t in enumerate(goterms)}
 
     # Node features (identity embeddings as placeholder)
     data["patient"].x = torch.eye(len(patients))
@@ -93,6 +115,10 @@ def build_hetero_data(patients, genes, drugs, pathways,
     data["gene"].node_id = genes
     data["drug"].node_id = drugs
     data["pathway"].node_id = pathways
+
+    if USE_GO:
+        data["goterm"].x = torch.eye(len(goterms))
+        data["goterm"].node_id = goterms
 
     # Patient -> Gene (HAS_MUTATION)
     src, dst = [], []
@@ -138,43 +164,59 @@ def build_hetero_data(patients, genes, drugs, pathways,
             dst.append(drug_idx[e["drug"]])
     data["pathway", "associated_with_drug", "drug"].edge_index = torch.tensor([src, dst], dtype=torch.long)
 
+    # Gene -> GOTerm (HAS_GO_ANNOTATION)
+    if USE_GO:
+        src, dst = [], []
+        for e in gene_go_edges:
+            if e["gene"] in gene_idx and e["go_id"] in go_idx:
+                src.append(gene_idx[e["gene"]])
+                dst.append(go_idx[e["go_id"]])
+        data["gene", "has_go_annotation", "goterm"].edge_index = torch.tensor([src, dst], dtype=torch.long)
+
     # Reverse edges for bidirectional message passing
     data["gene", "rev_has_mutation", "patient"].edge_index = data["patient", "has_mutation", "gene"].edge_index.flip(0)
     data["drug", "rev_targeted_by", "gene"].edge_index = data["gene", "targeted_by", "drug"].edge_index.flip(0)
     data["drug", "rev_has_clinical_evidence", "gene"].edge_index = data["gene", "has_clinical_evidence", "drug"].edge_index.flip(0)
     data["pathway", "rev_involved_in", "gene"].edge_index = data["gene", "involved_in", "pathway"].edge_index.flip(0)
     data["drug", "rev_associated_with_drug", "pathway"].edge_index = data["pathway", "associated_with_drug", "drug"].edge_index.flip(0)
+    if USE_GO:
+        data["goterm", "rev_has_go_annotation", "gene"].edge_index = data["gene", "has_go_annotation", "goterm"].edge_index.flip(0)
 
     return data, patient_idx, gene_idx, drug_idx, pathway_idx
 
 
 def main():
     print("Exporting Neo4j knowledge graph to PyTorch Geometric format...")
+    print(f"   GO terms: {'ON' if USE_GO else 'OFF (--no-go)'}")
     print("=" * 60)
 
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
     print("\n[1/2] Fetching nodes and edges from Neo4j...")
-    (patients, genes, drugs, pathways,
+    (patients, genes, drugs, pathways, goterms,
      mutation_edges, targeted_edges, clinical_edges,
-     gene_pathway_edges, pathway_drug_edges) = fetch_all_nodes_and_edges(driver)
+     gene_pathway_edges, pathway_drug_edges, gene_go_edges) = fetch_all_nodes_and_edges(driver)
     driver.close()
 
     print(f"   Patients: {len(patients)}")
     print(f"   Genes: {len(genes)}")
     print(f"   Pathways: {len(pathways)}")
     print(f"   Drugs: {len(drugs)}")
+    if USE_GO:
+        print(f"   GO terms: {len(goterms)}")
     print(f"   HAS_MUTATION edges: {len(mutation_edges)}")
     print(f"   TARGETED_BY edges: {len(targeted_edges)}")
     print(f"   HAS_CLINICAL_EVIDENCE edges: {len(clinical_edges)}")
     print(f"   INVOLVED_IN edges: {len(gene_pathway_edges)}")
     print(f"   ASSOCIATED_WITH_DRUG edges: {len(pathway_drug_edges)}")
+    if USE_GO:
+        print(f"   HAS_GO_ANNOTATION edges: {len(gene_go_edges)}")
 
     print("\n[2/2] Building HeteroData object...")
     data, patient_idx, gene_idx, drug_idx, pathway_idx = build_hetero_data(
-        patients, genes, drugs, pathways,
+        patients, genes, drugs, pathways, goterms,
         mutation_edges, targeted_edges, clinical_edges,
-        gene_pathway_edges, pathway_drug_edges
+        gene_pathway_edges, pathway_drug_edges, gene_go_edges
     )
 
     print("\nGraph structure:")

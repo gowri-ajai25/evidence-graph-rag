@@ -1,0 +1,2008 @@
+gene,go_id,term,category,evidence
+ABCB1,GO:0000086,G2/M transition of mitotic cell cycle,BP,IDA
+ABCB1,GO:0006805,xenobiotic metabolic process,BP,TAS
+ABCB1,GO:0009410,response to xenobiotic stimulus,BP,TAS
+ABCB1,GO:0045332,phospholipid translocation,BP,IBA
+ABCB1,GO:0045332,phospholipid translocation,BP,IDA
+ABCB1,GO:0045332,phospholipid translocation,BP,IEA
+ABCB1,GO:0046865,terpenoid transport,BP,ISS
+ABCB1,GO:0055085,transmembrane transport,BP,IEA
+ABCB1,GO:0055085,transmembrane transport,BP,TAS
+ABCB1,GO:0070633,transepithelial transport,BP,IDA
+ABCB1,GO:0070633,transepithelial transport,BP,IMP
+ABCB1,GO:0072089,stem cell proliferation,BP,IMP
+ABCB1,GO:0099040,ceramide translocation,BP,IBA
+ABCB1,GO:0099040,ceramide translocation,BP,IDA
+ABCB1,GO:0140115,export across plasma membrane,BP,IDA
+ABCB1,GO:0140115,export across plasma membrane,BP,IMP
+ABCB1,GO:0150104,transport across blood-brain barrier,BP,NAS
+ABCB1,GO:1905039,carboxylic acid transmembrane transport,BP,IMP
+ABCB1,GO:1990961,xenobiotic detoxification by transmembrane export across the plasma membrane,BP,IDA
+ABCB1,GO:1990961,xenobiotic detoxification by transmembrane export across the plasma membrane,BP,IGI
+ABCB1,GO:1990961,xenobiotic detoxification by transmembrane export across the plasma membrane,BP,IMP
+ABCB1,GO:1990961,xenobiotic detoxification by transmembrane export across the plasma membrane,BP,TAS
+ABCB1,GO:1990962,xenobiotic transport across blood-brain barrier,BP,IC
+ABCB1,GO:1990962,xenobiotic transport across blood-brain barrier,BP,IMP
+ABCB1,GO:1990962,xenobiotic transport across blood-brain barrier,BP,ISS
+ABCB1,GO:2001225,regulation of chloride transport,BP,IMP
+ABCB1,GO:0005515,protein binding,MF,IPI
+ABCB1,GO:0005524,ATP binding,MF,IDA
+ABCB1,GO:0005524,ATP binding,MF,IEA
+ABCB1,GO:0005524,ATP binding,MF,TAS
+ABCB1,GO:0008559,ABC-type xenobiotic transporter activity,MF,EXP
+ABCB1,GO:0008559,ABC-type xenobiotic transporter activity,MF,IDA
+ABCB1,GO:0008559,ABC-type xenobiotic transporter activity,MF,IEA
+ABCB1,GO:0008559,ABC-type xenobiotic transporter activity,MF,IGI
+ABCB1,GO:0008559,ABC-type xenobiotic transporter activity,MF,IMP
+ABCB1,GO:0008559,ABC-type xenobiotic transporter activity,MF,TAS
+ABCB1,GO:0015562,efflux transmembrane transporter activity,MF,IDA
+ABCB1,GO:0015562,efflux transmembrane transporter activity,MF,IGI
+ABCB1,GO:0015562,efflux transmembrane transporter activity,MF,IMP
+ABCB1,GO:0016887,ATP hydrolysis activity,MF,IEA
+ABCB1,GO:0022857,transmembrane transporter activity,MF,ISS
+ABCB1,GO:0031625,ubiquitin protein ligase binding,MF,IPI
+ABCB1,GO:0042626,ATPase-coupled transmembrane transporter activity,MF,IBA
+ABCB1,GO:0042626,ATPase-coupled transmembrane transporter activity,MF,IDA
+ABCB1,GO:0042626,ATPase-coupled transmembrane transporter activity,MF,TAS
+ABCB1,GO:0042910,xenobiotic transmembrane transporter activity,MF,IBA
+ABCB1,GO:0042910,xenobiotic transmembrane transporter activity,MF,IDA
+ABCB1,GO:0042910,xenobiotic transmembrane transporter activity,MF,IMP
+ABCB1,GO:0046943,carboxylic acid transmembrane transporter activity,MF,IMP
+ABCB1,GO:0090554,phosphatidylcholine floppase activity,MF,IBA
+ABCB1,GO:0090554,phosphatidylcholine floppase activity,MF,IDA
+ABCB1,GO:0090554,phosphatidylcholine floppase activity,MF,IEA
+ABCB1,GO:0090555,phosphatidylethanolamine flippase activity,MF,IDA
+ABCB1,GO:0099038,ceramide floppase activity,MF,IDA
+ABCB1,GO:0140326,ATPase-coupled intramembrane lipid carrier activity,MF,EXP
+ABCB1,GO:0140326,ATPase-coupled intramembrane lipid carrier activity,MF,IEA
+ABCB1,GO:0140328,floppase activity,MF,IMP
+ABCB1,GO:0140341,phosphatidylethanolamine floppase activity,MF,IDA
+ABCB1,GO:0140359,ABC-type transporter activity,MF,IEA
+ARID1A,GO:0006338,chromatin remodeling,BP,IDA
+ARID1A,GO:0006338,chromatin remodeling,BP,IEA
+ARID1A,GO:0006338,chromatin remodeling,BP,NAS
+ARID1A,GO:0006357,regulation of transcription by RNA polymerase II,BP,IBA
+ARID1A,GO:0006357,regulation of transcription by RNA polymerase II,BP,NAS
+ARID1A,GO:0030071,regulation of mitotic metaphase/anaphase transition,BP,NAS
+ARID1A,GO:0045582,positive regulation of T cell differentiation,BP,NAS
+ARID1A,GO:0045597,positive regulation of cell differentiation,BP,NAS
+ARID1A,GO:0045663,positive regulation of myoblast differentiation,BP,NAS
+ARID1A,GO:0045815,transcription initiation-coupled chromatin remodeling,BP,TAS
+ARID1A,GO:0045893,positive regulation of DNA-templated transcription,BP,IBA
+ARID1A,GO:0045893,positive regulation of DNA-templated transcription,BP,IDA
+ARID1A,GO:0070316,regulation of G0 to G1 transition,BP,NAS
+ARID1A,GO:1902459,positive regulation of stem cell population maintenance,BP,NAS
+ARID1A,GO:2000045,regulation of G1/S transition of mitotic cell cycle,BP,NAS
+ARID1A,GO:2000781,positive regulation of double-strand break repair,BP,NAS
+ARID1A,GO:2000819,regulation of nucleotide-excision repair,BP,NAS
+ARID1A,GO:0003677,DNA binding,MF,IDA
+ARID1A,GO:0003677,DNA binding,MF,IEA
+ARID1A,GO:0003677,DNA binding,MF,NAS
+ARID1A,GO:0003713,transcription coactivator activity,MF,IDA
+ARID1A,GO:0003713,transcription coactivator activity,MF,NAS
+ARID1A,GO:0005515,protein binding,MF,IPI
+ARID1A,GO:0016922,nuclear receptor binding,MF,IPI
+ARID1A,GO:0031491,nucleosome binding,MF,IBA
+ARID1A,GO:0140658,ATP-dependent chromatin remodeler activity,MF,IDA
+ASNS,GO:0042149,cellular response to glucose starvation,BP,IDA
+ASNS,GO:0043066,negative regulation of apoptotic process,BP,IMP
+ASNS,GO:0045931,positive regulation of mitotic cell cycle,BP,IDA
+ASNS,GO:0070981,L-asparagine biosynthetic process,BP,IBA
+ASNS,GO:0070981,L-asparagine biosynthetic process,BP,IC
+ASNS,GO:0070981,L-asparagine biosynthetic process,BP,IDA
+ASNS,GO:0070981,L-asparagine biosynthetic process,BP,IEA
+ASNS,GO:0004066,asparagine synthase (glutamine-hydrolyzing) activity,MF,IBA
+ASNS,GO:0004066,asparagine synthase (glutamine-hydrolyzing) activity,MF,IDA
+ASNS,GO:0004066,asparagine synthase (glutamine-hydrolyzing) activity,MF,IEA
+ASNS,GO:0004071,aspartate-ammonia ligase activity,MF,IEA
+ASNS,GO:0004359,glutaminase activity,MF,IEA
+ASNS,GO:0005515,protein binding,MF,IPI
+ASS1,GO:0000050,urea cycle,BP,IBA
+ASS1,GO:0000050,urea cycle,BP,IEA
+ASS1,GO:0000050,urea cycle,BP,IMP
+ASS1,GO:0001822,kidney development,BP,IEA
+ASS1,GO:0001889,liver development,BP,IEA
+ASS1,GO:0006526,L-arginine biosynthetic process,BP,IBA
+ASS1,GO:0006526,L-arginine biosynthetic process,BP,IEA
+ASS1,GO:0006526,L-arginine biosynthetic process,BP,IMP
+ASS1,GO:0006533,L-aspartate catabolic process,BP,IMP
+ASS1,GO:0006953,acute-phase response,BP,IEA
+ASS1,GO:0007494,midgut development,BP,IEA
+ASS1,GO:0007584,response to nutrient,BP,IEA
+ASS1,GO:0007623,circadian rhythm,BP,IDA
+ASS1,GO:0007623,circadian rhythm,BP,IEA
+ASS1,GO:0009410,response to xenobiotic stimulus,BP,IEA
+ASS1,GO:0009636,response to toxic substance,BP,IEA
+ASS1,GO:0010043,response to zinc ion,BP,IEA
+ASS1,GO:0010046,response to mycotoxin,BP,IEA
+ASS1,GO:0014075,response to amine,BP,IEA
+ASS1,GO:0019241,L-citrulline catabolic process,BP,IMP
+ASS1,GO:0032355,response to estradiol,BP,IEA
+ASS1,GO:0032496,response to lipopolysaccharide,BP,IEA
+ASS1,GO:0043200,response to amino acid,BP,IEA
+ASS1,GO:0043434,response to peptide hormone,BP,IEA
+ASS1,GO:0045429,positive regulation of nitric oxide biosynthetic process,BP,IMP
+ASS1,GO:0048545,response to steroid hormone,BP,IEA
+ASS1,GO:0051384,response to glucocorticoid,BP,IEA
+ASS1,GO:0060416,response to growth hormone,BP,IEA
+ASS1,GO:0060539,diaphragm development,BP,IEA
+ASS1,GO:0070542,response to fatty acid,BP,IEA
+ASS1,GO:0071222,cellular response to lipopolysaccharide,BP,IEA
+ASS1,GO:0071230,cellular response to amino acid stimulus,BP,IEA
+ASS1,GO:0071242,cellular response to ammonium ion,BP,IEA
+ASS1,GO:0071320,cellular response to cAMP,BP,IEA
+ASS1,GO:0071346,cellular response to type II interferon,BP,IEA
+ASS1,GO:0071356,cellular response to tumor necrosis factor,BP,IEA
+ASS1,GO:0071377,cellular response to glucagon stimulus,BP,IEA
+ASS1,GO:0071400,cellular response to oleic acid,BP,IEA
+ASS1,GO:0071418,cellular response to amine stimulus,BP,IEA
+ASS1,GO:0071499,cellular response to laminar fluid shear stress,BP,IMP
+ASS1,GO:0071549,cellular response to dexamethasone stimulus,BP,IEA
+ASS1,GO:1903038,negative regulation of leukocyte cell-cell adhesion,BP,IMP
+ASS1,GO:0003723,RNA binding,MF,HDA
+ASS1,GO:0004055,argininosuccinate synthase activity,MF,IBA
+ASS1,GO:0004055,argininosuccinate synthase activity,MF,IEA
+ASS1,GO:0004055,argininosuccinate synthase activity,MF,IMP
+ASS1,GO:0005515,protein binding,MF,IPI
+ASS1,GO:0005524,ATP binding,MF,IEA
+ASS1,GO:0015643,toxic substance binding,MF,IEA
+ASS1,GO:0016597,amino acid binding,MF,IMP
+ASS1,GO:0042802,identical protein binding,MF,IPI
+ATM,GO:0000077,DNA damage checkpoint signaling,BP,IBA
+ATM,GO:0000077,DNA damage checkpoint signaling,BP,IDA
+ATM,GO:0000077,DNA damage checkpoint signaling,BP,IEA
+ATM,GO:0000278,mitotic cell cycle,BP,IBA
+ATM,GO:0000425,pexophagy,BP,IDA
+ATM,GO:0000723,telomere maintenance,BP,IBA
+ATM,GO:0000724,double-strand break repair via homologous recombination,BP,IDA
+ATM,GO:0000724,double-strand break repair via homologous recombination,BP,IEA
+ATM,GO:0000729,DNA double-strand break processing,BP,IDA
+ATM,GO:0002331,pre-B cell allelic exclusion,BP,IEA
+ATM,GO:0002331,pre-B cell allelic exclusion,BP,ISS
+ATM,GO:0006281,DNA repair,BP,IEA
+ATM,GO:0006302,double-strand break repair,BP,IBA
+ATM,GO:0006302,double-strand break repair,BP,IDA
+ATM,GO:0006302,double-strand break repair,BP,TAS
+ATM,GO:0006303,double-strand break repair via nonhomologous end joining,BP,TAS
+ATM,GO:0006338,chromatin remodeling,BP,IEA
+ATM,GO:0006974,DNA damage response,BP,IDA
+ATM,GO:0006974,DNA damage response,BP,IEA
+ATM,GO:0006974,DNA damage response,BP,IMP
+ATM,GO:0006974,DNA damage response,BP,IMP
+ATM,GO:0006979,response to oxidative stress,BP,IC
+ATM,GO:0007094,mitotic spindle assembly checkpoint signaling,BP,IMP
+ATM,GO:0007095,mitotic G2 DNA damage checkpoint signaling,BP,IMP
+ATM,GO:0007127,meiosis I,BP,IEA
+ATM,GO:0007131,reciprocal meiotic recombination,BP,TAS
+ATM,GO:0007165,signal transduction,BP,TAS
+ATM,GO:0008630,intrinsic apoptotic signaling pathway in response to DNA damage,BP,IBA
+ATM,GO:0010212,response to ionizing radiation,BP,IDA
+ATM,GO:0010212,response to ionizing radiation,BP,IEA
+ATM,GO:0010468,regulation of gene expression,BP,IEA
+ATM,GO:0010506,regulation of autophagy,BP,IEA
+ATM,GO:0010506,regulation of autophagy,BP,IMP
+ATM,GO:0010628,positive regulation of gene expression,BP,IMP
+ATM,GO:0030330,"DNA damage response, signal transduction by p53 class mediator",BP,TAS
+ATM,GO:0030335,positive regulation of cell migration,BP,IMP
+ATM,GO:0030889,negative regulation of B cell proliferation,BP,IMP
+ATM,GO:0032210,regulation of telomere maintenance via telomerase,BP,IEA
+ATM,GO:0032210,regulation of telomere maintenance via telomerase,BP,IGI
+ATM,GO:0032212,positive regulation of telomere maintenance via telomerase,BP,IEA
+ATM,GO:0032212,positive regulation of telomere maintenance via telomerase,BP,ISS
+ATM,GO:0033554,cellular response to stress,BP,IDA
+ATM,GO:0034614,cellular response to reactive oxygen species,BP,IDA
+ATM,GO:0036092,phosphatidylinositol-3-phosphate biosynthetic process,BP,IEA
+ATM,GO:0036289,peptidyl-serine autophosphorylation,BP,IMP
+ATM,GO:0042594,response to starvation,BP,IC
+ATM,GO:0042770,signal transduction in response to DNA damage,BP,IDA
+ATM,GO:0042770,signal transduction in response to DNA damage,BP,IMP
+ATM,GO:0042981,regulation of apoptotic process,BP,TAS
+ATM,GO:0043065,positive regulation of apoptotic process,BP,IEA
+ATM,GO:0043065,positive regulation of apoptotic process,BP,IMP
+ATM,GO:0043517,"positive regulation of DNA damage response, signal transduction by p53 class mediator",BP,IMP
+ATM,GO:0045785,positive regulation of cell adhesion,BP,IEA
+ATM,GO:0045785,positive regulation of cell adhesion,BP,ISS
+ATM,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IEA
+ATM,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,ISS
+ATM,GO:0046777,protein autophosphorylation,BP,IMP
+ATM,GO:0050821,protein stabilization,BP,IDA
+ATM,GO:0051726,regulation of cell cycle,BP,IMP
+ATM,GO:0071044,histone mRNA catabolic process,BP,IDA
+ATM,GO:0071300,cellular response to retinoic acid,BP,IEA
+ATM,GO:0071300,cellular response to retinoic acid,BP,ISS
+ATM,GO:0071480,cellular response to gamma radiation,BP,IBA
+ATM,GO:0071480,cellular response to gamma radiation,BP,IDA
+ATM,GO:0071481,cellular response to X-ray,BP,IDA
+ATM,GO:0071500,cellular response to nitrosative stress,BP,IDA
+ATM,GO:0080135,regulation of cellular response to stress,BP,IEA
+ATM,GO:0090398,cellular senescence,BP,TAS
+ATM,GO:0090399,replicative senescence,BP,IMP
+ATM,GO:0097694,establishment of RNA localization to telomere,BP,IMP
+ATM,GO:0097695,establishment of protein-containing complex localization to telomere,BP,IMP
+ATM,GO:1900034,regulation of cellular response to heat,BP,TAS
+ATM,GO:1901701,cellular response to oxygen-containing compound,BP,IEA
+ATM,GO:1901796,regulation of signal transduction by p53 class mediator,BP,TAS
+ATM,GO:1904262,negative regulation of TORC1 signaling,BP,IBA
+ATM,GO:1904262,negative regulation of TORC1 signaling,BP,IEA
+ATM,GO:1904262,negative regulation of TORC1 signaling,BP,IMP
+ATM,GO:1904354,negative regulation of telomere capping,BP,IMP
+ATM,GO:1904358,positive regulation of telomere maintenance via telomere lengthening,BP,IBA
+ATM,GO:1904358,positive regulation of telomere maintenance via telomere lengthening,BP,IEA
+ATM,GO:1904358,positive regulation of telomere maintenance via telomere lengthening,BP,IMP
+ATM,GO:1904884,positive regulation of telomerase catalytic core complex assembly,BP,IMP
+ATM,GO:1905168,positive regulation of double-strand break repair via homologous recombination,BP,IDA
+ATM,GO:2000781,positive regulation of double-strand break repair,BP,IMP
+ATM,GO:2000785,regulation of autophagosome assembly,BP,IC
+ATM,GO:2000786,positive regulation of autophagosome assembly,BP,IDA
+ATM,GO:0004672,protein kinase activity,MF,IEA
+ATM,GO:0004674,protein serine/threonine kinase activity,MF,IBA
+ATM,GO:0004674,protein serine/threonine kinase activity,MF,IDA
+ATM,GO:0004674,protein serine/threonine kinase activity,MF,IEA
+ATM,GO:0004674,protein serine/threonine kinase activity,MF,TAS
+ATM,GO:0004677,DNA-dependent protein kinase activity,MF,IDA
+ATM,GO:0005515,protein binding,MF,IPI
+ATM,GO:0016301,kinase activity,MF,IEA
+ATM,GO:0016303,1-phosphatidylinositol-3-kinase activity,MF,IMP
+ATM,GO:0035979,histone H2AXS139 kinase activity,MF,IEA
+ATM,GO:0035979,histone H2AXS139 kinase activity,MF,ISS
+ATM,GO:0042802,identical protein binding,MF,IPI
+ATM,GO:0044877,protein-containing complex binding,MF,IDA
+ATM,GO:0106310,protein serine kinase activity,MF,EXP
+ATM,GO:0106310,protein serine kinase activity,MF,IEA
+AURKA,GO:0000086,G2/M transition of mitotic cell cycle,BP,TAS
+AURKA,GO:0000212,meiotic spindle organization,BP,IEA
+AURKA,GO:0000226,microtubule cytoskeleton organization,BP,IEA
+AURKA,GO:0000278,mitotic cell cycle,BP,IEA
+AURKA,GO:0000278,mitotic cell cycle,BP,TAS
+AURKA,GO:0006468,protein phosphorylation,BP,IDA
+AURKA,GO:0006468,protein phosphorylation,BP,IDA
+AURKA,GO:0006468,protein phosphorylation,BP,TAS
+AURKA,GO:0007051,spindle organization,BP,IEA
+AURKA,GO:0007051,spindle organization,BP,IMP
+AURKA,GO:0007052,mitotic spindle organization,BP,IBA
+AURKA,GO:0007052,mitotic spindle organization,BP,IEA
+AURKA,GO:0007098,centrosome cycle,BP,IEA
+AURKA,GO:0007100,mitotic centrosome separation,BP,IEA
+AURKA,GO:0009611,response to wounding,BP,IDA
+AURKA,GO:0010389,regulation of G2/M transition of mitotic cell cycle,BP,TAS
+AURKA,GO:0010629,negative regulation of gene expression,BP,IMP
+AURKA,GO:0018105,peptidyl-serine phosphorylation,BP,IMP
+AURKA,GO:0031647,regulation of protein stability,BP,IMP
+AURKA,GO:0032091,negative regulation of protein binding,BP,IDA
+AURKA,GO:0032465,regulation of cytokinesis,BP,IBA
+AURKA,GO:0045840,positive regulation of mitotic nuclear division,BP,TAS
+AURKA,GO:0045931,positive regulation of mitotic cell cycle,BP,ISS
+AURKA,GO:0046605,regulation of centrosome cycle,BP,TAS
+AURKA,GO:0046777,protein autophosphorylation,BP,TAS
+AURKA,GO:0051321,meiotic cell cycle,BP,IEA
+AURKA,GO:0061523,cilium disassembly,BP,IMP
+AURKA,GO:0090068,positive regulation of cell cycle process,BP,IEA
+AURKA,GO:0090141,positive regulation of mitochondrial fission,BP,IMP
+AURKA,GO:0097421,liver regeneration,BP,IDA
+AURKA,GO:1901796,regulation of signal transduction by p53 class mediator,BP,TAS
+AURKA,GO:0004672,protein kinase activity,MF,IDA
+AURKA,GO:0004672,protein kinase activity,MF,IEA
+AURKA,GO:0004674,protein serine/threonine kinase activity,MF,EXP
+AURKA,GO:0004674,protein serine/threonine kinase activity,MF,IEA
+AURKA,GO:0004674,protein serine/threonine kinase activity,MF,IMP
+AURKA,GO:0004674,protein serine/threonine kinase activity,MF,TAS
+AURKA,GO:0004712,protein serine/threonine/tyrosine kinase activity,MF,IEA
+AURKA,GO:0004712,protein serine/threonine/tyrosine kinase activity,MF,TAS
+AURKA,GO:0005515,protein binding,MF,IPI
+AURKA,GO:0005524,ATP binding,MF,IEA
+AURKA,GO:0019901,protein kinase binding,MF,IPI
+AURKA,GO:0046982,protein heterodimerization activity,MF,IPI
+AURKA,GO:0106310,protein serine kinase activity,MF,EXP
+AURKA,GO:0106310,protein serine kinase activity,MF,IEA
+AURKA,GO:0140677,molecular function activator activity,MF,EXP
+BRAF,GO:0000165,MAPK cascade,BP,IBA
+BRAF,GO:0000165,MAPK cascade,BP,IDA
+BRAF,GO:0006468,protein phosphorylation,BP,TAS
+BRAF,GO:0007165,signal transduction,BP,IEA
+BRAF,GO:0007173,epidermal growth factor receptor signaling pathway,BP,IDA
+BRAF,GO:0009887,animal organ morphogenesis,BP,TAS
+BRAF,GO:0010628,positive regulation of gene expression,BP,IMP
+BRAF,GO:0010828,positive regulation of D-glucose transmembrane transport,BP,IDA
+BRAF,GO:0033138,positive regulation of peptidyl-serine phosphorylation,BP,IDA
+BRAF,GO:0043066,negative regulation of apoptotic process,BP,IDA
+BRAF,GO:0043066,negative regulation of apoptotic process,BP,IEA
+BRAF,GO:0043066,negative regulation of apoptotic process,BP,TAS
+BRAF,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IDA
+BRAF,GO:0071277,cellular response to calcium ion,BP,IDA
+BRAF,GO:0090150,establishment of protein localization to membrane,BP,IDA
+BRAF,GO:0099170,postsynaptic modulation of chemical synaptic transmission,BP,IEA
+BRAF,GO:0004672,protein kinase activity,MF,IDA
+BRAF,GO:0004672,protein kinase activity,MF,IEA
+BRAF,GO:0004672,protein kinase activity,MF,TAS
+BRAF,GO:0004674,protein serine/threonine kinase activity,MF,IDA
+BRAF,GO:0004674,protein serine/threonine kinase activity,MF,IEA
+BRAF,GO:0004708,MAP kinase kinase activity,MF,IMP
+BRAF,GO:0004709,MAP kinase kinase kinase activity,MF,IBA
+BRAF,GO:0005509,calcium ion binding,MF,IDA
+BRAF,GO:0005515,protein binding,MF,IPI
+BRAF,GO:0005524,ATP binding,MF,IEA
+BRAF,GO:0031267,small GTPase binding,MF,IPI
+BRAF,GO:0042802,identical protein binding,MF,IPI
+BRAF,GO:0097110,scaffold protein binding,MF,IPI
+BRAF,GO:0106310,protein serine kinase activity,MF,EXP
+BRAF,GO:0106310,protein serine kinase activity,MF,IEA
+BRCA1,GO:0000724,double-strand break repair via homologous recombination,BP,IBA
+BRCA1,GO:0000724,double-strand break repair via homologous recombination,BP,IDA
+BRCA1,GO:0006281,DNA repair,BP,IEA
+BRCA1,GO:0006281,DNA repair,BP,NAS
+BRCA1,GO:0006282,regulation of DNA repair,BP,NAS
+BRCA1,GO:0006301,DNA damage tolerance,BP,IDA
+BRCA1,GO:0006302,double-strand break repair,BP,IDA
+BRCA1,GO:0006302,double-strand break repair,BP,IEA
+BRCA1,GO:0006302,double-strand break repair,BP,IMP
+BRCA1,GO:0006302,double-strand break repair,BP,TAS
+BRCA1,GO:0006338,chromatin remodeling,BP,TAS
+BRCA1,GO:0006357,regulation of transcription by RNA polymerase II,BP,IMP
+BRCA1,GO:0006357,regulation of transcription by RNA polymerase II,BP,TAS
+BRCA1,GO:0006974,DNA damage response,BP,IEA
+BRCA1,GO:0006974,DNA damage response,BP,NAS
+BRCA1,GO:0006974,DNA damage response,BP,TAS
+BRCA1,GO:0007059,chromosome segregation,BP,IMP
+BRCA1,GO:0007095,mitotic G2 DNA damage checkpoint signaling,BP,IMP
+BRCA1,GO:0008630,intrinsic apoptotic signaling pathway in response to DNA damage,BP,IDA
+BRCA1,GO:0010212,response to ionizing radiation,BP,IMP
+BRCA1,GO:0010575,positive regulation of vascular endothelial growth factor production,BP,IMP
+BRCA1,GO:0010628,positive regulation of gene expression,BP,IMP
+BRCA1,GO:0016567,protein ubiquitination,BP,IDA
+BRCA1,GO:0016567,protein ubiquitination,BP,IEA
+BRCA1,GO:0030308,negative regulation of cell growth,BP,IMP
+BRCA1,GO:0033147,negative regulation of intracellular estrogen receptor signaling pathway,BP,IMP
+BRCA1,GO:0035825,homologous recombination,BP,NAS
+BRCA1,GO:0044027,negative regulation of gene expression via chromosomal CpG island methylation,BP,IMP
+BRCA1,GO:0044818,mitotic G2/M transition checkpoint,BP,IBA
+BRCA1,GO:0044818,mitotic G2/M transition checkpoint,BP,NAS
+BRCA1,GO:0045717,negative regulation of fatty acid biosynthetic process,BP,IMP
+BRCA1,GO:0045739,positive regulation of DNA repair,BP,IMP
+BRCA1,GO:0045766,positive regulation of angiogenesis,BP,IMP
+BRCA1,GO:0045786,negative regulation of cell cycle,BP,NAS
+BRCA1,GO:0045892,negative regulation of DNA-templated transcription,BP,IDA
+BRCA1,GO:0045893,positive regulation of DNA-templated transcription,BP,IDA
+BRCA1,GO:0045893,positive regulation of DNA-templated transcription,BP,IMP
+BRCA1,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IDA
+BRCA1,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IEA
+BRCA1,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IMP
+BRCA1,GO:0046600,negative regulation of centriole replication,BP,NAS
+BRCA1,GO:0051726,regulation of cell cycle,BP,IDA
+BRCA1,GO:0051865,protein autoubiquitination,BP,IDA
+BRCA1,GO:0071356,cellular response to tumor necrosis factor,BP,IMP
+BRCA1,GO:0071479,cellular response to ionizing radiation,BP,IMP
+BRCA1,GO:0071681,cellular response to indole-3-methanol,BP,IDA
+BRCA1,GO:0085020,protein K6-linked ubiquitination,BP,IDA
+BRCA1,GO:0110025,DNA strand resection involved in replication fork processing,BP,NAS
+BRCA1,GO:1902042,negative regulation of extrinsic apoptotic signaling pathway via death domain receptors,BP,IMP
+BRCA1,GO:2000001,regulation of DNA damage checkpoint,BP,NAS
+BRCA1,GO:2000378,negative regulation of reactive oxygen species metabolic process,BP,IMP
+BRCA1,GO:0000976,transcription cis-regulatory region binding,MF,IDA
+BRCA1,GO:0000976,transcription cis-regulatory region binding,MF,IEA
+BRCA1,GO:0002039,p53 binding,MF,IDA
+BRCA1,GO:0003677,DNA binding,MF,IEA
+BRCA1,GO:0003677,DNA binding,MF,TAS
+BRCA1,GO:0003684,damaged DNA binding,MF,IBA
+BRCA1,GO:0003684,damaged DNA binding,MF,IEA
+BRCA1,GO:0003713,transcription coactivator activity,MF,IDA
+BRCA1,GO:0003713,transcription coactivator activity,MF,IEA
+BRCA1,GO:0003713,transcription coactivator activity,MF,IMP
+BRCA1,GO:0003723,RNA binding,MF,IDA
+BRCA1,GO:0004842,ubiquitin-protein transferase activity,MF,IBA
+BRCA1,GO:0004842,ubiquitin-protein transferase activity,MF,IDA
+BRCA1,GO:0004842,ubiquitin-protein transferase activity,MF,IEA
+BRCA1,GO:0004842,ubiquitin-protein transferase activity,MF,TAS
+BRCA1,GO:0005515,protein binding,MF,IPI
+BRCA1,GO:0008270,zinc ion binding,MF,IEA
+BRCA1,GO:0008270,zinc ion binding,MF,TAS
+BRCA1,GO:0015631,tubulin binding,MF,NAS
+BRCA1,GO:0019899,enzyme binding,MF,IPI
+BRCA1,GO:0031625,ubiquitin protein ligase binding,MF,IPI
+BRCA1,GO:0042802,identical protein binding,MF,IPI
+BRCA1,GO:0046872,metal ion binding,MF,IEA
+BRCA1,GO:0061630,ubiquitin protein ligase activity,MF,EXP
+BRCA1,GO:0061630,ubiquitin protein ligase activity,MF,IEA
+BRCA1,GO:0061649,ubiquitin-modified histone reader activity,MF,TAS
+BRCA1,GO:0070063,RNA polymerase binding,MF,IDA
+BRCA1,GO:0140863,histone H2AK127 ubiquitin ligase activity,MF,TAS
+BRCA1,GO:0140864,histone H2AK129 ubiquitin ligase activity,MF,TAS
+BRCA2,GO:0000722,telomere maintenance via recombination,BP,IEA
+BRCA2,GO:0000724,double-strand break repair via homologous recombination,BP,IBA
+BRCA2,GO:0000724,double-strand break repair via homologous recombination,BP,IDA
+BRCA2,GO:0000724,double-strand break repair via homologous recombination,BP,IEA
+BRCA2,GO:0000724,double-strand break repair via homologous recombination,BP,IMP
+BRCA2,GO:0000730,DNA recombinase assembly,BP,IDA
+BRCA2,GO:0006281,DNA repair,BP,IEA
+BRCA2,GO:0006289,nucleotide-excision repair,BP,IMP
+BRCA2,GO:0006302,double-strand break repair,BP,IMP
+BRCA2,GO:0006310,DNA recombination,BP,IEA
+BRCA2,GO:0006355,regulation of DNA-templated transcription,BP,IBA
+BRCA2,GO:0006974,DNA damage response,BP,IDA
+BRCA2,GO:0006974,DNA damage response,BP,IEA
+BRCA2,GO:0007127,meiosis I,BP,IEA
+BRCA2,GO:0007141,male meiosis I,BP,IEA
+BRCA2,GO:0033600,negative regulation of mammary gland epithelial cell proliferation,BP,IDA
+BRCA2,GO:0045893,positive regulation of DNA-templated transcription,BP,IDA
+BRCA2,GO:0051298,centrosome duplication,BP,IMP
+BRCA2,GO:0070200,establishment of protein localization to telomere,BP,IDA
+BRCA2,GO:0070200,establishment of protein localization to telomere,BP,IEA
+BRCA2,GO:0071479,cellular response to ionizing radiation,BP,IMP
+BRCA2,GO:1990426,mitotic recombination-dependent replication fork processing,BP,IMP
+BRCA2,GO:1990918,double-strand break repair involved in meiotic recombination,BP,IDA
+BRCA2,GO:2000001,regulation of DNA damage checkpoint,BP,NAS
+BRCA2,GO:0002020,protease binding,MF,IPI
+BRCA2,GO:0003690,double-stranded DNA binding,MF,IDA
+BRCA2,GO:0003697,single-stranded DNA binding,MF,IBA
+BRCA2,GO:0003697,single-stranded DNA binding,MF,IDA
+BRCA2,GO:0004402,histone acetyltransferase activity,MF,IDA
+BRCA2,GO:0005515,protein binding,MF,IDA
+BRCA2,GO:0005515,protein binding,MF,IPI
+BRCA2,GO:0030674,protein-macromolecule adaptor activity,MF,IDA
+BRCA2,GO:0042802,identical protein binding,MF,IPI
+BRCA2,GO:0043015,gamma-tubulin binding,MF,IPI
+BRCA2,GO:0140678,molecular function inhibitor activity,MF,IDA
+BRIP1,GO:0000077,DNA damage checkpoint signaling,BP,NAS
+BRIP1,GO:0006281,DNA repair,BP,IEA
+BRIP1,GO:0006281,DNA repair,BP,NAS
+BRIP1,GO:0006289,nucleotide-excision repair,BP,IBA
+BRIP1,GO:0006302,double-strand break repair,BP,NAS
+BRIP1,GO:0006357,regulation of transcription by RNA polymerase II,BP,IDA
+BRIP1,GO:0035825,homologous recombination,BP,NAS
+BRIP1,GO:0106300,protein-DNA covalent cross-linking repair,BP,IDA
+BRIP1,GO:1990918,double-strand break repair involved in meiotic recombination,BP,IBA
+BRIP1,GO:0003676,nucleic acid binding,MF,IEA
+BRIP1,GO:0003677,DNA binding,MF,IEA
+BRIP1,GO:0003677,DNA binding,MF,NAS
+BRIP1,GO:0003678,DNA helicase activity,MF,IBA
+BRIP1,GO:0003678,DNA helicase activity,MF,IEA
+BRIP1,GO:0003678,DNA helicase activity,MF,NAS
+BRIP1,GO:0004386,helicase activity,MF,IEA
+BRIP1,GO:0005515,protein binding,MF,IPI
+BRIP1,GO:0005524,ATP binding,MF,IEA
+BRIP1,GO:0016818,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",MF,IEA
+BRIP1,GO:0016887,ATP hydrolysis activity,MF,EXP
+BRIP1,GO:0016887,ATP hydrolysis activity,MF,IEA
+BRIP1,GO:0043139,5'-3' DNA helicase activity,MF,EXP
+BRIP1,GO:0043139,5'-3' DNA helicase activity,MF,IDA
+BRIP1,GO:0043139,5'-3' DNA helicase activity,MF,IEA
+BRIP1,GO:0160225,G-quadruplex unwinding activity,MF,IDA
+CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IBA
+CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IDA
+CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IEA
+CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,NAS
+CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,TAS
+CCND1,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,IDA
+CCND1,GO:0001889,liver development,BP,IEA
+CCND1,GO:0006357,regulation of transcription by RNA polymerase II,BP,IEA
+CCND1,GO:0006974,DNA damage response,BP,IDA
+CCND1,GO:0008284,positive regulation of cell population proliferation,BP,IEA
+CCND1,GO:0009410,response to xenobiotic stimulus,BP,IEA
+CCND1,GO:0009410,response to xenobiotic stimulus,BP,IEP
+CCND1,GO:0010039,response to iron ion,BP,IEA
+CCND1,GO:0010165,response to X-ray,BP,IEA
+CCND1,GO:0010971,positive regulation of G2/M transition of mitotic cell cycle,BP,IDA
+CCND1,GO:0031100,animal organ regeneration,BP,IEA
+CCND1,GO:0031571,mitotic G1 DNA damage checkpoint signaling,BP,IDA
+CCND1,GO:0032026,response to magnesium ion,BP,IEA
+CCND1,GO:0032355,response to estradiol,BP,IEA
+CCND1,GO:0033197,response to vitamin E,BP,IEA
+CCND1,GO:0033327,Leydig cell differentiation,BP,IEA
+CCND1,GO:0043627,response to estrogen,BP,IEA
+CCND1,GO:0044321,response to leptin,BP,IDA
+CCND1,GO:0045471,response to ethanol,BP,IEA
+CCND1,GO:0048545,response to steroid hormone,BP,IEA
+CCND1,GO:0051384,response to glucocorticoid,BP,IEA
+CCND1,GO:0051412,response to corticosterone,BP,IEA
+CCND1,GO:0051592,response to calcium ion,BP,IEA
+CCND1,GO:0070141,response to UV-A,BP,IDA
+CCND1,GO:0071456,cellular response to hypoxia,BP,IEA
+CCND1,GO:1900087,positive regulation of G1/S transition of mitotic cell cycle,BP,IBA
+CCND1,GO:1901992,positive regulation of mitotic cell cycle phase transition,BP,IEA
+CCND1,GO:2000045,regulation of G1/S transition of mitotic cell cycle,BP,IEA
+CCND1,GO:0003714,transcription corepressor activity,MF,IDA
+CCND1,GO:0004672,protein kinase activity,MF,IEA
+CCND1,GO:0005515,protein binding,MF,IPI
+CCND1,GO:0016301,kinase activity,MF,IEA
+CCND1,GO:0016538,cyclin-dependent protein serine/threonine kinase regulator activity,MF,IBA
+CCND1,GO:0016538,cyclin-dependent protein serine/threonine kinase regulator activity,MF,IEA
+CCND1,GO:0019899,enzyme binding,MF,IPI
+CCND1,GO:0019901,protein kinase binding,MF,IEA
+CCND1,GO:0019901,protein kinase binding,MF,IPI
+CCND1,GO:0042826,histone deacetylase binding,MF,IPI
+CCND1,GO:0043539,protein serine/threonine kinase activator activity,MF,IDA
+CCND1,GO:0044877,protein-containing complex binding,MF,IEA
+CCND1,GO:0061575,cyclin-dependent protein serine/threonine kinase activator activity,MF,IDA
+CCND1,GO:0061575,cyclin-dependent protein serine/threonine kinase activator activity,MF,IEA
+CCND1,GO:0061575,cyclin-dependent protein serine/threonine kinase activator activity,MF,TAS
+CCND1,GO:0070064,proline-rich region binding,MF,IDA
+CCNE1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IBA
+CCNE1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IMP
+CCNE1,GO:0000082,G1/S transition of mitotic cell cycle,BP,NAS
+CCNE1,GO:0006468,protein phosphorylation,BP,IMP
+CCNE1,GO:1900087,positive regulation of G1/S transition of mitotic cell cycle,BP,IBA
+CCNE1,GO:1902462,positive regulation of mesenchymal stem cell proliferation,BP,IMP
+CCNE1,GO:0005515,protein binding,MF,IPI
+CCNE1,GO:0016301,kinase activity,MF,IEA
+CCNE1,GO:0016538,cyclin-dependent protein serine/threonine kinase regulator activity,MF,IBA
+CCNE1,GO:0016538,cyclin-dependent protein serine/threonine kinase regulator activity,MF,IEA
+CCNE1,GO:0019901,protein kinase binding,MF,IEA
+CDK12,GO:0006366,transcription by RNA polymerase II,BP,IDA
+CDK12,GO:0008380,RNA splicing,BP,ISS
+CDK12,GO:0032968,positive regulation of transcription elongation by RNA polymerase II,BP,IBA
+CDK12,GO:0032968,positive regulation of transcription elongation by RNA polymerase II,BP,IDA
+CDK12,GO:0032968,positive regulation of transcription elongation by RNA polymerase II,BP,IEA
+CDK12,GO:0033147,negative regulation of intracellular estrogen receptor signaling pathway,BP,IMP
+CDK12,GO:0043405,regulation of MAP kinase activity,BP,IMP
+CDK12,GO:0043409,negative regulation of MAPK cascade,BP,IMP
+CDK12,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IMP
+CDK12,GO:0051726,regulation of cell cycle,BP,IEA
+CDK12,GO:0071391,cellular response to estrogen stimulus,BP,IMP
+CDK12,GO:0004672,protein kinase activity,MF,IDA
+CDK12,GO:0004672,protein kinase activity,MF,IEA
+CDK12,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IEA
+CDK12,GO:0005515,protein binding,MF,IPI
+CDK12,GO:0005524,ATP binding,MF,IEA
+CDK12,GO:0008353,RNA polymerase II CTD heptapeptide repeat kinase activity,MF,IBA
+CDK12,GO:0008353,RNA polymerase II CTD heptapeptide repeat kinase activity,MF,IDA
+CDK12,GO:0008353,RNA polymerase II CTD heptapeptide repeat kinase activity,MF,IEA
+CDK12,GO:0008353,RNA polymerase II CTD heptapeptide repeat kinase activity,MF,IMP
+CDK12,GO:0019901,protein kinase binding,MF,IEA
+CDK12,GO:0030332,cyclin binding,MF,IEA
+CDK12,GO:0030332,cyclin binding,MF,IPI
+CDK12,GO:0106310,protein serine kinase activity,MF,IEA
+CDK4,GO:0000082,G1/S transition of mitotic cell cycle,BP,IDA
+CDK4,GO:0000082,G1/S transition of mitotic cell cycle,BP,IEA
+CDK4,GO:0000082,G1/S transition of mitotic cell cycle,BP,IMP
+CDK4,GO:0000082,G1/S transition of mitotic cell cycle,BP,NAS
+CDK4,GO:0000086,G2/M transition of mitotic cell cycle,BP,IBA
+CDK4,GO:0007165,signal transduction,BP,IBA
+CDK4,GO:0008284,positive regulation of cell population proliferation,BP,IMP
+CDK4,GO:0009410,response to xenobiotic stimulus,BP,IEP
+CDK4,GO:0010468,regulation of gene expression,BP,IMP
+CDK4,GO:0010971,positive regulation of G2/M transition of mitotic cell cycle,BP,IDA
+CDK4,GO:0048146,positive regulation of fibroblast proliferation,BP,IEA
+CDK4,GO:0048146,positive regulation of fibroblast proliferation,BP,IMP
+CDK4,GO:0051726,regulation of cell cycle,BP,IDA
+CDK4,GO:0060260,regulation of transcription initiation by RNA polymerase II,BP,TAS
+CDK4,GO:0004672,protein kinase activity,MF,IEA
+CDK4,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IBA
+CDK4,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IDA
+CDK4,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IEA
+CDK4,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,TAS
+CDK4,GO:0005515,protein binding,MF,IPI
+CDK4,GO:0005524,ATP binding,MF,IEA
+CDK4,GO:0016301,kinase activity,MF,IEA
+CDK4,GO:0016538,cyclin-dependent protein serine/threonine kinase regulator activity,MF,TAS
+CDK4,GO:0030332,cyclin binding,MF,IEA
+CDK4,GO:0030332,cyclin binding,MF,IPI
+CDK4,GO:0106310,protein serine kinase activity,MF,EXP
+CDK4,GO:0106310,protein serine kinase activity,MF,IEA
+CDK6,GO:0000082,G1/S transition of mitotic cell cycle,BP,IEA
+CDK6,GO:0000082,G1/S transition of mitotic cell cycle,BP,NAS
+CDK6,GO:0000082,G1/S transition of mitotic cell cycle,BP,TAS
+CDK6,GO:0000086,G2/M transition of mitotic cell cycle,BP,IBA
+CDK6,GO:0001954,positive regulation of cell-matrix adhesion,BP,IDA
+CDK6,GO:0003323,type B pancreatic cell development,BP,IDA
+CDK6,GO:0006974,DNA damage response,BP,IEA
+CDK6,GO:0007165,signal transduction,BP,IBA
+CDK6,GO:0008285,negative regulation of cell population proliferation,BP,TAS
+CDK6,GO:0009615,response to virus,BP,IEP
+CDK6,GO:0010468,regulation of gene expression,BP,IDA
+CDK6,GO:0010468,regulation of gene expression,BP,IMP
+CDK6,GO:0014002,astrocyte development,BP,ISS
+CDK6,GO:0021542,dentate gyrus development,BP,ISS
+CDK6,GO:0021670,lateral ventricle development,BP,ISS
+CDK6,GO:0030097,hemopoiesis,BP,IEA
+CDK6,GO:0042063,gliogenesis,BP,IMP
+CDK6,GO:0042127,regulation of cell population proliferation,BP,IEA
+CDK6,GO:0043697,cell dedifferentiation,BP,IEA
+CDK6,GO:0043697,cell dedifferentiation,BP,IMP
+CDK6,GO:0045596,negative regulation of cell differentiation,BP,TAS
+CDK6,GO:0045638,negative regulation of myeloid cell differentiation,BP,IDA
+CDK6,GO:0045646,regulation of erythrocyte differentiation,BP,IMP
+CDK6,GO:0045656,negative regulation of monocyte differentiation,BP,IDA
+CDK6,GO:0045668,negative regulation of osteoblast differentiation,BP,IDA
+CDK6,GO:0045786,negative regulation of cell cycle,BP,IDA
+CDK6,GO:0048146,positive regulation of fibroblast proliferation,BP,IEA
+CDK6,GO:0048146,positive regulation of fibroblast proliferation,BP,IMP
+CDK6,GO:0048699,generation of neurons,BP,ISS
+CDK6,GO:0050680,negative regulation of epithelial cell proliferation,BP,IMP
+CDK6,GO:0051726,regulation of cell cycle,BP,TAS
+CDK6,GO:2000145,regulation of cell motility,BP,ISS
+CDK6,GO:2000773,negative regulation of cellular senescence,BP,IDA
+CDK6,GO:0004672,protein kinase activity,MF,IEA
+CDK6,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IBA
+CDK6,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IDA
+CDK6,GO:0004693,cyclin-dependent protein serine/threonine kinase activity,MF,IEA
+CDK6,GO:0005515,protein binding,MF,IPI
+CDK6,GO:0005524,ATP binding,MF,IDA
+CDK6,GO:0005524,ATP binding,MF,IEA
+CDK6,GO:0016301,kinase activity,MF,IEA
+CDK6,GO:0030332,cyclin binding,MF,IEA
+CDK6,GO:0030332,cyclin binding,MF,IPI
+CDK6,GO:0098770,FBXO family protein binding,MF,IPI
+CDK6,GO:0106310,protein serine kinase activity,MF,IEA
+CDKN2A,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,IDA
+CDKN2A,GO:0000209,protein polyubiquitination,BP,IDA
+CDKN2A,GO:0000422,autophagy of mitochondrion,BP,IMP
+CDKN2A,GO:0001953,negative regulation of cell-matrix adhesion,BP,IMP
+CDKN2A,GO:0006915,apoptotic process,BP,IEA
+CDKN2A,GO:0007265,Ras protein signal transduction,BP,IEP
+CDKN2A,GO:0008285,negative regulation of cell population proliferation,BP,IBA
+CDKN2A,GO:0008285,negative regulation of cell population proliferation,BP,IDA
+CDKN2A,GO:0008285,negative regulation of cell population proliferation,BP,IEA
+CDKN2A,GO:0008285,negative regulation of cell population proliferation,BP,IMP
+CDKN2A,GO:0016925,protein sumoylation,BP,TAS
+CDKN2A,GO:0030308,negative regulation of cell growth,BP,IDA
+CDKN2A,GO:0030575,nuclear body organization,BP,EXP
+CDKN2A,GO:0030889,negative regulation of B cell proliferation,BP,ISS
+CDKN2A,GO:0031647,regulation of protein stability,BP,IEP
+CDKN2A,GO:0031647,regulation of protein stability,BP,ISS
+CDKN2A,GO:0031648,protein destabilization,BP,IDA
+CDKN2A,GO:0033088,negative regulation of immature T cell proliferation in thymus,BP,ISS
+CDKN2A,GO:0033235,positive regulation of protein sumoylation,BP,IMP
+CDKN2A,GO:0034393,positive regulation of smooth muscle cell apoptotic process,BP,IEA
+CDKN2A,GO:0034393,positive regulation of smooth muscle cell apoptotic process,BP,ISS
+CDKN2A,GO:0034504,protein localization to nucleus,BP,IDA
+CDKN2A,GO:0043065,positive regulation of apoptotic process,BP,IMP
+CDKN2A,GO:0043517,"positive regulation of DNA damage response, signal transduction by p53 class mediator",BP,IDA
+CDKN2A,GO:0045736,negative regulation of cyclin-dependent protein serine/threonine kinase activity,BP,IDA
+CDKN2A,GO:0045892,negative regulation of DNA-templated transcription,BP,IMP
+CDKN2A,GO:0045893,positive regulation of DNA-templated transcription,BP,IDA
+CDKN2A,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IDA
+CDKN2A,GO:0046825,regulation of protein export from nucleus,BP,IMP
+CDKN2A,GO:0048103,somatic stem cell division,BP,ISS
+CDKN2A,GO:0050821,protein stabilization,BP,IDA
+CDKN2A,GO:0050821,protein stabilization,BP,IMP
+CDKN2A,GO:0051726,regulation of cell cycle,BP,IDA
+CDKN2A,GO:0051726,regulation of cell cycle,BP,IEA
+CDKN2A,GO:0051726,regulation of cell cycle,BP,IMP
+CDKN2A,GO:0051882,mitochondrial depolarization,BP,IMP
+CDKN2A,GO:0070534,protein K63-linked ubiquitination,BP,IDA
+CDKN2A,GO:0090398,cellular senescence,BP,IEA
+CDKN2A,GO:0090398,cellular senescence,BP,IMP
+CDKN2A,GO:0090399,replicative senescence,BP,IMP
+CDKN2A,GO:0097190,apoptotic signaling pathway,BP,IMP
+CDKN2A,GO:1900182,positive regulation of protein localization to nucleus,BP,IDA
+CDKN2A,GO:1901798,positive regulation of signal transduction by p53 class mediator,BP,IDA
+CDKN2A,GO:1902570,protein localization to nucleolus,BP,EXP
+CDKN2A,GO:1903747,regulation of protein localization to mitochondrion,BP,IMP
+CDKN2A,GO:1904666,regulation of ubiquitin protein ligase activity,BP,IPI
+CDKN2A,GO:1990000,amyloid fibril formation,BP,IDA
+CDKN2A,GO:1990000,amyloid fibril formation,BP,IMP
+CDKN2A,GO:2000045,regulation of G1/S transition of mitotic cell cycle,BP,IBA
+CDKN2A,GO:2000045,regulation of G1/S transition of mitotic cell cycle,BP,IDA
+CDKN2A,GO:2000045,regulation of G1/S transition of mitotic cell cycle,BP,IEA
+CDKN2A,GO:2000059,negative regulation of ubiquitin-dependent protein catabolic process,BP,IDA
+CDKN2A,GO:2000111,positive regulation of macrophage apoptotic process,BP,IEA
+CDKN2A,GO:2000111,positive regulation of macrophage apoptotic process,BP,ISS
+CDKN2A,GO:0002039,p53 binding,MF,IPI
+CDKN2A,GO:0003723,RNA binding,MF,HDA
+CDKN2A,GO:0004861,cyclin-dependent protein serine/threonine kinase inhibitor activity,MF,IBA
+CDKN2A,GO:0004861,cyclin-dependent protein serine/threonine kinase inhibitor activity,MF,IDA
+CDKN2A,GO:0004861,cyclin-dependent protein serine/threonine kinase inhibitor activity,MF,IEA
+CDKN2A,GO:0004861,cyclin-dependent protein serine/threonine kinase inhibitor activity,MF,TAS
+CDKN2A,GO:0005515,protein binding,MF,IPI
+CDKN2A,GO:0019789,SUMO transferase activity,MF,EXP
+CDKN2A,GO:0019901,protein kinase binding,MF,IPI
+CDKN2A,GO:0051059,NF-kappaB binding,MF,IPI
+CDKN2A,GO:0055104,ligase inhibitor activity,MF,IDA
+CDKN2A,GO:0055105,ubiquitin-protein transferase inhibitor activity,MF,ISS
+CDKN2A,GO:0061629,RNA polymerase II-specific DNA-binding transcription factor binding,MF,IPI
+CDKN2A,GO:0097371,MDM2/MDM4 family protein binding,MF,IPI
+CDKN2A,GO:0097718,disordered domain specific binding,MF,IPI
+CDKN2A,GO:1990948,ubiquitin ligase inhibitor activity,MF,IDA
+DNMT1,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,TAS
+DNMT1,GO:0006346,DNA methylation-dependent constitutive heterochromatin formation,BP,IEA
+DNMT1,GO:0010628,positive regulation of gene expression,BP,IMP
+DNMT1,GO:0010629,negative regulation of gene expression,BP,IMP
+DNMT1,GO:0044027,negative regulation of gene expression via chromosomal CpG island methylation,BP,IBA
+DNMT1,GO:0044027,negative regulation of gene expression via chromosomal CpG island methylation,BP,IDA
+DNMT1,GO:0044027,negative regulation of gene expression via chromosomal CpG island methylation,BP,IEA
+DNMT1,GO:0044027,negative regulation of gene expression via chromosomal CpG island methylation,BP,IMP
+DNMT1,GO:0044027,negative regulation of gene expression via chromosomal CpG island methylation,BP,TAS
+DNMT1,GO:0141119,chromosomal DNA methylation maintenance following DNA replication,BP,IDA
+DNMT1,GO:0141119,chromosomal DNA methylation maintenance following DNA replication,BP,TAS
+DNMT1,GO:1900240,negative regulation of phenotypic switching,BP,IDA
+DNMT1,GO:1904707,positive regulation of vascular associated smooth muscle cell proliferation,BP,IMP
+DNMT1,GO:1905064,negative regulation of vascular associated smooth muscle cell differentiation,BP,IMP
+DNMT1,GO:1905460,negative regulation of vascular associated smooth muscle cell apoptotic process,BP,IMP
+DNMT1,GO:0003677,DNA binding,MF,IBA
+DNMT1,GO:0003677,DNA binding,MF,IDA
+DNMT1,GO:0003677,DNA binding,MF,IEA
+DNMT1,GO:0003682,chromatin binding,MF,IEA
+DNMT1,GO:0003723,RNA binding,MF,IEA
+DNMT1,GO:0003886,DNA (cytosine-5-)-methyltransferase activity,MF,IBA
+DNMT1,GO:0003886,DNA (cytosine-5-)-methyltransferase activity,MF,IDA
+DNMT1,GO:0003886,DNA (cytosine-5-)-methyltransferase activity,MF,IEA
+DNMT1,GO:0003886,DNA (cytosine-5-)-methyltransferase activity,MF,TAS
+DNMT1,GO:0005515,protein binding,MF,IPI
+DNMT1,GO:0008168,methyltransferase activity,MF,IEA
+DNMT1,GO:0008270,zinc ion binding,MF,IEA
+DNMT1,GO:0008327,methyl-CpG binding,MF,IEA
+DNMT1,GO:0009008,DNA-methyltransferase activity,MF,IDA
+DNMT1,GO:0009008,DNA-methyltransferase activity,MF,IEA
+DNMT1,GO:0106222,lncRNA binding,MF,IEA
+DNMT1,GO:0140254,histone H3K18ub reader activity,MF,IDA
+DNMT1,GO:0140254,histone H3K18ub reader activity,MF,IEA
+DNMT1,GO:0140257,histone H3K23ub reader activity,MF,IDA
+DNMT1,GO:0140257,histone H3K23ub reader activity,MF,IEA
+DNMT1,GO:0140258,histone H3K14ub reader activity,MF,IDA
+DNMT1,GO:0140258,histone H3K14ub reader activity,MF,IEA
+DNMT1,GO:1990841,promoter-specific chromatin binding,MF,IDA
+EGFR,GO:0000165,MAPK cascade,BP,IEA
+EGFR,GO:0001503,ossification,BP,NAS
+EGFR,GO:0001934,positive regulation of protein phosphorylation,BP,IDA
+EGFR,GO:0007165,signal transduction,BP,IDA
+EGFR,GO:0007165,signal transduction,BP,TAS
+EGFR,GO:0007166,cell surface receptor signaling pathway,BP,IDA
+EGFR,GO:0007169,cell surface receptor protein tyrosine kinase signaling pathway,BP,IEA
+EGFR,GO:0007173,epidermal growth factor receptor signaling pathway,BP,IBA
+EGFR,GO:0007173,epidermal growth factor receptor signaling pathway,BP,IDA
+EGFR,GO:0007173,epidermal growth factor receptor signaling pathway,BP,IDA
+EGFR,GO:0007173,epidermal growth factor receptor signaling pathway,BP,IMP
+EGFR,GO:0007173,epidermal growth factor receptor signaling pathway,BP,TAS
+EGFR,GO:0007611,learning or memory,BP,ISS
+EGFR,GO:0008284,positive regulation of cell population proliferation,BP,IDA
+EGFR,GO:0008284,positive regulation of cell population proliferation,BP,IMP
+EGFR,GO:0016242,negative regulation of macroautophagy,BP,IDA
+EGFR,GO:0030182,neuron differentiation,BP,IBA
+EGFR,GO:0030307,positive regulation of cell growth,BP,IDA
+EGFR,GO:0030335,positive regulation of cell migration,BP,IMP
+EGFR,GO:0033138,positive regulation of peptidyl-serine phosphorylation,BP,IMP
+EGFR,GO:0034165,positive regulation of toll-like receptor 9 signaling pathway,BP,IDA
+EGFR,GO:0038134,ERBB2-EGFR signaling pathway,BP,IDA
+EGFR,GO:0038134,ERBB2-EGFR signaling pathway,BP,IDA
+EGFR,GO:0038134,ERBB2-EGFR signaling pathway,BP,IEA
+EGFR,GO:0042059,negative regulation of epidermal growth factor receptor signaling pathway,BP,IEA
+EGFR,GO:0042059,negative regulation of epidermal growth factor receptor signaling pathway,BP,TAS
+EGFR,GO:0042177,negative regulation of protein catabolic process,BP,IDA
+EGFR,GO:0042327,positive regulation of phosphorylation,BP,IDA
+EGFR,GO:0043066,negative regulation of apoptotic process,BP,IBA
+EGFR,GO:0043066,negative regulation of apoptotic process,BP,IMP
+EGFR,GO:0043410,positive regulation of MAPK cascade,BP,IBA
+EGFR,GO:0043410,positive regulation of MAPK cascade,BP,IDA
+EGFR,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IMP
+EGFR,GO:0045739,positive regulation of DNA repair,BP,IDA
+EGFR,GO:0045740,positive regulation of DNA replication,BP,IDA
+EGFR,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IDA
+EGFR,GO:0048146,positive regulation of fibroblast proliferation,BP,IEA
+EGFR,GO:0050679,positive regulation of epithelial cell proliferation,BP,IBA
+EGFR,GO:0050679,positive regulation of epithelial cell proliferation,BP,IDA
+EGFR,GO:0050679,positive regulation of epithelial cell proliferation,BP,IEA
+EGFR,GO:0050730,regulation of peptidyl-tyrosine phosphorylation,BP,IMP
+EGFR,GO:0051205,protein insertion into membrane,BP,TAS
+EGFR,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IMP
+EGFR,GO:0070141,response to UV-A,BP,IDA
+EGFR,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IDA
+EGFR,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IEA
+EGFR,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IMP
+EGFR,GO:0071230,cellular response to amino acid stimulus,BP,IEA
+EGFR,GO:0071364,cellular response to epidermal growth factor stimulus,BP,ISS
+EGFR,GO:0071392,cellular response to estradiol stimulus,BP,IDA
+EGFR,GO:0090037,positive regulation of protein kinase C signaling,BP,IDA
+EGFR,GO:0090263,positive regulation of canonical Wnt signaling pathway,BP,IMP
+EGFR,GO:0098609,cell-cell adhesion,BP,IMP
+EGFR,GO:0141111,positive regulation of cGAS/STING signaling pathway,BP,IDA
+EGFR,GO:1900087,positive regulation of G1/S transition of mitotic cell cycle,BP,IMP
+EGFR,GO:1902895,positive regulation of miRNA transcription,BP,IMP
+EGFR,GO:1903078,positive regulation of protein localization to plasma membrane,BP,IDA
+EGFR,GO:1905208,negative regulation of cardiocyte differentiation,BP,IMP
+EGFR,GO:0003682,chromatin binding,MF,IDA
+EGFR,GO:0003690,double-stranded DNA binding,MF,NAS
+EGFR,GO:0004672,protein kinase activity,MF,IEA
+EGFR,GO:0004709,MAP kinase kinase kinase activity,MF,NAS
+EGFR,GO:0004713,protein tyrosine kinase activity,MF,EXP
+EGFR,GO:0004713,protein tyrosine kinase activity,MF,IDA
+EGFR,GO:0004713,protein tyrosine kinase activity,MF,IEA
+EGFR,GO:0004713,protein tyrosine kinase activity,MF,IMP
+EGFR,GO:0004713,protein tyrosine kinase activity,MF,TAS
+EGFR,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,IBA
+EGFR,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,IEA
+EGFR,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,TAS
+EGFR,GO:0004888,transmembrane signaling receptor activity,MF,IDA
+EGFR,GO:0005006,epidermal growth factor receptor activity,MF,IDA
+EGFR,GO:0005006,epidermal growth factor receptor activity,MF,IDA
+EGFR,GO:0005006,epidermal growth factor receptor activity,MF,IEA
+EGFR,GO:0005006,epidermal growth factor receptor activity,MF,IMP
+EGFR,GO:0005006,epidermal growth factor receptor activity,MF,NAS
+EGFR,GO:0005515,protein binding,MF,IPI
+EGFR,GO:0005524,ATP binding,MF,IEA
+EGFR,GO:0016301,kinase activity,MF,IEA
+EGFR,GO:0019899,enzyme binding,MF,IPI
+EGFR,GO:0019900,kinase binding,MF,IPI
+EGFR,GO:0019903,protein phosphatase binding,MF,IPI
+EGFR,GO:0030296,protein tyrosine kinase activator activity,MF,IDA
+EGFR,GO:0031625,ubiquitin protein ligase binding,MF,IPI
+EGFR,GO:0042802,identical protein binding,MF,IPI
+EGFR,GO:0045296,cadherin binding,MF,HDA
+EGFR,GO:0048408,epidermal growth factor binding,MF,IBA
+EGFR,GO:0048408,epidermal growth factor binding,MF,IEA
+EGFR,GO:0051015,actin filament binding,MF,IDA
+EGFR,GO:0051117,ATPase binding,MF,ISS
+ERBB2,GO:0006468,protein phosphorylation,BP,TAS
+ERBB2,GO:0007165,signal transduction,BP,IDA
+ERBB2,GO:0007166,cell surface receptor signaling pathway,BP,IDA
+ERBB2,GO:0007167,enzyme-linked receptor protein signaling pathway,BP,TAS
+ERBB2,GO:0007169,cell surface receptor protein tyrosine kinase signaling pathway,BP,IDA
+ERBB2,GO:0007169,cell surface receptor protein tyrosine kinase signaling pathway,BP,IEA
+ERBB2,GO:0007173,epidermal growth factor receptor signaling pathway,BP,IBA
+ERBB2,GO:0008283,cell population proliferation,BP,IDA
+ERBB2,GO:0014044,Schwann cell development,BP,IEA
+ERBB2,GO:0018108,peptidyl-tyrosine phosphorylation,BP,IDA
+ERBB2,GO:0030182,neuron differentiation,BP,IBA
+ERBB2,GO:0030307,positive regulation of cell growth,BP,IMP
+ERBB2,GO:0032886,regulation of microtubule-based process,BP,IDA
+ERBB2,GO:0035025,positive regulation of Rho protein signal transduction,BP,IEA
+ERBB2,GO:0035025,positive regulation of Rho protein signal transduction,BP,ISS
+ERBB2,GO:0035556,intracellular signal transduction,BP,IDA
+ERBB2,GO:0038127,ERBB signaling pathway,BP,IEA
+ERBB2,GO:0038128,ERBB2 signaling pathway,BP,IEA
+ERBB2,GO:0038133,ERBB2-ERBB3 signaling pathway,BP,IEA
+ERBB2,GO:0038134,ERBB2-EGFR signaling pathway,BP,IDA
+ERBB2,GO:0038134,ERBB2-EGFR signaling pathway,BP,IDA
+ERBB2,GO:0038134,ERBB2-EGFR signaling pathway,BP,IEA
+ERBB2,GO:0038135,ERBB2-ERBB4 signaling pathway,BP,IEA
+ERBB2,GO:0042060,wound healing,BP,IDA
+ERBB2,GO:0042127,regulation of cell population proliferation,BP,IEA
+ERBB2,GO:0043066,negative regulation of apoptotic process,BP,IBA
+ERBB2,GO:0043406,positive regulation of MAP kinase activity,BP,IDA
+ERBB2,GO:0043410,positive regulation of MAPK cascade,BP,IBA
+ERBB2,GO:0043410,positive regulation of MAPK cascade,BP,IEA
+ERBB2,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IDA
+ERBB2,GO:0045727,positive regulation of translation,BP,IMP
+ERBB2,GO:0045765,regulation of angiogenesis,BP,NAS
+ERBB2,GO:0045785,positive regulation of cell adhesion,BP,IDA
+ERBB2,GO:0045943,positive regulation of transcription by RNA polymerase I,BP,IMP
+ERBB2,GO:0046330,positive regulation of JNK cascade,BP,IEA
+ERBB2,GO:0050679,positive regulation of epithelial cell proliferation,BP,IBA
+ERBB2,GO:0050679,positive regulation of epithelial cell proliferation,BP,IDA
+ERBB2,GO:0070372,regulation of ERK1 and ERK2 cascade,BP,IMP
+ERBB2,GO:0071363,cellular response to growth factor stimulus,BP,IDA
+ERBB2,GO:0071364,cellular response to epidermal growth factor stimulus,BP,IMP
+ERBB2,GO:0071526,semaphorin-plexin signaling pathway,BP,IEA
+ERBB2,GO:0071526,semaphorin-plexin signaling pathway,BP,ISS
+ERBB2,GO:0090314,positive regulation of protein targeting to membrane,BP,IDA
+ERBB2,GO:0099645,neurotransmitter receptor localization to postsynaptic specialization membrane,BP,IEA
+ERBB2,GO:0001042,RNA polymerase I core binding,MF,IDA
+ERBB2,GO:0004672,protein kinase activity,MF,IEA
+ERBB2,GO:0004713,protein tyrosine kinase activity,MF,EXP
+ERBB2,GO:0004713,protein tyrosine kinase activity,MF,IDA
+ERBB2,GO:0004713,protein tyrosine kinase activity,MF,IEA
+ERBB2,GO:0004713,protein tyrosine kinase activity,MF,TAS
+ERBB2,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,IBA
+ERBB2,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,IDA
+ERBB2,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,IEA
+ERBB2,GO:0004888,transmembrane signaling receptor activity,MF,IDA
+ERBB2,GO:0005102,signaling receptor binding,MF,IPI
+ERBB2,GO:0005515,protein binding,MF,IPI
+ERBB2,GO:0005524,ATP binding,MF,IEA
+ERBB2,GO:0015026,coreceptor activity,MF,IEA
+ERBB2,GO:0015026,coreceptor activity,MF,ISS
+ERBB2,GO:0019838,growth factor binding,MF,IDA
+ERBB2,GO:0030971,receptor tyrosine kinase binding,MF,IPI
+ERBB2,GO:0042802,identical protein binding,MF,IPI
+ERBB2,GO:0043125,ErbB-3 class receptor binding,MF,IPI
+ERBB2,GO:0043125,ErbB-3 class receptor binding,MF,TAS
+ERBB2,GO:0046982,protein heterodimerization activity,MF,IPI
+ERCC1,GO:0000723,telomere maintenance,BP,IEA
+ERCC1,GO:0006281,DNA repair,BP,IEA
+ERCC1,GO:0006281,DNA repair,BP,IMP
+ERCC1,GO:0006289,nucleotide-excision repair,BP,IBA
+ERCC1,GO:0006289,nucleotide-excision repair,BP,IDA
+ERCC1,GO:0006289,nucleotide-excision repair,BP,IDA
+ERCC1,GO:0006289,nucleotide-excision repair,BP,IEA
+ERCC1,GO:0006289,nucleotide-excision repair,BP,IMP
+ERCC1,GO:0006302,double-strand break repair,BP,IEA
+ERCC1,GO:0006303,double-strand break repair via nonhomologous end joining,BP,IMP
+ERCC1,GO:0006310,DNA recombination,BP,IEA
+ERCC1,GO:0006312,mitotic recombination,BP,IBA
+ERCC1,GO:0006312,mitotic recombination,BP,IMP
+ERCC1,GO:0006979,response to oxidative stress,BP,IMP
+ERCC1,GO:0032204,regulation of telomere maintenance,BP,IEA
+ERCC1,GO:0032205,negative regulation of telomere maintenance,BP,IMP
+ERCC1,GO:0061819,telomeric DNA-containing double minutes formation,BP,IMP
+ERCC1,GO:0070914,UV-damage excision repair,BP,IBA
+ERCC1,GO:0090656,t-circle formation,BP,IEA
+ERCC1,GO:0090656,t-circle formation,BP,ISS
+ERCC1,GO:1904431,positive regulation of t-circle formation,BP,IEA
+ERCC1,GO:1904431,positive regulation of t-circle formation,BP,ISS
+ERCC1,GO:1905765,negative regulation of protection from non-homologous end joining at telomere,BP,IMP
+ERCC1,GO:0000014,single-stranded DNA endonuclease activity,MF,IDA
+ERCC1,GO:0001094,TFIID-class transcription factor complex binding,MF,IEA
+ERCC1,GO:0003677,DNA binding,MF,IDA
+ERCC1,GO:0003684,damaged DNA binding,MF,IBA
+ERCC1,GO:0003684,damaged DNA binding,MF,IDA
+ERCC1,GO:0003684,damaged DNA binding,MF,IEA
+ERCC1,GO:0003697,single-stranded DNA binding,MF,IBA
+ERCC1,GO:0003697,single-stranded DNA binding,MF,IDA
+ERCC1,GO:0005515,protein binding,MF,IPI
+ERCC1,GO:1990599,3' overhang single-stranded DNA endonuclease activity,MF,IMP
+ERCC1,GO:1990841,promoter-specific chromatin binding,MF,IEA
+FNTB,GO:0008284,positive regulation of cell population proliferation,BP,IEA
+FNTB,GO:0018343,protein farnesylation,BP,IDA
+FNTB,GO:0045787,positive regulation of cell cycle,BP,IEA
+FNTB,GO:0060632,regulation of microtubule-based movement,BP,IDA
+FNTB,GO:0003824,catalytic activity,MF,IEA
+FNTB,GO:0004660,protein farnesyltransferase activity,MF,EXP
+FNTB,GO:0004660,protein farnesyltransferase activity,MF,IBA
+FNTB,GO:0004660,protein farnesyltransferase activity,MF,IDA
+FNTB,GO:0004660,protein farnesyltransferase activity,MF,IDA
+FNTB,GO:0004660,protein farnesyltransferase activity,MF,IEA
+FNTB,GO:0005515,protein binding,MF,IPI
+FNTB,GO:0008270,zinc ion binding,MF,IDA
+FNTB,GO:0008318,protein prenyltransferase activity,MF,IEA
+FNTB,GO:0010698,acetyltransferase activator activity,MF,IDA
+FNTB,GO:0019899,enzyme binding,MF,IPI
+FNTB,GO:0042277,peptide binding,MF,IEA
+GSTP1,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,ISS
+GSTP1,GO:0000302,response to reactive oxygen species,BP,ISS
+GSTP1,GO:0002674,negative regulation of acute inflammatory response,BP,NAS
+GSTP1,GO:0006693,prostaglandin metabolic process,BP,IDA
+GSTP1,GO:0006749,glutathione metabolic process,BP,IBA
+GSTP1,GO:0006749,glutathione metabolic process,BP,IDA
+GSTP1,GO:0006749,glutathione metabolic process,BP,IEA
+GSTP1,GO:0006805,xenobiotic metabolic process,BP,IDA
+GSTP1,GO:0007417,central nervous system development,BP,TAS
+GSTP1,GO:0009636,response to toxic substance,BP,IEA
+GSTP1,GO:0010804,negative regulation of tumor necrosis factor-mediated signaling pathway,BP,IC
+GSTP1,GO:0014003,oligodendrocyte development,BP,IEA
+GSTP1,GO:0031100,animal organ regeneration,BP,IEA
+GSTP1,GO:0031667,response to nutrient levels,BP,IEA
+GSTP1,GO:0032355,response to estradiol,BP,IEA
+GSTP1,GO:0032691,negative regulation of interleukin-1 beta production,BP,IDA
+GSTP1,GO:0032720,negative regulation of tumor necrosis factor production,BP,IDA
+GSTP1,GO:0032869,cellular response to insulin stimulus,BP,IEA
+GSTP1,GO:0032872,regulation of stress-activated MAPK cascade,BP,ISS
+GSTP1,GO:0032873,negative regulation of stress-activated MAPK cascade,BP,ISS
+GSTP1,GO:0032930,positive regulation of superoxide anion generation,BP,ISS
+GSTP1,GO:0033591,response to L-ascorbic acid,BP,IEA
+GSTP1,GO:0035726,common myeloid progenitor cell proliferation,BP,ISS
+GSTP1,GO:0035732,nitric oxide storage,BP,NAS
+GSTP1,GO:0043066,negative regulation of apoptotic process,BP,TAS
+GSTP1,GO:0043124,negative regulation of canonical NF-kappaB signal transduction,BP,ISS
+GSTP1,GO:0043200,response to amino acid,BP,IEA
+GSTP1,GO:0043409,negative regulation of MAPK cascade,BP,NAS
+GSTP1,GO:0043651,linoleic acid metabolic process,BP,IDA
+GSTP1,GO:0045471,response to ethanol,BP,IEA
+GSTP1,GO:0046329,negative regulation of JNK cascade,BP,IDA
+GSTP1,GO:0046329,negative regulation of JNK cascade,BP,ISS
+GSTP1,GO:0048147,negative regulation of fibroblast proliferation,BP,ISS
+GSTP1,GO:0051122,hepoxilin biosynthetic process,BP,IDA
+GSTP1,GO:0070372,regulation of ERK1 and ERK2 cascade,BP,ISS
+GSTP1,GO:0070373,negative regulation of ERK1 and ERK2 cascade,BP,IDA
+GSTP1,GO:0070664,negative regulation of leukocyte proliferation,BP,ISS
+GSTP1,GO:0071222,cellular response to lipopolysaccharide,BP,ISS
+GSTP1,GO:0071364,cellular response to epidermal growth factor stimulus,BP,IEA
+GSTP1,GO:0071385,cellular response to glucocorticoid stimulus,BP,IEA
+GSTP1,GO:0071460,cellular response to cell-matrix adhesion,BP,IEA
+GSTP1,GO:0071638,negative regulation of monocyte chemotactic protein-1 production,BP,IDA
+GSTP1,GO:0071672,negative regulation of smooth muscle cell chemotaxis,BP,IEA
+GSTP1,GO:0098869,cellular oxidant detoxification,BP,IEA
+GSTP1,GO:0110076,negative regulation of ferroptosis,BP,IDA
+GSTP1,GO:1901687,glutathione derivative biosynthetic process,BP,IDA
+GSTP1,GO:1904706,negative regulation of vascular associated smooth muscle cell proliferation,BP,IEA
+GSTP1,GO:2001237,negative regulation of extrinsic apoptotic signaling pathway,BP,IDA
+GSTP1,GO:0004364,glutathione transferase activity,MF,EXP
+GSTP1,GO:0004364,glutathione transferase activity,MF,IBA
+GSTP1,GO:0004364,glutathione transferase activity,MF,IDA
+GSTP1,GO:0004364,glutathione transferase activity,MF,IEA
+GSTP1,GO:0004602,glutathione peroxidase activity,MF,IDA
+GSTP1,GO:0005504,fatty acid binding,MF,IPI
+GSTP1,GO:0005515,protein binding,MF,IPI
+GSTP1,GO:0008432,JUN kinase binding,MF,ISS
+GSTP1,GO:0015643,toxic substance binding,MF,IEA
+GSTP1,GO:0019901,protein kinase binding,MF,IEA
+GSTP1,GO:0030291,protein serine/threonine kinase inhibitor activity,MF,ISS
+GSTP1,GO:0035730,S-nitrosoglutathione binding,MF,IDA
+GSTP1,GO:0035731,dinitrosyl-iron complex binding,MF,IDA
+GSTP1,GO:0070026,nitric oxide binding,MF,NAS
+KRAS,GO:0000165,MAPK cascade,BP,IEA
+KRAS,GO:0000165,MAPK cascade,BP,TAS
+KRAS,GO:0001889,liver development,BP,IEA
+KRAS,GO:0007165,signal transduction,BP,IEA
+KRAS,GO:0007249,canonical NF-kappaB signal transduction,BP,IEA
+KRAS,GO:0007265,Ras protein signal transduction,BP,IBA
+KRAS,GO:0007265,Ras protein signal transduction,BP,IDA
+KRAS,GO:0007265,Ras protein signal transduction,BP,IEA
+KRAS,GO:0007565,female pregnancy,BP,IEA
+KRAS,GO:0008284,positive regulation of cell population proliferation,BP,IBA
+KRAS,GO:0009629,response to gravity,BP,IEA
+KRAS,GO:0010628,positive regulation of gene expression,BP,IMP
+KRAS,GO:0019221,cytokine-mediated signaling pathway,BP,IEA
+KRAS,GO:0032008,positive regulation of TOR signaling,BP,NAS
+KRAS,GO:0035900,response to isolation stress,BP,IEA
+KRAS,GO:0042127,regulation of cell population proliferation,BP,NAS
+KRAS,GO:0043069,negative regulation of programmed cell death,BP,NAS
+KRAS,GO:0043410,positive regulation of MAPK cascade,BP,NAS
+KRAS,GO:0046579,positive regulation of Ras protein signal transduction,BP,NAS
+KRAS,GO:0051384,response to glucocorticoid,BP,IEA
+KRAS,GO:0051385,response to mineralocorticoid,BP,IEA
+KRAS,GO:0051450,myoblast proliferation,BP,IEA
+KRAS,GO:0060038,cardiac muscle cell proliferation,BP,IEA
+KRAS,GO:2000774,positive regulation of cellular senescence,BP,IEA
+KRAS,GO:0003924,GTPase activity,MF,EXP
+KRAS,GO:0003924,GTPase activity,MF,IBA
+KRAS,GO:0003924,GTPase activity,MF,IEA
+KRAS,GO:0003924,GTPase activity,MF,IMP
+KRAS,GO:0003924,GTPase activity,MF,TAS
+KRAS,GO:0003925,G protein activity,MF,IEA
+KRAS,GO:0005515,protein binding,MF,IPI
+KRAS,GO:0005525,GTP binding,MF,IEA
+KRAS,GO:0019002,GMP binding,MF,IEA
+KRAS,GO:0019003,GDP binding,MF,IEA
+KRAS,GO:0030275,LRR domain binding,MF,IEA
+KRAS,GO:0042802,identical protein binding,MF,IPI
+KRAS,GO:0044877,protein-containing complex binding,MF,IDA
+LRP1B,GO:0006898,receptor-mediated endocytosis,BP,IEA
+LRP1B,GO:0006898,receptor-mediated endocytosis,BP,TAS
+LRP1B,GO:0015031,protein transport,BP,TAS
+LRP1B,GO:0005041,low-density lipoprotein particle receptor activity,MF,IBA
+LRP1B,GO:0005509,calcium ion binding,MF,IEA
+LRP1B,GO:0005515,protein binding,MF,IPI
+MAP2K1,GO:0000165,MAPK cascade,BP,IBA
+MAP2K1,GO:0000165,MAPK cascade,BP,IEA
+MAP2K1,GO:0003056,regulation of vascular associated smooth muscle contraction,BP,IEA
+MAP2K1,GO:0006935,chemotaxis,BP,TAS
+MAP2K1,GO:0006979,response to oxidative stress,BP,IEA
+MAP2K1,GO:0007165,signal transduction,BP,TAS
+MAP2K1,GO:0007528,neuromuscular junction development,BP,IEA
+MAP2K1,GO:0008285,negative regulation of cell population proliferation,BP,IDA
+MAP2K1,GO:0010508,positive regulation of autophagy,BP,IEA
+MAP2K1,GO:0010628,positive regulation of gene expression,BP,IEA
+MAP2K1,GO:0010628,positive regulation of gene expression,BP,IMP
+MAP2K1,GO:0010629,negative regulation of gene expression,BP,IEA
+MAP2K1,GO:0014044,Schwann cell development,BP,IEA
+MAP2K1,GO:0030182,neuron differentiation,BP,IBA
+MAP2K1,GO:0030182,neuron differentiation,BP,IEA
+MAP2K1,GO:0030335,positive regulation of cell migration,BP,IEA
+MAP2K1,GO:0032402,melanosome transport,BP,IEA
+MAP2K1,GO:0032872,regulation of stress-activated MAPK cascade,BP,IEA
+MAP2K1,GO:0032872,regulation of stress-activated MAPK cascade,BP,TAS
+MAP2K1,GO:0032968,positive regulation of transcription elongation by RNA polymerase II,BP,IEA
+MAP2K1,GO:0034111,negative regulation of homotypic cell-cell adhesion,BP,IEA
+MAP2K1,GO:0038127,ERBB signaling pathway,BP,IEA
+MAP2K1,GO:0038133,ERBB2-ERBB3 signaling pathway,BP,IEA
+MAP2K1,GO:0042552,myelination,BP,IEA
+MAP2K1,GO:0043410,positive regulation of MAPK cascade,BP,IEA
+MAP2K1,GO:0045893,positive regulation of DNA-templated transcription,BP,IMP
+MAP2K1,GO:0045933,positive regulation of muscle contraction,BP,IEA
+MAP2K1,GO:0047496,vesicle transport along microtubule,BP,IEA
+MAP2K1,GO:0048009,insulin-like growth factor receptor signaling pathway,BP,IEA
+MAP2K1,GO:0048313,Golgi inheritance,BP,IEA
+MAP2K1,GO:0048678,response to axon injury,BP,IEA
+MAP2K1,GO:0048812,neuron projection morphogenesis,BP,IEA
+MAP2K1,GO:0051384,response to glucocorticoid,BP,IEA
+MAP2K1,GO:0070328,triglyceride homeostasis,BP,IEA
+MAP2K1,GO:0070371,ERK1 and ERK2 cascade,BP,TAS
+MAP2K1,GO:0070372,regulation of ERK1 and ERK2 cascade,BP,IEA
+MAP2K1,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IMP
+MAP2K1,GO:0071902,positive regulation of protein serine/threonine kinase activity,BP,IDA
+MAP2K1,GO:0090170,regulation of Golgi inheritance,BP,IEA
+MAP2K1,GO:0090170,regulation of Golgi inheritance,BP,TAS
+MAP2K1,GO:0090398,cellular senescence,BP,IMP
+MAP2K1,GO:0098696,regulation of neurotransmitter receptor localization to postsynaptic specialization membrane,BP,IEA
+MAP2K1,GO:1903298,negative regulation of hypoxia-induced intrinsic apoptotic signaling pathway,BP,IEA
+MAP2K1,GO:2000641,regulation of early endosome to late endosome transport,BP,IEA
+MAP2K1,GO:2000641,regulation of early endosome to late endosome transport,BP,TAS
+MAP2K1,GO:2001171,positive regulation of ATP biosynthetic process,BP,IEA
+MAP2K1,GO:0004672,protein kinase activity,MF,IEA
+MAP2K1,GO:0004672,protein kinase activity,MF,TAS
+MAP2K1,GO:0004674,protein serine/threonine kinase activity,MF,IEA
+MAP2K1,GO:0004674,protein serine/threonine kinase activity,MF,TAS
+MAP2K1,GO:0004708,MAP kinase kinase activity,MF,IBA
+MAP2K1,GO:0004708,MAP kinase kinase activity,MF,IDA
+MAP2K1,GO:0004708,MAP kinase kinase activity,MF,IEA
+MAP2K1,GO:0004712,protein serine/threonine/tyrosine kinase activity,MF,TAS
+MAP2K1,GO:0004713,protein tyrosine kinase activity,MF,IEA
+MAP2K1,GO:0005078,MAP kinase scaffold activity,MF,IEA
+MAP2K1,GO:0005078,MAP kinase scaffold activity,MF,IMP
+MAP2K1,GO:0005515,protein binding,MF,IDA
+MAP2K1,GO:0005515,protein binding,MF,IPI
+MAP2K1,GO:0005524,ATP binding,MF,IEA
+MAP2K1,GO:0019901,protein kinase binding,MF,IEA
+MAP2K1,GO:0030295,protein kinase activator activity,MF,IDA
+MAP2K1,GO:0031267,small GTPase binding,MF,IEA
+MAP2K1,GO:0031435,mitogen-activated protein kinase kinase kinase binding,MF,IEA
+MAP2K1,GO:0043539,protein serine/threonine kinase activator activity,MF,IDA
+MAP2K1,GO:0043539,protein serine/threonine kinase activator activity,MF,IEA
+MAP2K1,GO:0044877,protein-containing complex binding,MF,IEA
+MAP2K1,GO:0097110,scaffold protein binding,MF,IEA
+MAP2K1,GO:0097110,scaffold protein binding,MF,IPI
+MAP2K1,GO:0106310,protein serine kinase activity,MF,IEA
+NRG1,GO:0003222,ventricular trabecula myocardium morphogenesis,BP,IDA
+NRG1,GO:0007154,cell communication,BP,TAS
+NRG1,GO:0007169,cell surface receptor protein tyrosine kinase signaling pathway,BP,IDA
+NRG1,GO:0007399,nervous system development,BP,IEA
+NRG1,GO:0007399,nervous system development,BP,TAS
+NRG1,GO:0007420,brain development,BP,IBA
+NRG1,GO:0007422,peripheral nervous system development,BP,IBA
+NRG1,GO:0008283,cell population proliferation,BP,IDA
+NRG1,GO:0008284,positive regulation of cell population proliferation,BP,IMP
+NRG1,GO:0010646,regulation of cell communication,BP,IEA
+NRG1,GO:0010667,negative regulation of cardiac muscle cell apoptotic process,BP,IDA
+NRG1,GO:0014032,neural crest cell development,BP,TAS
+NRG1,GO:0023051,regulation of signaling,BP,IEA
+NRG1,GO:0030154,cell differentiation,BP,IBA
+NRG1,GO:0030307,positive regulation of cell growth,BP,IDA
+NRG1,GO:0030879,mammary gland development,BP,TAS
+NRG1,GO:0031334,positive regulation of protein-containing complex assembly,BP,IDA
+NRG1,GO:0031334,positive regulation of protein-containing complex assembly,BP,TAS
+NRG1,GO:0032148,activation of protein kinase B activity,BP,IMP
+NRG1,GO:0035556,intracellular signal transduction,BP,IBA
+NRG1,GO:0038127,ERBB signaling pathway,BP,IDA
+NRG1,GO:0038127,ERBB signaling pathway,BP,IMP
+NRG1,GO:0038128,ERBB2 signaling pathway,BP,IDA
+NRG1,GO:0038129,ERBB3 signaling pathway,BP,IDA
+NRG1,GO:0038130,ERBB4 signaling pathway,BP,IBA
+NRG1,GO:0038130,ERBB4 signaling pathway,BP,IDA
+NRG1,GO:0038130,ERBB4 signaling pathway,BP,IDA
+NRG1,GO:0038133,ERBB2-ERBB3 signaling pathway,BP,IBA
+NRG1,GO:0038133,ERBB2-ERBB3 signaling pathway,BP,IDA
+NRG1,GO:0038135,ERBB2-ERBB4 signaling pathway,BP,IDA
+NRG1,GO:0038135,ERBB2-ERBB4 signaling pathway,BP,IDA
+NRG1,GO:0038138,ERBB4-ERBB4 signaling pathway,BP,IDA
+NRG1,GO:0038138,ERBB4-ERBB4 signaling pathway,BP,IDA
+NRG1,GO:0042060,wound healing,BP,IDA
+NRG1,GO:0042060,wound healing,BP,TAS
+NRG1,GO:0045785,positive regulation of cell adhesion,BP,IDA
+NRG1,GO:0045892,negative regulation of DNA-templated transcription,BP,IDA
+NRG1,GO:0050919,negative chemotaxis,BP,IEA
+NRG1,GO:0051048,negative regulation of secretion,BP,IDA
+NRG1,GO:0051094,positive regulation of developmental process,BP,IEA
+NRG1,GO:0051155,positive regulation of striated muscle cell differentiation,BP,ISS
+NRG1,GO:0055007,cardiac muscle cell differentiation,BP,ISS
+NRG1,GO:0055012,ventricular cardiac muscle cell differentiation,BP,IDA
+NRG1,GO:0060045,positive regulation of cardiac muscle cell proliferation,BP,IDA
+NRG1,GO:0060379,cardiac muscle cell myoblast differentiation,BP,IDA
+NRG1,GO:0060956,endocardial cell differentiation,BP,IDA
+NRG1,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IMP
+NRG1,GO:0099149,regulation of postsynaptic neurotransmitter receptor internalization,BP,IDA
+NRG1,GO:0099149,regulation of postsynaptic neurotransmitter receptor internalization,BP,IMP
+NRG1,GO:1900086,positive regulation of peptidyl-tyrosine autophosphorylation,BP,IDA
+NRG1,GO:2001240,negative regulation of extrinsic apoptotic signaling pathway in absence of ligand,BP,IDA
+NRG1,GO:0003712,transcription coregulator activity,MF,IDA
+NRG1,GO:0005102,signaling receptor binding,MF,IBA
+NRG1,GO:0005102,signaling receptor binding,MF,IEA
+NRG1,GO:0005102,signaling receptor binding,MF,IPI
+NRG1,GO:0005125,cytokine activity,MF,TAS
+NRG1,GO:0005178,integrin binding,MF,IDA
+NRG1,GO:0005515,protein binding,MF,IPI
+NRG1,GO:0008083,growth factor activity,MF,IDA
+NRG1,GO:0008083,growth factor activity,MF,NAS
+NRG1,GO:0008270,zinc ion binding,MF,IPI
+NRG1,GO:0016151,nickel cation binding,MF,IPI
+NRG1,GO:0030296,protein tyrosine kinase activator activity,MF,IBA
+NRG1,GO:0030296,protein tyrosine kinase activator activity,MF,IDA
+NRG1,GO:0030297,transmembrane receptor protein tyrosine kinase activator activity,MF,IDA
+NRG1,GO:0030297,transmembrane receptor protein tyrosine kinase activator activity,MF,NAS
+NRG1,GO:0030971,receptor tyrosine kinase binding,MF,NAS
+NRG1,GO:0043125,ErbB-3 class receptor binding,MF,IDA
+NRG1,GO:0043125,ErbB-3 class receptor binding,MF,IPI
+NRG1,GO:0045499,chemorepellent activity,MF,IBA
+NRG1,GO:0048018,receptor ligand activity,MF,IDA
+PALB2,GO:0000724,double-strand break repair via homologous recombination,BP,IBA
+PALB2,GO:0000724,double-strand break repair via homologous recombination,BP,IDA
+PALB2,GO:0000724,double-strand break repair via homologous recombination,BP,IEA
+PALB2,GO:0000724,double-strand break repair via homologous recombination,BP,IMP
+PALB2,GO:0051289,protein homotetramerization,BP,EXP
+PALB2,GO:0003677,DNA binding,MF,EXP
+PALB2,GO:0003677,DNA binding,MF,IBA
+PALB2,GO:0003677,DNA binding,MF,IDA
+PALB2,GO:0003677,DNA binding,MF,IEA
+PALB2,GO:0003677,DNA binding,MF,IPI
+PALB2,GO:0003697,single-stranded DNA binding,MF,EXP
+PALB2,GO:0003697,single-stranded DNA binding,MF,IMP
+PALB2,GO:0005515,protein binding,MF,IPI
+PALB2,GO:0042803,protein homodimerization activity,MF,EXP
+PALB2,GO:0042803,protein homodimerization activity,MF,IMP
+PIK3CA,GO:0001944,vasculature development,BP,TAS
+PIK3CA,GO:0007173,epidermal growth factor receptor signaling pathway,BP,TAS
+PIK3CA,GO:0008286,insulin receptor signaling pathway,BP,IEA
+PIK3CA,GO:0008286,insulin receptor signaling pathway,BP,TAS
+PIK3CA,GO:0010592,positive regulation of lamellipodium assembly,BP,ISS
+PIK3CA,GO:0010629,negative regulation of gene expression,BP,IEA
+PIK3CA,GO:0014823,response to activity,BP,IEA
+PIK3CA,GO:0014870,response to muscle inactivity,BP,IEA
+PIK3CA,GO:0016242,negative regulation of macroautophagy,BP,NAS
+PIK3CA,GO:0016477,cell migration,BP,IBA
+PIK3CA,GO:0030036,actin cytoskeleton organization,BP,IEA
+PIK3CA,GO:0030036,actin cytoskeleton organization,BP,ISS
+PIK3CA,GO:0030168,platelet activation,BP,TAS
+PIK3CA,GO:0030593,neutrophil chemotaxis,BP,IDA
+PIK3CA,GO:0030835,negative regulation of actin filament depolymerization,BP,IEA
+PIK3CA,GO:0030835,negative regulation of actin filament depolymerization,BP,ISS
+PIK3CA,GO:0032008,positive regulation of TOR signaling,BP,NAS
+PIK3CA,GO:0032869,cellular response to insulin stimulus,BP,IDA
+PIK3CA,GO:0035994,response to muscle stretch,BP,IEA
+PIK3CA,GO:0035994,response to muscle stretch,BP,ISS
+PIK3CA,GO:0036092,phosphatidylinositol-3-phosphate biosynthetic process,BP,IBA
+PIK3CA,GO:0038084,vascular endothelial growth factor signaling pathway,BP,IGI
+PIK3CA,GO:0038112,interleukin-8-mediated signaling pathway,BP,IDA
+PIK3CA,GO:0038203,TORC2 signaling,BP,IMP
+PIK3CA,GO:0043069,negative regulation of programmed cell death,BP,NAS
+PIK3CA,GO:0043201,response to L-leucine,BP,IEA
+PIK3CA,GO:0043276,anoikis,BP,NAS
+PIK3CA,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IBA
+PIK3CA,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IEA
+PIK3CA,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IGI
+PIK3CA,GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,ISS
+PIK3CA,GO:0043542,endothelial cell migration,BP,TAS
+PIK3CA,GO:0045860,positive regulation of protein kinase activity,BP,IMP
+PIK3CA,GO:0046854,phosphatidylinositol phosphate biosynthetic process,BP,IEA
+PIK3CA,GO:0046854,phosphatidylinositol phosphate biosynthetic process,BP,ISS
+PIK3CA,GO:0048009,insulin-like growth factor receptor signaling pathway,BP,IEA
+PIK3CA,GO:0048015,phosphatidylinositol-mediated signaling,BP,IBA
+PIK3CA,GO:0048661,positive regulation of smooth muscle cell proliferation,BP,IEA
+PIK3CA,GO:0050852,T cell receptor signaling pathway,BP,TAS
+PIK3CA,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IGI
+PIK3CA,GO:0055119,relaxation of cardiac muscle,BP,IEA
+PIK3CA,GO:0055119,relaxation of cardiac muscle,BP,ISS
+PIK3CA,GO:0060048,cardiac muscle contraction,BP,TAS
+PIK3CA,GO:0071464,cellular response to hydrostatic pressure,BP,IEA
+PIK3CA,GO:0071464,cellular response to hydrostatic pressure,BP,ISS
+PIK3CA,GO:0071548,response to dexamethasone,BP,IEA
+PIK3CA,GO:0086003,cardiac muscle cell contraction,BP,IEA
+PIK3CA,GO:0086003,cardiac muscle cell contraction,BP,ISS
+PIK3CA,GO:0110053,regulation of actin filament organization,BP,IEA
+PIK3CA,GO:0110053,regulation of actin filament organization,BP,ISS
+PIK3CA,GO:1903544,response to butyrate,BP,IEA
+PIK3CA,GO:1905477,positive regulation of protein localization to membrane,BP,IDA
+PIK3CA,GO:2000811,negative regulation of anoikis,BP,IMP
+PIK3CA,GO:2000811,negative regulation of anoikis,BP,NAS
+PIK3CA,GO:0004674,protein serine/threonine kinase activity,MF,IEA
+PIK3CA,GO:0005515,protein binding,MF,IPI
+PIK3CA,GO:0016301,kinase activity,MF,IEA
+PIK3CA,GO:0016303,1-phosphatidylinositol-3-kinase activity,MF,IBA
+PIK3CA,GO:0016303,1-phosphatidylinositol-3-kinase activity,MF,IDA
+PIK3CA,GO:0016303,1-phosphatidylinositol-3-kinase activity,MF,IEA
+PIK3CA,GO:0016303,1-phosphatidylinositol-3-kinase activity,MF,ISS
+PIK3CA,GO:0016303,1-phosphatidylinositol-3-kinase activity,MF,TAS
+PIK3CA,GO:0030295,protein kinase activator activity,MF,IEA
+PIK3CA,GO:0035005,1-phosphatidylinositol-4-phosphate 3-kinase activity,MF,IBA
+PIK3CA,GO:0043560,insulin receptor substrate binding,MF,IEA
+PIK3CA,GO:0046934,"1-phosphatidylinositol-4,5-bisphosphate 3-kinase activity",MF,IBA
+PIK3CA,GO:0046934,"1-phosphatidylinositol-4,5-bisphosphate 3-kinase activity",MF,IDA
+PIK3CA,GO:0046934,"1-phosphatidylinositol-4,5-bisphosphate 3-kinase activity",MF,IEA
+PIK3CA,GO:0046934,"1-phosphatidylinositol-4,5-bisphosphate 3-kinase activity",MF,TAS
+PIK3CA,GO:0106310,protein serine kinase activity,MF,IEA
+PTEN,GO:0001568,blood vessel development,BP,IBA
+PTEN,GO:0006470,protein dephosphorylation,BP,IDA
+PTEN,GO:0006470,protein dephosphorylation,BP,TAS
+PTEN,GO:0006661,phosphatidylinositol biosynthetic process,BP,TAS
+PTEN,GO:0007056,spindle assembly involved in female meiosis,BP,IDA
+PTEN,GO:0007270,neuron-neuron synaptic transmission,BP,ISS
+PTEN,GO:0007416,synapse assembly,BP,ISS
+PTEN,GO:0007417,central nervous system development,BP,ISS
+PTEN,GO:0007507,heart development,BP,ISS
+PTEN,GO:0007611,learning or memory,BP,ISS
+PTEN,GO:0007626,locomotory behavior,BP,ISS
+PTEN,GO:0008284,positive regulation of cell population proliferation,BP,ISS
+PTEN,GO:0008285,negative regulation of cell population proliferation,BP,IDA
+PTEN,GO:0008285,negative regulation of cell population proliferation,BP,IEA
+PTEN,GO:0008285,negative regulation of cell population proliferation,BP,IMP
+PTEN,GO:0009966,regulation of signal transduction,BP,IEA
+PTEN,GO:0010648,negative regulation of cell communication,BP,IEA
+PTEN,GO:0010719,negative regulation of epithelial to mesenchymal transition,BP,IMP
+PTEN,GO:0010975,regulation of neuron projection development,BP,ISS
+PTEN,GO:0010977,negative regulation of neuron projection development,BP,ISS
+PTEN,GO:0016477,cell migration,BP,ISS
+PTEN,GO:0021542,dentate gyrus development,BP,ISS
+PTEN,GO:0021955,central nervous system neuron axonogenesis,BP,ISS
+PTEN,GO:0023057,negative regulation of signaling,BP,IEA
+PTEN,GO:0030336,negative regulation of cell migration,BP,IMP
+PTEN,GO:0030534,adult behavior,BP,ISS
+PTEN,GO:0031647,regulation of protein stability,BP,IMP
+PTEN,GO:0032286,central nervous system myelin maintenance,BP,ISS
+PTEN,GO:0033137,negative regulation of peptidyl-serine phosphorylation,BP,IMP
+PTEN,GO:0033555,multicellular organismal response to stress,BP,ISS
+PTEN,GO:0035176,social behavior,BP,ISS
+PTEN,GO:0042711,maternal behavior,BP,ISS
+PTEN,GO:0045475,locomotor rhythm,BP,ISS
+PTEN,GO:0045595,regulation of cell differentiation,BP,IEA
+PTEN,GO:0045668,negative regulation of osteoblast differentiation,BP,IDA
+PTEN,GO:0045792,negative regulation of cell size,BP,ISS
+PTEN,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IMP
+PTEN,GO:0046621,negative regulation of organ growth,BP,ISS
+PTEN,GO:0046856,phosphatidylinositol dephosphorylation,BP,IDA
+PTEN,GO:0046856,phosphatidylinositol dephosphorylation,BP,IEA
+PTEN,GO:0046856,phosphatidylinositol dephosphorylation,BP,IMP
+PTEN,GO:0048853,forebrain morphogenesis,BP,ISS
+PTEN,GO:0050771,negative regulation of axonogenesis,BP,ISS
+PTEN,GO:0050821,protein stabilization,BP,IDA
+PTEN,GO:0051093,negative regulation of developmental process,BP,IEA
+PTEN,GO:0051129,negative regulation of cellular component organization,BP,IEA
+PTEN,GO:0051241,negative regulation of multicellular organismal process,BP,IEA
+PTEN,GO:0051548,negative regulation of keratinocyte migration,BP,IMP
+PTEN,GO:0051726,regulation of cell cycle,BP,IBA
+PTEN,GO:0051726,regulation of cell cycle,BP,IEA
+PTEN,GO:0051895,negative regulation of focal adhesion assembly,BP,IMP
+PTEN,GO:0051896,regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IBA
+PTEN,GO:0051898,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IDA
+PTEN,GO:0051898,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IMP
+PTEN,GO:0051898,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IMP
+PTEN,GO:0051898,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,ISS
+PTEN,GO:0051898,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,NAS
+PTEN,GO:0051898,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,TAS
+PTEN,GO:0060024,rhythmic synaptic transmission,BP,ISS
+PTEN,GO:0060074,synapse maturation,BP,ISS
+PTEN,GO:0060134,prepulse inhibition,BP,ISS
+PTEN,GO:0060292,long-term synaptic depression,BP,ISS
+PTEN,GO:0060997,dendritic spine morphogenesis,BP,ISS
+PTEN,GO:0071257,cellular response to electrical stimulus,BP,IMP
+PTEN,GO:0090394,negative regulation of excitatory postsynaptic potential,BP,ISS
+PTEN,GO:0097105,presynaptic membrane assembly,BP,ISS
+PTEN,GO:0097107,postsynaptic density assembly,BP,ISS
+PTEN,GO:1902533,positive regulation of intracellular signal transduction,BP,IMP
+PTEN,GO:1902807,negative regulation of cell cycle G1/S phase transition,BP,IDA
+PTEN,GO:1903690,"negative regulation of wound healing, spreading of epidermal cells",BP,IMP
+PTEN,GO:1904706,negative regulation of vascular associated smooth muscle cell proliferation,BP,IMP
+PTEN,GO:2000060,positive regulation of ubiquitin-dependent protein catabolic process,BP,IDA
+PTEN,GO:2000134,negative regulation of G1/S transition of mitotic cell cycle,BP,IDA
+PTEN,GO:2000463,positive regulation of excitatory postsynaptic potential,BP,ISS
+PTEN,GO:2000773,negative regulation of cellular senescence,BP,ISS
+PTEN,GO:2000808,negative regulation of synaptic vesicle clustering,BP,ISS
+PTEN,GO:0004438,phosphatidylinositol-3-phosphate phosphatase activity,MF,IDA
+PTEN,GO:0004721,phosphoprotein phosphatase activity,MF,IDA
+PTEN,GO:0004722,protein serine/threonine phosphatase activity,MF,IDA
+PTEN,GO:0004722,protein serine/threonine phosphatase activity,MF,IEA
+PTEN,GO:0004725,protein tyrosine phosphatase activity,MF,EXP
+PTEN,GO:0004725,protein tyrosine phosphatase activity,MF,IBA
+PTEN,GO:0004725,protein tyrosine phosphatase activity,MF,IDA
+PTEN,GO:0004725,protein tyrosine phosphatase activity,MF,IEA
+PTEN,GO:0005515,protein binding,MF,IPI
+PTEN,GO:0008013,beta-catenin binding,MF,IPI
+PTEN,GO:0010997,anaphase-promoting complex binding,MF,IPI
+PTEN,GO:0016314,"phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase activity",MF,EXP
+PTEN,GO:0016314,"phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase activity",MF,IBA
+PTEN,GO:0016314,"phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase activity",MF,IDA
+PTEN,GO:0016314,"phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase activity",MF,IEA
+PTEN,GO:0016314,"phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase activity",MF,TAS
+PTEN,GO:0016791,phosphatase activity,MF,IEA
+PTEN,GO:0019899,enzyme binding,MF,IEA
+PTEN,GO:0019899,enzyme binding,MF,IPI
+PTEN,GO:0030165,PDZ domain binding,MF,IPI
+PTEN,GO:0030351,"inositol-1,3,4,5,6-pentakisphosphate 3-phosphatase activity",MF,IDA
+PTEN,GO:0030351,"inositol-1,3,4,5,6-pentakisphosphate 3-phosphatase activity",MF,IEA
+PTEN,GO:0042802,identical protein binding,MF,IPI
+PTEN,GO:0051717,"inositol-1,3,4,5-tetrakisphosphate 3-phosphatase activity",MF,IDA
+PTEN,GO:0051717,"inositol-1,3,4,5-tetrakisphosphate 3-phosphatase activity",MF,IEA
+PTEN,GO:0051800,"phosphatidylinositol-3,4-bisphosphate 3-phosphatase activity",MF,IDA
+PTEN,GO:0051800,"phosphatidylinositol-3,4-bisphosphate 3-phosphatase activity",MF,IEA
+PTEN,GO:0051800,"phosphatidylinositol-3,4-bisphosphate 3-phosphatase activity",MF,TAS
+PTEN,GO:0052866,phosphatidylinositol phosphate phosphatase activity,MF,IDA
+PTEN,GO:0052866,phosphatidylinositol phosphate phosphatase activity,MF,ISS
+PTEN,GO:0140678,molecular function inhibitor activity,MF,IMP
+PTEN,GO:1990381,ubiquitin-specific protease binding,MF,IPI
+PTEN,GO:1990757,ubiquitin ligase activator activity,MF,ISS
+RAD51,GO:0000722,telomere maintenance via recombination,BP,IEA
+RAD51,GO:0000722,telomere maintenance via recombination,BP,ISS
+RAD51,GO:0000724,double-strand break repair via homologous recombination,BP,IDA
+RAD51,GO:0000724,double-strand break repair via homologous recombination,BP,IDA
+RAD51,GO:0000724,double-strand break repair via homologous recombination,BP,IEA
+RAD51,GO:0000724,double-strand break repair via homologous recombination,BP,IMP
+RAD51,GO:0000724,double-strand break repair via homologous recombination,BP,TAS
+RAD51,GO:0000730,DNA recombinase assembly,BP,IBA
+RAD51,GO:0006259,DNA metabolic process,BP,IEA
+RAD51,GO:0006281,DNA repair,BP,IEA
+RAD51,GO:0006281,DNA repair,BP,TAS
+RAD51,GO:0006310,DNA recombination,BP,IDA
+RAD51,GO:0006310,DNA recombination,BP,TAS
+RAD51,GO:0006312,mitotic recombination,BP,IBA
+RAD51,GO:0006312,mitotic recombination,BP,TAS
+RAD51,GO:0006974,DNA damage response,BP,IDA
+RAD51,GO:0006974,DNA damage response,BP,IMP
+RAD51,GO:0007127,meiosis I,BP,IEA
+RAD51,GO:0007131,reciprocal meiotic recombination,BP,IBA
+RAD51,GO:0007131,reciprocal meiotic recombination,BP,IEA
+RAD51,GO:0007131,reciprocal meiotic recombination,BP,ISS
+RAD51,GO:0007131,reciprocal meiotic recombination,BP,TAS
+RAD51,GO:0009410,response to xenobiotic stimulus,BP,IEA
+RAD51,GO:0009636,response to toxic substance,BP,IEA
+RAD51,GO:0010165,response to X-ray,BP,IEA
+RAD51,GO:0010569,regulation of double-strand break repair via homologous recombination,BP,IDA
+RAD51,GO:0010833,telomere maintenance via telomere lengthening,BP,IEA
+RAD51,GO:0010833,telomere maintenance via telomere lengthening,BP,ISS
+RAD51,GO:0031297,replication fork processing,BP,IDA
+RAD51,GO:0031297,replication fork processing,BP,IMP
+RAD51,GO:0036297,interstrand cross-link repair,BP,IMP
+RAD51,GO:0042148,DNA strand invasion,BP,IBA
+RAD51,GO:0042148,DNA strand invasion,BP,IDA
+RAD51,GO:0051321,meiotic cell cycle,BP,ISS
+RAD51,GO:0070192,chromosome organization involved in meiotic cell cycle,BP,IBA
+RAD51,GO:0071479,cellular response to ionizing radiation,BP,IDA
+RAD51,GO:0071479,cellular response to ionizing radiation,BP,IMP
+RAD51,GO:0071480,cellular response to gamma radiation,BP,IEA
+RAD51,GO:0072719,cellular response to cisplatin,BP,IEA
+RAD51,GO:0072757,cellular response to camptothecin,BP,IDA
+RAD51,GO:1904631,response to glucoside,BP,IEA
+RAD51,GO:1990426,mitotic recombination-dependent replication fork processing,BP,IEA
+RAD51,GO:1990918,double-strand break repair involved in meiotic recombination,BP,IEA
+RAD51,GO:1990918,double-strand break repair involved in meiotic recombination,BP,ISS
+RAD51,GO:2000001,regulation of DNA damage checkpoint,BP,NAS
+RAD51,GO:0000150,DNA strand exchange activity,MF,IBA
+RAD51,GO:0000150,DNA strand exchange activity,MF,IDA
+RAD51,GO:0000150,DNA strand exchange activity,MF,IEA
+RAD51,GO:0000150,DNA strand exchange activity,MF,IMP
+RAD51,GO:0000166,nucleotide binding,MF,IEA
+RAD51,GO:0003677,DNA binding,MF,IEA
+RAD51,GO:0003682,chromatin binding,MF,IDA
+RAD51,GO:0003682,chromatin binding,MF,IEA
+RAD51,GO:0003690,double-stranded DNA binding,MF,IBA
+RAD51,GO:0003690,double-stranded DNA binding,MF,IDA
+RAD51,GO:0003690,double-stranded DNA binding,MF,IEA
+RAD51,GO:0003690,double-stranded DNA binding,MF,IMP
+RAD51,GO:0003697,single-stranded DNA binding,MF,IBA
+RAD51,GO:0003697,single-stranded DNA binding,MF,IDA
+RAD51,GO:0003697,single-stranded DNA binding,MF,IEA
+RAD51,GO:0003697,single-stranded DNA binding,MF,IMP
+RAD51,GO:0003697,single-stranded DNA binding,MF,ISS
+RAD51,GO:0005515,protein binding,MF,IPI
+RAD51,GO:0005524,ATP binding,MF,IDA
+RAD51,GO:0005524,ATP binding,MF,IEA
+RAD51,GO:0008094,"ATP-dependent activity, acting on DNA",MF,IBA
+RAD51,GO:0008094,"ATP-dependent activity, acting on DNA",MF,IEA
+RAD51,GO:0016887,ATP hydrolysis activity,MF,EXP
+RAD51,GO:0019899,enzyme binding,MF,IPI
+RAD51,GO:0031491,nucleosome binding,MF,IDA
+RAD51,GO:0042802,identical protein binding,MF,IPI
+RAD51,GO:0070182,DNA polymerase binding,MF,IPI
+RAD51,GO:0140664,ATP-dependent DNA damage sensor activity,MF,IEA
+RAD51C,GO:0000707,meiotic DNA recombinase assembly,BP,IBA
+RAD51C,GO:0000722,telomere maintenance via recombination,BP,IEA
+RAD51C,GO:0000724,double-strand break repair via homologous recombination,BP,IMP
+RAD51C,GO:0000724,double-strand break repair via homologous recombination,BP,NAS
+RAD51C,GO:0006281,DNA repair,BP,IDA
+RAD51C,GO:0006281,DNA repair,BP,IEA
+RAD51C,GO:0006281,DNA repair,BP,TAS
+RAD51C,GO:0006302,double-strand break repair,BP,IEA
+RAD51C,GO:0006310,DNA recombination,BP,IDA
+RAD51C,GO:0006310,DNA recombination,BP,TAS
+RAD51C,GO:0007062,sister chromatid cohesion,BP,ISS
+RAD51C,GO:0007131,reciprocal meiotic recombination,BP,IBA
+RAD51C,GO:0010971,positive regulation of G2/M transition of mitotic cell cycle,BP,IMP
+RAD51C,GO:0031297,replication fork processing,BP,IDA
+RAD51C,GO:0097435,supramolecular fiber organization,BP,IDA
+RAD51C,GO:0000400,four-way junction DNA binding,MF,IBA
+RAD51C,GO:0000400,four-way junction DNA binding,MF,IDA
+RAD51C,GO:0003677,DNA binding,MF,IEA
+RAD51C,GO:0003677,DNA binding,MF,TAS
+RAD51C,GO:0005515,protein binding,MF,IPI
+RAD51C,GO:0005524,ATP binding,MF,IEA
+RAD51C,GO:0008821,crossover junction DNA endonuclease activity,MF,IBA
+RAD51C,GO:0008821,crossover junction DNA endonuclease activity,MF,IEA
+RAD51C,GO:0008821,crossover junction DNA endonuclease activity,MF,IMP
+RAD51C,GO:0140664,ATP-dependent DNA damage sensor activity,MF,IEA
+SYK,GO:0001775,cell activation,BP,IEA
+SYK,GO:0001775,cell activation,BP,ISS
+SYK,GO:0001945,lymph vessel development,BP,IEA
+SYK,GO:0001945,lymph vessel development,BP,ISS
+SYK,GO:0002092,positive regulation of receptor internalization,BP,IEA
+SYK,GO:0002223,stimulatory C-type lectin receptor signaling pathway,BP,IEA
+SYK,GO:0002223,stimulatory C-type lectin receptor signaling pathway,BP,ISS
+SYK,GO:0002223,stimulatory C-type lectin receptor signaling pathway,BP,TAS
+SYK,GO:0002250,adaptive immune response,BP,IBA
+SYK,GO:0002250,adaptive immune response,BP,ISS
+SYK,GO:0002281,macrophage activation involved in immune response,BP,IBA
+SYK,GO:0002281,macrophage activation involved in immune response,BP,IEA
+SYK,GO:0002281,macrophage activation involved in immune response,BP,ISS
+SYK,GO:0002283,neutrophil activation involved in immune response,BP,IBA
+SYK,GO:0002283,neutrophil activation involved in immune response,BP,IEA
+SYK,GO:0002283,neutrophil activation involved in immune response,BP,ISS
+SYK,GO:0002366,leukocyte activation involved in immune response,BP,IEA
+SYK,GO:0002366,leukocyte activation involved in immune response,BP,ISS
+SYK,GO:0002554,serotonin secretion by platelet,BP,IEA
+SYK,GO:0002554,serotonin secretion by platelet,BP,ISS
+SYK,GO:0002752,cell surface pattern recognition receptor signaling pathway,BP,IMP
+SYK,GO:0002862,negative regulation of inflammatory response to antigenic stimulus,BP,TAS
+SYK,GO:0006357,regulation of transcription by RNA polymerase II,BP,IMP
+SYK,GO:0006468,protein phosphorylation,BP,IDA
+SYK,GO:0006606,protein import into nucleus,BP,IMP
+SYK,GO:0007159,leukocyte cell-cell adhesion,BP,IDA
+SYK,GO:0007159,leukocyte cell-cell adhesion,BP,IEA
+SYK,GO:0007229,integrin-mediated signaling pathway,BP,IEA
+SYK,GO:0007229,integrin-mediated signaling pathway,BP,ISS
+SYK,GO:0007229,integrin-mediated signaling pathway,BP,NAS
+SYK,GO:0009887,animal organ morphogenesis,BP,TAS
+SYK,GO:0010543,regulation of platelet activation,BP,IEA
+SYK,GO:0010543,regulation of platelet activation,BP,ISS
+SYK,GO:0010803,regulation of tumor necrosis factor-mediated signaling pathway,BP,IMP
+SYK,GO:0018108,peptidyl-tyrosine phosphorylation,BP,ISS
+SYK,GO:0030168,platelet activation,BP,TAS
+SYK,GO:0030593,neutrophil chemotaxis,BP,IDA
+SYK,GO:0031334,positive regulation of protein-containing complex assembly,BP,IMP
+SYK,GO:0031623,receptor internalization,BP,IEA
+SYK,GO:0031623,receptor internalization,BP,ISS
+SYK,GO:0032481,positive regulation of type I interferon production,BP,IEA
+SYK,GO:0032733,positive regulation of interleukin-10 production,BP,IMP
+SYK,GO:0032735,positive regulation of interleukin-12 production,BP,IMP
+SYK,GO:0032753,positive regulation of interleukin-4 production,BP,IEA
+SYK,GO:0032753,positive regulation of interleukin-4 production,BP,ISS
+SYK,GO:0032755,positive regulation of interleukin-6 production,BP,IMP
+SYK,GO:0032757,positive regulation of interleukin-8 production,BP,IMP
+SYK,GO:0032760,positive regulation of tumor necrosis factor production,BP,IMP
+SYK,GO:0032928,regulation of superoxide anion generation,BP,IEA
+SYK,GO:0032928,regulation of superoxide anion generation,BP,ISS
+SYK,GO:0032930,positive regulation of superoxide anion generation,BP,IMP
+SYK,GO:0033630,positive regulation of cell adhesion mediated by integrin,BP,IBA
+SYK,GO:0033630,positive regulation of cell adhesion mediated by integrin,BP,IEA
+SYK,GO:0033630,positive regulation of cell adhesion mediated by integrin,BP,ISS
+SYK,GO:0034165,positive regulation of toll-like receptor 9 signaling pathway,BP,IDA
+SYK,GO:0035556,intracellular signal transduction,BP,IDA
+SYK,GO:0035556,intracellular signal transduction,BP,IEA
+SYK,GO:0035556,intracellular signal transduction,BP,IGI
+SYK,GO:0035556,intracellular signal transduction,BP,IMP
+SYK,GO:0035556,intracellular signal transduction,BP,ISS
+SYK,GO:0038095,Fc-epsilon receptor signaling pathway,BP,TAS
+SYK,GO:0038096,Fc-gamma receptor signaling pathway involved in phagocytosis,BP,TAS
+SYK,GO:0038156,interleukin-3-mediated signaling pathway,BP,IEA
+SYK,GO:0038156,interleukin-3-mediated signaling pathway,BP,ISS
+SYK,GO:0042742,defense response to bacterium,BP,IEA
+SYK,GO:0042742,defense response to bacterium,BP,ISS
+SYK,GO:0043313,regulation of neutrophil degranulation,BP,IEA
+SYK,GO:0043313,regulation of neutrophil degranulation,BP,ISS
+SYK,GO:0045087,innate immune response,BP,IEA
+SYK,GO:0045087,innate immune response,BP,ISS
+SYK,GO:0045579,positive regulation of B cell differentiation,BP,IMP
+SYK,GO:0045621,positive regulation of lymphocyte differentiation,BP,IEA
+SYK,GO:0045780,positive regulation of bone resorption,BP,IEA
+SYK,GO:0045780,positive regulation of bone resorption,BP,ISS
+SYK,GO:0048514,blood vessel morphogenesis,BP,IEA
+SYK,GO:0048514,blood vessel morphogenesis,BP,ISS
+SYK,GO:0050729,positive regulation of inflammatory response,BP,IDA
+SYK,GO:0050764,regulation of phagocytosis,BP,IEA
+SYK,GO:0050764,regulation of phagocytosis,BP,ISS
+SYK,GO:0050776,regulation of immune response,BP,IEA
+SYK,GO:0050853,B cell receptor signaling pathway,BP,IBA
+SYK,GO:0050853,B cell receptor signaling pathway,BP,IMP
+SYK,GO:0050853,B cell receptor signaling pathway,BP,ISS
+SYK,GO:0050900,leukocyte migration,BP,IEA
+SYK,GO:0070372,regulation of ERK1 and ERK2 cascade,BP,IEA
+SYK,GO:0070372,regulation of ERK1 and ERK2 cascade,BP,ISS
+SYK,GO:0071226,cellular response to molecule of fungal origin,BP,IEA
+SYK,GO:0071226,cellular response to molecule of fungal origin,BP,ISS
+SYK,GO:0071396,cellular response to lipid,BP,IMP
+SYK,GO:0071404,cellular response to low-density lipoprotein particle stimulus,BP,IEA
+SYK,GO:0071404,cellular response to low-density lipoprotein particle stimulus,BP,ISS
+SYK,GO:0071639,positive regulation of monocyte chemotactic protein-1 production,BP,IMP
+SYK,GO:0090237,regulation of arachidonate secretion,BP,IEA
+SYK,GO:0090237,regulation of arachidonate secretion,BP,ISS
+SYK,GO:0090330,regulation of platelet aggregation,BP,IEA
+SYK,GO:0090330,regulation of platelet aggregation,BP,ISS
+SYK,GO:0097190,apoptotic signaling pathway,BP,IMP
+SYK,GO:0097242,amyloid-beta clearance,BP,IDA
+SYK,GO:0120162,positive regulation of cold-induced thermogenesis,BP,IEA
+SYK,GO:0120162,positive regulation of cold-induced thermogenesis,BP,ISS
+SYK,GO:0140374,antiviral innate immune response,BP,IDA
+SYK,GO:0141111,positive regulation of cGAS/STING signaling pathway,BP,IDA
+SYK,GO:1904263,positive regulation of TORC1 signaling,BP,IDA
+SYK,GO:1904646,cellular response to amyloid-beta,BP,IDA
+SYK,GO:1990858,cellular response to lectin,BP,IEA
+SYK,GO:1990858,cellular response to lectin,BP,ISS
+SYK,GO:0001784,phosphotyrosine residue binding,MF,IPI
+SYK,GO:0004672,protein kinase activity,MF,IDA
+SYK,GO:0004672,protein kinase activity,MF,IEA
+SYK,GO:0004672,protein kinase activity,MF,NAS
+SYK,GO:0004674,protein serine/threonine kinase activity,MF,IDA
+SYK,GO:0004713,protein tyrosine kinase activity,MF,EXP
+SYK,GO:0004713,protein tyrosine kinase activity,MF,IBA
+SYK,GO:0004713,protein tyrosine kinase activity,MF,IDA
+SYK,GO:0004713,protein tyrosine kinase activity,MF,IEA
+SYK,GO:0004713,protein tyrosine kinase activity,MF,IMP
+SYK,GO:0004713,protein tyrosine kinase activity,MF,ISS
+SYK,GO:0004713,protein tyrosine kinase activity,MF,NAS
+SYK,GO:0004713,protein tyrosine kinase activity,MF,TAS
+SYK,GO:0004715,non-membrane spanning protein tyrosine kinase activity,MF,IDA
+SYK,GO:0004715,non-membrane spanning protein tyrosine kinase activity,MF,IEA
+SYK,GO:0004715,non-membrane spanning protein tyrosine kinase activity,MF,IGI
+SYK,GO:0004715,non-membrane spanning protein tyrosine kinase activity,MF,IMP
+SYK,GO:0004715,non-membrane spanning protein tyrosine kinase activity,MF,TAS
+SYK,GO:0005102,signaling receptor binding,MF,IPI
+SYK,GO:0005178,integrin binding,MF,IPI
+SYK,GO:0005515,protein binding,MF,IPI
+SYK,GO:0005524,ATP binding,MF,IEA
+SYK,GO:0016170,interleukin-15 receptor binding,MF,IPI
+SYK,GO:0016301,kinase activity,MF,IDA
+SYK,GO:0019901,protein kinase binding,MF,IEA
+SYK,GO:0019902,phosphatase binding,MF,IEA
+SYK,GO:0035325,Toll-like receptor binding,MF,IEA
+SYK,GO:0042169,SH2 domain binding,MF,IEA
+SYK,GO:0043274,phospholipase binding,MF,IPI
+SYK,GO:0097110,scaffold protein binding,MF,IPI
+TOP1,GO:0006260,DNA replication,BP,IBA
+TOP1,GO:0006265,DNA topological change,BP,IBA
+TOP1,GO:0006265,DNA topological change,BP,IDA
+TOP1,GO:0006265,DNA topological change,BP,IEA
+TOP1,GO:0006265,DNA topological change,BP,IMP
+TOP1,GO:0006338,chromatin remodeling,BP,IMP
+TOP1,GO:0007059,chromosome segregation,BP,IBA
+TOP1,GO:0007623,circadian rhythm,BP,IEP
+TOP1,GO:0009266,response to temperature stimulus,BP,IEA
+TOP1,GO:0009303,rRNA transcription,BP,IEA
+TOP1,GO:0009410,response to xenobiotic stimulus,BP,IEP
+TOP1,GO:0010332,response to gamma radiation,BP,IEA
+TOP1,GO:0012501,programmed cell death,BP,NAS
+TOP1,GO:0031100,animal organ regeneration,BP,IEA
+TOP1,GO:0032922,circadian regulation of gene expression,BP,IMP
+TOP1,GO:0051591,response to cAMP,BP,IEA
+TOP1,GO:0071373,cellular response to luteinizing hormone stimulus,BP,IEA
+TOP1,GO:0000978,RNA polymerase II cis-regulatory region sequence-specific DNA binding,MF,IDA
+TOP1,GO:0003677,DNA binding,MF,EXP
+TOP1,GO:0003677,DNA binding,MF,IDA
+TOP1,GO:0003677,DNA binding,MF,IEA
+TOP1,GO:0003677,DNA binding,MF,IMP
+TOP1,GO:0003682,chromatin binding,MF,IDA
+TOP1,GO:0003690,double-stranded DNA binding,MF,IMP
+TOP1,GO:0003697,single-stranded DNA binding,MF,IMP
+TOP1,GO:0003723,RNA binding,MF,HDA
+TOP1,GO:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity",MF,IBA
+TOP1,GO:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity",MF,IDA
+TOP1,GO:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity",MF,IEA
+TOP1,GO:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity",MF,IMP
+TOP1,GO:0004674,protein serine/threonine kinase activity,MF,IMP
+TOP1,GO:0005515,protein binding,MF,IPI
+TOP1,GO:0005524,ATP binding,MF,IMP
+TOP1,GO:0008301,"DNA binding, bending",MF,EXP
+TOP1,GO:0019904,protein domain specific binding,MF,IPI
+TOP1,GO:0031490,chromatin DNA binding,MF,IEA
+TOP1,GO:0044877,protein-containing complex binding,MF,IEA
+TOP1,GO:0097100,supercoiled DNA binding,MF,IMP
+TOP1,GO:0140693,molecular condensate scaffold activity,MF,EXP
+TOP1,GO:0140693,molecular condensate scaffold activity,MF,IDA
+TP53,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,IDA
+TP53,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,ISS
+TP53,GO:0002244,hematopoietic progenitor cell differentiation,BP,IMP
+TP53,GO:0006289,nucleotide-excision repair,BP,IMP
+TP53,GO:0006355,regulation of DNA-templated transcription,BP,IDA
+TP53,GO:0006355,regulation of DNA-templated transcription,BP,IEA
+TP53,GO:0006355,regulation of DNA-templated transcription,BP,IMP
+TP53,GO:0006357,regulation of transcription by RNA polymerase II,BP,IDA
+TP53,GO:0006914,autophagy,BP,IMP
+TP53,GO:0006915,apoptotic process,BP,IEA
+TP53,GO:0006974,DNA damage response,BP,IDA
+TP53,GO:0006974,DNA damage response,BP,IDA
+TP53,GO:0006974,DNA damage response,BP,IMP
+TP53,GO:0006979,response to oxidative stress,BP,IEA
+TP53,GO:0006983,ER overload response,BP,IDA
+TP53,GO:0007265,Ras protein signal transduction,BP,IEP
+TP53,GO:0007623,circadian rhythm,BP,IEA
+TP53,GO:0008104,intracellular protein localization,BP,IDA
+TP53,GO:0008285,negative regulation of cell population proliferation,BP,IDA
+TP53,GO:0008285,negative regulation of cell population proliferation,BP,IEA
+TP53,GO:0008285,negative regulation of cell population proliferation,BP,IMP
+TP53,GO:0008285,negative regulation of cell population proliferation,BP,ISS
+TP53,GO:0008285,negative regulation of cell population proliferation,BP,ISS
+TP53,GO:0008340,determination of adult lifespan,BP,IEA
+TP53,GO:0008340,determination of adult lifespan,BP,ISS
+TP53,GO:0009299,mRNA transcription,BP,IMP
+TP53,GO:0009410,response to xenobiotic stimulus,BP,IEA
+TP53,GO:0009411,response to UV,BP,IEA
+TP53,GO:0010212,response to ionizing radiation,BP,IEA
+TP53,GO:0010332,response to gamma radiation,BP,IMP
+TP53,GO:0010628,positive regulation of gene expression,BP,IDA
+TP53,GO:0010628,positive regulation of gene expression,BP,IMP
+TP53,GO:0010628,positive regulation of gene expression,BP,ISS
+TP53,GO:0016032,viral process,BP,IMP
+TP53,GO:0030308,negative regulation of cell growth,BP,IMP
+TP53,GO:0030330,"DNA damage response, signal transduction by p53 class mediator",BP,IDA
+TP53,GO:0030330,"DNA damage response, signal transduction by p53 class mediator",BP,IMP
+TP53,GO:0031571,mitotic G1 DNA damage checkpoint signaling,BP,IMP
+TP53,GO:0032211,negative regulation of telomere maintenance via telomerase,BP,IDA
+TP53,GO:0033209,tumor necrosis factor-mediated signaling pathway,BP,IGI
+TP53,GO:0034644,cellular response to UV,BP,IDA
+TP53,GO:0042149,cellular response to glucose starvation,BP,IDA
+TP53,GO:0042149,cellular response to glucose starvation,BP,IDA
+TP53,GO:0042771,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,BP,IBA
+TP53,GO:0042771,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,BP,IDA
+TP53,GO:0042771,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,BP,IDA
+TP53,GO:0042771,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,BP,IEA
+TP53,GO:0042771,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,BP,IMP
+TP53,GO:0042981,regulation of apoptotic process,BP,IBA
+TP53,GO:0042981,regulation of apoptotic process,BP,IDA
+TP53,GO:0043065,positive regulation of apoptotic process,BP,IDA
+TP53,GO:0043066,negative regulation of apoptotic process,BP,IDA
+TP53,GO:0043066,negative regulation of apoptotic process,BP,IGI
+TP53,GO:0043066,negative regulation of apoptotic process,BP,IMP
+TP53,GO:0043153,entrainment of circadian clock by photoperiod,BP,IEA
+TP53,GO:0043153,entrainment of circadian clock by photoperiod,BP,ISS
+TP53,GO:0045815,transcription initiation-coupled chromatin remodeling,BP,IDA
+TP53,GO:0045892,negative regulation of DNA-templated transcription,BP,IDA
+TP53,GO:0045892,negative regulation of DNA-templated transcription,BP,IEA
+TP53,GO:0045892,negative regulation of DNA-templated transcription,BP,IMP
+TP53,GO:0045892,negative regulation of DNA-templated transcription,BP,NAS
+TP53,GO:0045893,positive regulation of DNA-templated transcription,BP,IDA
+TP53,GO:0045893,positive regulation of DNA-templated transcription,BP,IEA
+TP53,GO:0045893,positive regulation of DNA-templated transcription,BP,IMP
+TP53,GO:0045899,positive regulation of RNA polymerase II transcription preinitiation complex assembly,BP,IDA
+TP53,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IBA
+TP53,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IDA
+TP53,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IDA
+TP53,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IGI
+TP53,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IMP
+TP53,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,ISS
+TP53,GO:0046677,response to antibiotic,BP,IEP
+TP53,GO:0048147,negative regulation of fibroblast proliferation,BP,IMP
+TP53,GO:0048512,circadian behavior,BP,IEA
+TP53,GO:0048512,circadian behavior,BP,ISS
+TP53,GO:0048539,bone marrow development,BP,IMP
+TP53,GO:0051053,negative regulation of DNA metabolic process,BP,IEA
+TP53,GO:0051097,negative regulation of helicase activity,BP,TAS
+TP53,GO:0051262,protein tetramerization,BP,IEA
+TP53,GO:0051726,regulation of cell cycle,BP,IDA
+TP53,GO:0051726,regulation of cell cycle,BP,IGI
+TP53,GO:0051726,regulation of cell cycle,BP,IMP
+TP53,GO:0051726,regulation of cell cycle,BP,ISS
+TP53,GO:0060218,hematopoietic stem cell differentiation,BP,IMP
+TP53,GO:0060333,type II interferon-mediated signaling pathway,BP,IEA
+TP53,GO:0062100,positive regulation of programmed necrotic cell death,BP,IEA
+TP53,GO:0065003,protein-containing complex assembly,BP,IDA
+TP53,GO:0070059,intrinsic apoptotic signaling pathway in response to endoplasmic reticulum stress,BP,IEA
+TP53,GO:0070245,positive regulation of thymocyte apoptotic process,BP,IEA
+TP53,GO:0070245,positive regulation of thymocyte apoptotic process,BP,ISS
+TP53,GO:0071456,cellular response to hypoxia,BP,IEA
+TP53,GO:0071456,cellular response to hypoxia,BP,IEP
+TP53,GO:0071466,cellular response to xenobiotic stimulus,BP,IEP
+TP53,GO:0071479,cellular response to ionizing radiation,BP,IEA
+TP53,GO:0071479,cellular response to ionizing radiation,BP,IMP
+TP53,GO:0071480,cellular response to gamma radiation,BP,IDA
+TP53,GO:0072331,signal transduction by p53 class mediator,BP,IDA
+TP53,GO:0072332,intrinsic apoptotic signaling pathway by p53 class mediator,BP,IMP
+TP53,GO:0072717,cellular response to actinomycin D,BP,IDA
+TP53,GO:0090200,positive regulation of release of cytochrome c from mitochondria,BP,IDA
+TP53,GO:0090398,cellular senescence,BP,IMP
+TP53,GO:0090399,replicative senescence,BP,IMP
+TP53,GO:0090403,oxidative stress-induced premature senescence,BP,IMP
+TP53,GO:0097190,apoptotic signaling pathway,BP,IEA
+TP53,GO:0097193,intrinsic apoptotic signaling pathway,BP,TAS
+TP53,GO:0097252,oligodendrocyte apoptotic process,BP,IDA
+TP53,GO:1900119,positive regulation of execution phase of apoptosis,BP,IMP
+TP53,GO:1902749,regulation of cell cycle G2/M phase transition,BP,IMP
+TP53,GO:1902895,positive regulation of miRNA transcription,BP,IDA
+TP53,GO:1902895,positive regulation of miRNA transcription,BP,IGI
+TP53,GO:1902895,positive regulation of miRNA transcription,BP,IMP
+TP53,GO:1902895,positive regulation of miRNA transcription,BP,IMP
+TP53,GO:1903451,negative regulation of G1 to G0 transition,BP,IDA
+TP53,GO:1903451,negative regulation of G1 to G0 transition,BP,IMP
+TP53,GO:1905856,negative regulation of pentose-phosphate shunt,BP,IMP
+TP53,GO:2000379,positive regulation of reactive oxygen species metabolic process,BP,IMP
+TP53,GO:2000774,positive regulation of cellular senescence,BP,IDA
+TP53,GO:2000774,positive regulation of cellular senescence,BP,IEA
+TP53,GO:2000774,positive regulation of cellular senescence,BP,ISS
+TP53,GO:2001242,regulation of intrinsic apoptotic signaling pathway,BP,IEA
+TP53,GO:2001244,positive regulation of intrinsic apoptotic signaling pathway,BP,IMP
+TP53,GO:2001244,positive regulation of intrinsic apoptotic signaling pathway,BP,ISS
+TP53,GO:0000976,transcription cis-regulatory region binding,MF,IDA
+TP53,GO:0000976,transcription cis-regulatory region binding,MF,IEA
+TP53,GO:0000977,RNA polymerase II transcription regulatory region sequence-specific DNA binding,MF,IEA
+TP53,GO:0000978,RNA polymerase II cis-regulatory region sequence-specific DNA binding,MF,IBA
+TP53,GO:0000978,RNA polymerase II cis-regulatory region sequence-specific DNA binding,MF,IDA
+TP53,GO:0000978,RNA polymerase II cis-regulatory region sequence-specific DNA binding,MF,IEA
+TP53,GO:0000978,RNA polymerase II cis-regulatory region sequence-specific DNA binding,MF,ISS
+TP53,GO:0000981,"DNA-binding transcription factor activity, RNA polymerase II-specific",MF,IBA
+TP53,GO:0000981,"DNA-binding transcription factor activity, RNA polymerase II-specific",MF,IDA
+TP53,GO:0000981,"DNA-binding transcription factor activity, RNA polymerase II-specific",MF,ISA
+TP53,GO:0000987,cis-regulatory region sequence-specific DNA binding,MF,IDA
+TP53,GO:0001046,core promoter sequence-specific DNA binding,MF,IDA
+TP53,GO:0001094,TFIID-class transcription factor complex binding,MF,IPI
+TP53,GO:0001223,transcription coactivator binding,MF,IPI
+TP53,GO:0001227,"DNA-binding transcription repressor activity, RNA polymerase II-specific",MF,IDA
+TP53,GO:0001228,"DNA-binding transcription activator activity, RNA polymerase II-specific",MF,IDA
+TP53,GO:0001228,"DNA-binding transcription activator activity, RNA polymerase II-specific",MF,IEA
+TP53,GO:0002020,protease binding,MF,IPI
+TP53,GO:0002039,p53 binding,MF,IPI
+TP53,GO:0003677,DNA binding,MF,IDA
+TP53,GO:0003677,DNA binding,MF,IEA
+TP53,GO:0003677,DNA binding,MF,IMP
+TP53,GO:0003682,chromatin binding,MF,IDA
+TP53,GO:0003682,chromatin binding,MF,IEA
+TP53,GO:0003700,DNA-binding transcription factor activity,MF,IDA
+TP53,GO:0003700,DNA-binding transcription factor activity,MF,IEA
+TP53,GO:0003700,DNA-binding transcription factor activity,MF,IMP
+TP53,GO:0003730,mRNA 3'-UTR binding,MF,IDA
+TP53,GO:0005507,copper ion binding,MF,IDA
+TP53,GO:0005515,protein binding,MF,IPI
+TP53,GO:0008270,zinc ion binding,MF,TAS
+TP53,GO:0019899,enzyme binding,MF,IPI
+TP53,GO:0030971,receptor tyrosine kinase binding,MF,IPI
+TP53,GO:0031625,ubiquitin protein ligase binding,MF,EXP
+TP53,GO:0031625,ubiquitin protein ligase binding,MF,IEA
+TP53,GO:0031625,ubiquitin protein ligase binding,MF,IPI
+TP53,GO:0035033,histone deacetylase regulator activity,MF,IEA
+TP53,GO:0036310,ATP-dependent DNA/DNA annealing activity,MF,IDA
+TP53,GO:0042802,identical protein binding,MF,IPI
+TP53,GO:0042826,histone deacetylase binding,MF,IPI
+TP53,GO:0046982,protein heterodimerization activity,MF,IPI
+TP53,GO:0051087,protein-folding chaperone binding,MF,IPI
+TP53,GO:0051721,protein phosphatase 2A binding,MF,IPI
+TP53,GO:0061629,RNA polymerase II-specific DNA-binding transcription factor binding,MF,IPI
+TP53,GO:0071889,14-3-3 protein binding,MF,EXP
+TP53,GO:0097371,MDM2/MDM4 family protein binding,MF,IEA
+TP53,GO:0097718,disordered domain specific binding,MF,IPI
+TP53,GO:0140296,general transcription initiation factor binding,MF,IPI
+TP53,GO:0140677,molecular function activator activity,MF,EXP
+TP53,GO:0140677,molecular function activator activity,MF,IPI
+TP53,GO:0140693,molecular condensate scaffold activity,MF,IDA
+TP53,GO:1990841,promoter-specific chromatin binding,MF,IBA
+TP53,GO:1990841,promoter-specific chromatin binding,MF,IDA
+VEGFA,GO:0000122,negative regulation of transcription by RNA polymerase II,BP,IDA
+VEGFA,GO:0001525,angiogenesis,BP,IDA
+VEGFA,GO:0001525,angiogenesis,BP,IEA
+VEGFA,GO:0001541,ovarian follicle development,BP,ISS
+VEGFA,GO:0001569,branching involved in blood vessel morphogenesis,BP,IMP
+VEGFA,GO:0001569,branching involved in blood vessel morphogenesis,BP,IMP
+VEGFA,GO:0001570,vasculogenesis,BP,TAS
+VEGFA,GO:0001666,response to hypoxia,BP,IBA
+VEGFA,GO:0001666,response to hypoxia,BP,IDA
+VEGFA,GO:0001701,in utero embryonic development,BP,ISS
+VEGFA,GO:0001822,kidney development,BP,ISS
+VEGFA,GO:0001934,positive regulation of protein phosphorylation,BP,IDA
+VEGFA,GO:0001938,positive regulation of endothelial cell proliferation,BP,IDA
+VEGFA,GO:0001938,positive regulation of endothelial cell proliferation,BP,IDA
+VEGFA,GO:0001938,positive regulation of endothelial cell proliferation,BP,ISS
+VEGFA,GO:0002040,sprouting angiogenesis,BP,IBA
+VEGFA,GO:0002042,cell migration involved in sprouting angiogenesis,BP,IDA
+VEGFA,GO:0002052,positive regulation of neuroblast proliferation,BP,ISS
+VEGFA,GO:0002092,positive regulation of receptor internalization,BP,IDA
+VEGFA,GO:0002575,basophil chemotaxis,BP,IDA
+VEGFA,GO:0002687,positive regulation of leukocyte migration,BP,TAS
+VEGFA,GO:0003007,heart morphogenesis,BP,ISS
+VEGFA,GO:0003151,outflow tract morphogenesis,BP,ISS
+VEGFA,GO:0003169,coronary vein morphogenesis,BP,ISS
+VEGFA,GO:0006357,regulation of transcription by RNA polymerase II,BP,IMP
+VEGFA,GO:0007200,phospholipase C-activating G protein-coupled receptor signaling pathway,BP,IDA
+VEGFA,GO:0007399,nervous system development,BP,TAS
+VEGFA,GO:0007498,mesoderm development,BP,ISS
+VEGFA,GO:0007595,lactation,BP,ISS
+VEGFA,GO:0008284,positive regulation of cell population proliferation,BP,IDA
+VEGFA,GO:0008284,positive regulation of cell population proliferation,BP,IEA
+VEGFA,GO:0008284,positive regulation of cell population proliferation,BP,IMP
+VEGFA,GO:0008360,regulation of cell shape,BP,IDA
+VEGFA,GO:0010595,positive regulation of endothelial cell migration,BP,IDA
+VEGFA,GO:0010628,positive regulation of gene expression,BP,IDA
+VEGFA,GO:0010629,negative regulation of gene expression,BP,IDA
+VEGFA,GO:0010629,negative regulation of gene expression,BP,IMP
+VEGFA,GO:0010719,negative regulation of epithelial to mesenchymal transition,BP,IEA
+VEGFA,GO:0030224,monocyte differentiation,BP,IDA
+VEGFA,GO:0030225,macrophage differentiation,BP,IDA
+VEGFA,GO:0030324,lung development,BP,ISS
+VEGFA,GO:0030335,positive regulation of cell migration,BP,IDA
+VEGFA,GO:0030855,epithelial cell differentiation,BP,ISS
+VEGFA,GO:0031077,post-embryonic camera-type eye development,BP,ISS
+VEGFA,GO:0031290,retinal ganglion cell axon guidance,BP,IEA
+VEGFA,GO:0031290,retinal ganglion cell axon guidance,BP,ISS
+VEGFA,GO:0031334,positive regulation of protein-containing complex assembly,BP,IDA
+VEGFA,GO:0031954,positive regulation of protein autophosphorylation,BP,IDA
+VEGFA,GO:0035148,tube formation,BP,IDA
+VEGFA,GO:0035767,endothelial cell chemotaxis,BP,IDA
+VEGFA,GO:0035924,cellular response to vascular endothelial growth factor stimulus,BP,IDA
+VEGFA,GO:0035924,cellular response to vascular endothelial growth factor stimulus,BP,IEA
+VEGFA,GO:0036303,lymph vessel morphogenesis,BP,ISS
+VEGFA,GO:0036324,vascular endothelial growth factor receptor-2 signaling pathway,BP,IMP
+VEGFA,GO:0038033,positive regulation of endothelial cell chemotaxis by VEGF-activated vascular endothelial growth factor receptor signaling pathway,BP,IDA
+VEGFA,GO:0038084,vascular endothelial growth factor signaling pathway,BP,IBA
+VEGFA,GO:0038084,vascular endothelial growth factor signaling pathway,BP,IDA
+VEGFA,GO:0038084,vascular endothelial growth factor signaling pathway,BP,IMP
+VEGFA,GO:0038084,vascular endothelial growth factor signaling pathway,BP,NAS
+VEGFA,GO:0038091,positive regulation of cell proliferation by VEGF-activated platelet derived growth factor receptor signaling pathway,BP,IDA
+VEGFA,GO:0038190,VEGF-activated neuropilin signaling pathway,BP,IMP
+VEGFA,GO:0038190,VEGF-activated neuropilin signaling pathway,BP,ISS
+VEGFA,GO:0042462,eye photoreceptor cell development,BP,ISS
+VEGFA,GO:0043066,negative regulation of apoptotic process,BP,IMP
+VEGFA,GO:0043117,positive regulation of vascular permeability,BP,IDA
+VEGFA,GO:0043117,positive regulation of vascular permeability,BP,IEA
+VEGFA,GO:0043123,positive regulation of canonical NF-kappaB signal transduction,BP,NAS
+VEGFA,GO:0043129,surfactant homeostasis,BP,ISS
+VEGFA,GO:0043410,positive regulation of MAPK cascade,BP,IDA
+VEGFA,GO:0043536,positive regulation of blood vessel endothelial cell migration,BP,IDA
+VEGFA,GO:0043536,positive regulation of blood vessel endothelial cell migration,BP,IMP
+VEGFA,GO:0045766,positive regulation of angiogenesis,BP,IDA
+VEGFA,GO:0045766,positive regulation of angiogenesis,BP,IEA
+VEGFA,GO:0045766,positive regulation of angiogenesis,BP,IMP
+VEGFA,GO:0045785,positive regulation of cell adhesion,BP,IDA
+VEGFA,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IDA
+VEGFA,GO:0045944,positive regulation of transcription by RNA polymerase II,BP,IMP
+VEGFA,GO:0048010,vascular endothelial growth factor receptor signaling pathway,BP,IBA
+VEGFA,GO:0048010,vascular endothelial growth factor receptor signaling pathway,BP,IDA
+VEGFA,GO:0048010,vascular endothelial growth factor receptor signaling pathway,BP,IEA
+VEGFA,GO:0048010,vascular endothelial growth factor receptor signaling pathway,BP,IMP
+VEGFA,GO:0048469,cell maturation,BP,ISS
+VEGFA,GO:0048593,camera-type eye morphogenesis,BP,ISS
+VEGFA,GO:0048842,positive regulation of axon extension involved in axon guidance,BP,IEA
+VEGFA,GO:0048842,positive regulation of axon extension involved in axon guidance,BP,ISS
+VEGFA,GO:0048844,artery morphogenesis,BP,ISS
+VEGFA,GO:0050679,positive regulation of epithelial cell proliferation,BP,ISS
+VEGFA,GO:0050918,positive chemotaxis,BP,IDA
+VEGFA,GO:0050918,positive chemotaxis,BP,IEA
+VEGFA,GO:0050918,positive chemotaxis,BP,ISS
+VEGFA,GO:0050927,positive regulation of positive chemotaxis,BP,IDA
+VEGFA,GO:0050930,induction of positive chemotaxis,BP,IBA
+VEGFA,GO:0050930,induction of positive chemotaxis,BP,IDA
+VEGFA,GO:0050930,induction of positive chemotaxis,BP,NAS
+VEGFA,GO:0051894,positive regulation of focal adhesion assembly,BP,IDA
+VEGFA,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IDA
+VEGFA,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IGI
+VEGFA,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IMP
+VEGFA,GO:0055013,cardiac muscle cell development,BP,ISS
+VEGFA,GO:0060319,primitive erythrocyte differentiation,BP,ISS
+VEGFA,GO:0060749,mammary gland alveolus development,BP,ISS
+VEGFA,GO:0060754,positive regulation of mast cell chemotaxis,BP,IBA
+VEGFA,GO:0060754,positive regulation of mast cell chemotaxis,BP,IDA
+VEGFA,GO:0060948,cardiac vascular smooth muscle cell development,BP,ISS
+VEGFA,GO:0060982,coronary artery morphogenesis,BP,ISS
+VEGFA,GO:0061042,vascular wound healing,BP,IMP
+VEGFA,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IDA
+VEGFA,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IMP
+VEGFA,GO:0071456,cellular response to hypoxia,BP,IDA
+VEGFA,GO:0071456,cellular response to hypoxia,BP,IMP
+VEGFA,GO:0071542,dopaminergic neuron differentiation,BP,ISS
+VEGFA,GO:0071679,commissural neuron axon guidance,BP,IEA
+VEGFA,GO:0071679,commissural neuron axon guidance,BP,ISS
+VEGFA,GO:0090050,positive regulation of cell migration involved in sprouting angiogenesis,BP,IDA
+VEGFA,GO:0090050,positive regulation of cell migration involved in sprouting angiogenesis,BP,IGI
+VEGFA,GO:0090050,positive regulation of cell migration involved in sprouting angiogenesis,BP,IMP
+VEGFA,GO:0090190,positive regulation of branching involved in ureteric bud morphogenesis,BP,IEA
+VEGFA,GO:0090190,positive regulation of branching involved in ureteric bud morphogenesis,BP,ISS
+VEGFA,GO:0097475,motor neuron migration,BP,IEA
+VEGFA,GO:0097475,motor neuron migration,BP,ISS
+VEGFA,GO:0097533,cellular stress response to acid chemical,BP,IDA
+VEGFA,GO:0120162,positive regulation of cold-induced thermogenesis,BP,IEA
+VEGFA,GO:0120162,positive regulation of cold-induced thermogenesis,BP,ISS
+VEGFA,GO:0141151,negative regulation of nitric oxide-cGMP mediated signal transduction,BP,IDA
+VEGFA,GO:1900748,positive regulation of vascular endothelial growth factor signaling pathway,BP,IDA
+VEGFA,GO:1901165,positive regulation of trophoblast cell migration,BP,IMP
+VEGFA,GO:1902894,negative regulation of miRNA transcription,BP,NAS
+VEGFA,GO:1902966,positive regulation of protein localization to early endosome,BP,IDA
+VEGFA,GO:1903141,negative regulation of establishment of endothelial barrier,BP,IDA
+VEGFA,GO:1903392,negative regulation of adherens junction organization,BP,IDA
+VEGFA,GO:1903589,positive regulation of blood vessel endothelial cell proliferation involved in sprouting angiogenesis,BP,IGI
+VEGFA,GO:1903589,positive regulation of blood vessel endothelial cell proliferation involved in sprouting angiogenesis,BP,IMP
+VEGFA,GO:1903672,positive regulation of sprouting angiogenesis,BP,IDA
+VEGFA,GO:1903672,positive regulation of sprouting angiogenesis,BP,IGI
+VEGFA,GO:1905278,positive regulation of epithelial tube formation,BP,IDA
+VEGFA,GO:1905555,positive regulation of blood vessel branching,BP,IDA
+VEGFA,GO:1905604,negative regulation of blood-brain barrier permeability,BP,IMP
+VEGFA,GO:2000048,negative regulation of cell-cell adhesion mediated by cadherin,BP,IDA
+VEGFA,GO:2000573,positive regulation of DNA biosynthetic process,BP,IDA
+VEGFA,GO:2000573,positive regulation of DNA biosynthetic process,BP,IGI
+VEGFA,GO:2001028,positive regulation of endothelial cell chemotaxis,BP,IDA
+VEGFA,GO:0001968,fibronectin binding,MF,IDA
+VEGFA,GO:0005125,cytokine activity,MF,IDA
+VEGFA,GO:0005125,cytokine activity,MF,ISS
+VEGFA,GO:0005161,platelet-derived growth factor receptor binding,MF,IPI
+VEGFA,GO:0005172,vascular endothelial growth factor receptor binding,MF,IBA
+VEGFA,GO:0005172,vascular endothelial growth factor receptor binding,MF,IPI
+VEGFA,GO:0005515,protein binding,MF,IPI
+VEGFA,GO:0008083,growth factor activity,MF,IBA
+VEGFA,GO:0008083,growth factor activity,MF,IDA
+VEGFA,GO:0008083,growth factor activity,MF,IEA
+VEGFA,GO:0008083,growth factor activity,MF,ISS
+VEGFA,GO:0008201,heparin binding,MF,IDA
+VEGFA,GO:0008201,heparin binding,MF,IEA
+VEGFA,GO:0008201,heparin binding,MF,IMP
+VEGFA,GO:0030297,transmembrane receptor protein tyrosine kinase activator activity,MF,IDA
+VEGFA,GO:0038191,neuropilin binding,MF,IPI
+VEGFA,GO:0042056,chemoattractant activity,MF,IBA
+VEGFA,GO:0042056,chemoattractant activity,MF,IDA
+VEGFA,GO:0042056,chemoattractant activity,MF,ISS
+VEGFA,GO:0042802,identical protein binding,MF,IPI
+VEGFA,GO:0043183,vascular endothelial growth factor receptor 1 binding,MF,IPI
+VEGFA,GO:0043184,vascular endothelial growth factor receptor 2 binding,MF,IEA
+VEGFA,GO:0043184,vascular endothelial growth factor receptor 2 binding,MF,IPI
+VEGFA,GO:0048018,receptor ligand activity,MF,IMP
+VEGFA,GO:0048018,receptor ligand activity,MF,IPI
+VEGFA,GO:0050840,extracellular matrix binding,MF,IC
+VPS37A,GO:0006612,protein targeting to membrane,BP,IBA
+VPS37A,GO:0006623,protein targeting to vacuole,BP,IBA
+VPS37A,GO:0016236,macroautophagy,BP,IEA
+VPS37A,GO:0016236,macroautophagy,BP,TAS
+VPS37A,GO:0036258,multivesicular body assembly,BP,IEA
+VPS37A,GO:0036258,multivesicular body assembly,BP,NAS
+VPS37A,GO:0036258,multivesicular body assembly,BP,TAS
+VPS37A,GO:0039702,viral budding via host ESCRT complex,BP,IEA
+VPS37A,GO:0039702,viral budding via host ESCRT complex,BP,TAS
+VPS37A,GO:0043162,ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,BP,IBA
+VPS37A,GO:0043162,ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,BP,IC
+VPS37A,GO:0043162,ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,BP,IMP
+VPS37A,GO:0043328,protein transport to vacuole involved in ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,BP,NAS
+VPS37A,GO:0090148,membrane fission,BP,NAS
+VPS37A,GO:0005515,protein binding,MF,IPI
