@@ -300,6 +300,13 @@ def build_pdf(patient_id, summary, ranking_rows, drug_sections, linker=None,
         story.append(KeepTogether([head]))
         story += _evidence_block("Supporting evidence", ev.get("supporting_genes", []), drug, linker, refs, st)
         story += _evidence_block("Opposing evidence", ev.get("opposing_genes", []), drug, linker, refs, st)
+        not_applied = ev.get("non_discriminating_genes", [])
+        if not_applied:
+            names = ", ".join(sorted({_txt(g["gene"]) for g in not_applied}))
+            story.append(Paragraph(
+                f"<i>Not applied: {names} has literature evidence against this drug, but the gene is "
+                "mutated in most patients, so it cannot single out this patient and is excluded from "
+                "the score.</i>", st["cell"]))
         story += _explanation_block(sec.get("explanation"), st)
         story.append(Spacer(1, 8))
 

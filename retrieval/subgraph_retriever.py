@@ -95,7 +95,9 @@ class SubgraphRetriever:
                     r.evidence_score AS evidence_score,
                     r.source AS evidence_source,
                     r.evidence_level AS civic_level,
-                    r.clinical_significance AS clinical_significance
+                    r.clinical_significance AS clinical_significance,
+                    r.raw_score AS raw_score,
+                    coalesce(r.non_discriminating, false) AS non_discriminating
                 ORDER BY r.evidence_score DESC
                 """,
                 patient_id=patient_id, min_score=min_evidence_score
@@ -142,9 +144,24 @@ class SubgraphRetriever:
                     "drug": drug,
                     "supporting_genes": [],
                     "opposing_genes": [],
+                    "non_discriminating_genes": [],
                     "net_evidence_score": 0.0,  # summed across ALL genes for this drug
                     "evidence_sources": set()
                 }
+
+            # Resistance evidence from a gene mutated in most patients (set to 0 by
+            # kg/apply_prevalence_weights.py) is reported separately: it is neither
+            # support nor opposition for this patient, and is not in the net score.
+            if row.get("non_discriminating"):
+                drug_data[drug]["non_discriminating_genes"].append({
+                    "gene": row["gene"],
+                    "relationship_type": row["relationship_type"],
+                    "evidence_source": row["evidence_source"],
+                    "civic_level": row["civic_level"],
+                    "clinical_significance": row["clinical_significance"],
+                    "raw_score": row.get("raw_score"),
+                })
+                continue
 
             gene_entry = {
                 "gene": row["gene"],
@@ -158,9 +175,9 @@ class SubgraphRetriever:
                 "go_terms": go_map.get(row["gene"], [])
             }
 
-            if score >= 0:
+            if score > 0:
                 drug_data[drug]["supporting_genes"].append(gene_entry)
-            else:
+            elif score < 0:
                 drug_data[drug]["opposing_genes"].append(gene_entry)
 
             # Sum every gene's contribution -- matches train.py exactly

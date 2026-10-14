@@ -387,6 +387,91 @@ def render_ranking_chart(ranking_df, n_each=5):
     return fig
 
 
+COLOR_NOT_APPLIED = "#9a9a9a"
+
+
+def render_evidence_balance_chart(summary, n_candidates=7, n_contra=4, n_literature=4):
+    """
+    Evidence FOR (green, right) and AGAINST (red, left) each drug, from the
+    retrieved knowledge-graph edges. A drug with mixed evidence shows both bars,
+    so opposing evidence stays visible even when the drug's net score is positive.
+    Grey hatched bars show literature evidence AGAINST a drug that is not applied to
+    the score because the gene is mutated in most patients (e.g. TP53 -> platinum).
+    Returns (figure, n_opposed, n_not_applied); figure is None if there is no
+    evidence to show.
+    """
+    by_drug = {}
+    for key in ("candidates", "contraindications"):
+        for entry in summary.get(key, []):
+            drug = entry["drug"]
+            if drug in by_drug:
+                continue
+            by_drug[drug] = {
+                "drug": drug,
+                "support": sum(g["evidence_score"] for g in entry.get("supporting_genes", [])),
+                "oppose": sum(g["evidence_score"] for g in entry.get("opposing_genes", [])),
+                "net": entry["net_evidence_score"],
+                "not_applied": sum(g.get("raw_score", 0) for g in entry.get("non_discriminating_genes", [])
+                                   if g.get("raw_score", 0) < 0),
+            }
+    if not by_drug:
+        return None, 0, 0
+
+    rows = sorted(by_drug.values(), key=lambda r: r["net"], reverse=True)
+    n_opposed = sum(1 for r in rows if r["oppose"] < 0)
+    top = rows[:n_candidates]
+    worst = [r for r in sorted(rows, key=lambda r: r["net"]) if r["oppose"] < 0][:n_contra]
+    chosen = top + [r for r in worst if r not in top]
+    lit = [r for r in rows if r["not_applied"] < 0]
+    n_not_applied = len(lit)
+    lit = sorted(lit, key=lambda r: r["not_applied"])[:n_literature]
+    chosen += [r for r in lit if r not in chosen]
+    chosen.sort(key=lambda r: r["net"], reverse=True)
+    chosen = chosen[::-1]   # barh draws bottom-up; best drug on top
+
+    fig, ax = plt.subplots(figsize=(7, max(2.8, 0.42 * len(chosen) + 1.2)))
+    fig.patch.set_facecolor(SURFACE)
+    ax.set_facecolor(SURFACE)
+    names = [r["drug"] for r in chosen]
+    ax.barh(names, [r["support"] for r in chosen], color=COLOR_GOOD, height=0.6)
+    ax.barh(names, [r["oppose"] for r in chosen], color=COLOR_CRITICAL, height=0.6)
+    ax.barh(names, [r["not_applied"] for r in chosen], color="none", edgecolor=COLOR_NOT_APPLIED,
+            hatch="////", linewidth=0.8, height=0.6)
+    ax.axvline(0, color=INK_MUTED, linewidth=1)
+    ax.set_xlabel("Evidence score from the knowledge graph (sum over the patient's mutated genes)",
+                  color=INK_SECONDARY, fontsize=8)
+    ax.tick_params(colors=INK_SECONDARY, labelsize=9)
+    for spine in ("top", "right", "left"):
+        ax.spines[spine].set_visible(False)
+    ax.spines["bottom"].set_color(GRIDLINE)
+    ax.margins(x=0.2)
+
+    span = max([abs(r["support"]) for r in chosen] + [abs(r["oppose"]) for r in chosen]
+               + [abs(r["not_applied"]) for r in chosen] + [1e-6])
+    for i, r in enumerate(chosen):
+        if r["support"] > 0:
+            ax.text(r["support"] + 0.015 * span, i, f"{r['support']:+.3f}", va="center", ha="left",
+                    fontsize=8, color=INK)
+        if r["oppose"] < 0:
+            ax.text(r["oppose"] - 0.015 * span, i, f"{r['oppose']:+.3f}", va="center", ha="right",
+                    fontsize=8, color=INK)
+        if r["not_applied"] < 0:
+            ax.text(r["not_applied"] / 2, i, f"{r['not_applied']:+.3f} (not applied)",
+                    va="center", ha="center", fontsize=8, color=INK_SECONDARY,
+                    bbox=dict(facecolor=SURFACE, edgecolor="none", pad=1.5))
+
+    legend_elems = [
+        plt.Rectangle((0, 0), 1, 1, color=COLOR_GOOD, label="Supporting evidence"),
+        plt.Rectangle((0, 0), 1, 1, color=COLOR_CRITICAL, label="Opposing evidence (applied)"),
+        plt.Rectangle((0, 0), 1, 1, facecolor="none", edgecolor=COLOR_NOT_APPLIED, hatch="////",
+                      label="Literature evidence against, not applied"),
+    ]
+    ax.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, -0.22),
+              ncol=3, frameon=False, fontsize=8, labelcolor=INK_SECONDARY)
+    fig.tight_layout()
+    return fig, n_opposed, n_not_applied
+
+
 # ---------------------------------------------------------------------------
 # Sidebar -- connection status + patient selection
 # ---------------------------------------------------------------------------
@@ -525,13 +610,36 @@ with tab_ranking:
 
     ranking_df = pd.DataFrame(rows)
 
+    # Evidence for vs against: the primary chart. Shows opposing evidence for every drug that has it.
+    balance_fig, n_opposed, n_not_applied = render_evidence_balance_chart(summary)
+    if balance_fig is not None:
+        st.markdown("**Evidence for and against each drug**")
+        st.pyplot(balance_fig, use_container_width=True)
+        if n_opposed:
+            st.caption(f"{n_opposed} drug(s) have applied opposing evidence for this patient (red). "
+                       "Mixed evidence is shown with both bars.")
+        if n_not_applied:
+            st.caption(f"Grey hatched bars: {n_not_applied} drug(s) have literature evidence against them "
+                       "from a gene mutated in most patients (e.g. TP53 and platinum resistance). It is "
+                       "shown for transparency but excluded from the score, because it cannot single "
+                       "out an individual patient.")
+        if not n_opposed and not n_not_applied:
+            st.info("No opposing evidence was found for this patient in the knowledge graph.")
+
+    # GNN score chart, kept for reference
     if not ranking_df.empty and ranking_df["GNN score"].notna().any():
-        chart_fig = render_ranking_chart(ranking_df)
-        if chart_fig is not None:
-            st.pyplot(chart_fig, use_container_width=True)
-            st.caption("Shows the 5 highest-scoring candidates and the 5 strongest contraindications "
-                       "(lowest GNN scores). The full list is in the table below.")
-    st.dataframe(ranking_df, use_container_width=True, hide_index=True)
+        with st.expander("GNN score chart"):
+            chart_fig = render_ranking_chart(ranking_df)
+            if chart_fig is not None:
+                st.pyplot(chart_fig, use_container_width=True)
+                st.caption("Top candidates and strongest contraindications by GNN score. The GNN "
+                           "score is a structural relevance estimate and can be nearly identical "
+                           "across drugs; the evidence chart above is the clinical signal.")
+
+    display_df = ranking_df.copy()
+    n_opp = {d: len(e.get("opposing_genes", [])) for d, e in {**candidate_lookup, **contra_lookup}.items()}
+    display_df["Opposing evidence"] = display_df["Drug"].map(lambda d: n_opp.get(d, 0))
+    st.dataframe(display_df, use_container_width=True, hide_index=True)
 
     st.subheader("Evidence-grounded explanations")
     st.caption(
@@ -580,6 +688,14 @@ with tab_ranking:
             if opposing:
                 st.markdown("**Opposing evidence**")
                 st.table(evidence_table(opposing))
+            not_applied = evidence.get("non_discriminating_genes", [])
+            if not_applied:
+                names = ", ".join(sorted({g["gene"] for g in not_applied}))
+                st.caption(
+                    f"Not applied: {names} has literature evidence against this drug, but the gene "
+                    "is mutated in most patients, so it cannot single out this patient and is "
+                    "excluded from the score."
+                )
             render_source_links(supporting + opposing, drug)
 
             st.markdown("**Explanation**")
