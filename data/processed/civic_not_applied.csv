@@ -1,0 +1,53 @@
+gene,drug,score,level,disease,significance,profile,scope
+GSTP1,Paclitaxel,0.45,D,Ovarian Carcinoma,Sensitivity/Response,GSTP1 Underexpression,expression
+GSTP1,Cisplatin,0.45,D,Ovarian Carcinoma,Sensitivity/Response,GSTP1 Underexpression,expression
+GSTP1,Carboplatin,0.45,D,Ovarian Carcinoma,Sensitivity/Response,GSTP1 Underexpression,expression
+EGFR,Cisplatin,-0.45,D,Epithelial Ovarian Cancer,Resistance,EGFR Exon 4 Deletion,variant
+KRAS,Paclitaxel,-0.675,B,Epithelial Ovarian Cancer,Resistance,KRAS RS61764370,variant
+KRAS,Carboplatin,-0.675,B,Epithelial Ovarian Cancer,Resistance,KRAS RS61764370,variant
+ABCB1,Paclitaxel,0.675,B,Ovarian Cancer,Sensitivity/Response,ABCB1 S893T,variant
+LRP1B,Doxorubicin,-0.45,D,Ovarian Cancer,Resistance,LRP1B Exon 12-22 Deletion,variant
+SYK,Paclitaxel,-0.45,D,Ovarian Cancer,Resistance,SYK OVEREXPRESSION,expression
+PIK3CA,Pictilisib,0.35,C,Epithelial Ovarian Cancer,Sensitivity/Response,PIK3CA Amplification,expression
+NRG1,Seribantumab,0.25,D,Ovarian Cancer,Sensitivity/Response,NRG1 Expression,expression
+FNTB,Lonafarnib,-0.475,B,Ovarian Cancer,Resistance,FNTB RS11623866,variant
+DNMT1,Decitabine,0.25,D,Ovarian Cancer,Sensitivity/Response,DNMT1 EXPRESSION,expression
+TOP1,Carboplatin,0.675,B,Ovarian Cancer,Sensitivity/Response,TOP1 EXPRESSION,expression
+TOP1,Cyclophosphamide,0.675,B,Ovarian Cancer,Sensitivity/Response,TOP1 EXPRESSION,expression
+TOP1,Topotecan,0.675,B,Ovarian Cancer,Sensitivity/Response,TOP1 EXPRESSION,expression
+ASNS,Asparaginase,-0.25,D,Ovarian Cancer,Resistance,ASNS Amplification,expression
+CDKN2A,Palbociclib,0.25,D,Ovarian Cancer,Sensitivity/Response,CDKN2A Loss,expression
+PTEN,Cisplatin,-0.45,D,Ovarian Cancer,Resistance,PTEN Loss,expression
+CCND1,Palbociclib,0.25,D,Ovarian Cancer,Sensitivity/Response,CCND1 Amplification,expression
+MAP2K1,Selumetinib,0.35,C,Ovarian Serous Carcinoma,Sensitivity/Response,MAP2K1 Q56_V60del,variant
+CCNE1,CDK Inhibitor SNS-032,0.25,D,Ovarian Cancer,Sensitivity/Response,CCNE1 Overexpression,expression
+CCNE1,Dinaciclib,0.25,D,Ovarian Serous Cystadenocarcinoma,Sensitivity/Response,CCNE1 Amplification,expression
+CCNE1,Akt Inhibitor MK2206,0.25,D,Ovarian Serous Cystadenocarcinoma,Sensitivity/Response,CCNE1 Amplification,expression
+VPS37A,Cetuximab,-0.25,D,Ovarian Cancer,Resistance,VPS37A Underexpression,expression
+TP53,Cisplatin,-0.55,C,Ovarian Cancer,Resistance,TP53 R273L,variant
+TP53,Carboplatin,-0.55,C,Ovarian Cancer,Resistance,TP53 R273L,variant
+TP53,Cisplatin,-0.55,C,Ovarian Cancer,Resistance,TP53 Y234C,variant
+TP53,Carboplatin,-0.55,C,Ovarian Cancer,Resistance,TP53 Y234C,variant
+BRCA1,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA1 Q1467*,variant
+BRCA2,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA2 M1R,variant
+BRCA2,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA2 M1?,variant
+BRCA2,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA2 V159M,variant
+BRCA2,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA2 V211L,variant
+BRCA2,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA2 V211I,variant
+BRCA2,Rucaparib,0.55,C,Ovarian Cancer,Sensitivity/Response,BRCA2 R2336P,variant
+ARID1A,Dasatinib,0.25,D,Ovarian Clear Cell Carcinoma,Sensitivity/Response,ARID1A Loss,expression
+ARID1A,GSK126,0.25,D,Ovarian Clear Cell Carcinoma,Sensitivity/Response,ARID1A Loss,expression
+TP53,Cisplatin,-0.675,B,Ovarian Cancer,Resistance,TP53 Overexpression,expression
+TP53,Carboplatin,-0.675,B,Ovarian Cancer,Resistance,TP53 Overexpression,expression
+BRAF,Vemurafenib,0.35,C,Ovarian Serous Carcinoma,Sensitivity/Response,BRAF V600E,variant
+KRAS,Cetuximab,-0.25,D,Ovarian Cancer,Resistance,KRAS G12D,variant
+ARID1A,Dasatinib,0.25,D,Ovarian Clear Cell Carcinoma,Sensitivity/Response,ARID1A P1175FS*5,variant
+BRAF,Vemurafenib,0.475,B,Ovarian Cancer,Sensitivity/Response,BRAF V600E,variant
+ASS1,Paclitaxel,-0.45,D,Ovarian Cancer,Resistance,ASS1 Loss,expression
+ASS1,Carboplatin,-0.45,D,Ovarian Cancer,Resistance,ASS1 Loss,expression
+ASS1,Cisplatin,-0.45,D,Ovarian Cancer,Resistance,ASS1 Loss,expression
+BRCA1,Niraparib,0.8,A,Epithelial Ovarian Cancer,Sensitivity/Response,BRCA1 Mutation OR BRCA2 Mutation,variant
+ARID1A,Dasatinib,0.475,B,Ovarian Clear Cell Carcinoma,Sensitivity/Response,ARID1A Loss OR ARID1A Wildtype,variant
+CCNE1,Camonsertib,0.25,D,Ovarian Carcinoma,Sensitivity/Response,CCNE1 Amplification,expression
+CCNE1,Lunresertib,0.25,D,Ovarian Carcinoma,Sensitivity/Response,CCNE1 Amplification,expression
+FGFR3,Erdafitinib,0.35,C,Malignant Ovarian Brenner Tumor,Sensitivity/Response,FGFR3 S249C,variant
