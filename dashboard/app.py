@@ -18,11 +18,13 @@ Run from the repo root (not from inside dashboard/):
     streamlit run dashboard/app.py
 """
 
+import io
 import os
 import sys
 import json
 import glob
 import pickle
+import datetime
 
 import streamlit as st
 import torch
@@ -35,13 +37,21 @@ from dotenv import load_dotenv
 # Path setup -- import the real pipeline modules, don't reimplement them
 # ---------------------------------------------------------------------------
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-for p in (ROOT, os.path.join(ROOT, "retrieval"), os.path.join(ROOT, "ranking"), os.path.join(ROOT, "explanation")):
+for p in (ROOT, os.path.join(ROOT, "retrieval"), os.path.join(ROOT, "ranking"), os.path.join(ROOT, "explanation"), os.path.join(ROOT, "report")):
     if p not in sys.path:
         sys.path.append(p)
 
 from subgraph_retriever import SubgraphRetriever          # noqa: E402
 from gnn_model import TreatmentRanker                      # noqa: E402
 from llm_explainer import explain_drug                     # noqa: E402
+from evidence_links import EvidenceLinker                  # noqa: E402
+
+# PDF export needs reportlab; the rest of the dashboard works without it
+try:
+    from build_report import build_pdf                     # noqa: E402
+    REPORT_ERROR = None
+except Exception as _e:  # noqa: BLE001
+    build_pdf, REPORT_ERROR = None, str(_e)
 
 load_dotenv(os.path.join(ROOT, ".env"))
 
@@ -231,6 +241,31 @@ def render_explanation(exp):
     )
 
 
+@st.cache_resource
+def get_linker():
+    """Looks up the real CIViC / PubMed / DGIdb / ChEMBL records behind each graph edge."""
+    return EvidenceLinker()
+
+
+def render_source_links(entries, drug):
+    """Clickable source records for each gene's evidence on one drug."""
+    lines = []
+    for entry, links in get_linker().links_for_entries(entries, drug):
+        if not links:
+            lines.append(f"- **{entry['gene']}**: no source record matched")
+            continue
+        parts = []
+        for l in links:
+            text = f"[{l['label']}]({l['url']})"
+            if l.get("detail") and l["kind"] in ("CIViC", "PubMed", "DGIdb"):
+                text += f" ({l['detail']})"
+            parts.append(text)
+        lines.append(f"- **{entry['gene']}**: " + " · ".join(parts))
+    if lines:
+        st.markdown("**Source records**")
+        st.markdown("\n".join(lines))
+
+
 def evidence_table(entries):
     """Evidence table with a GO function column (top 3 GO terms per gene)."""
     df = pd.DataFrame(entries)
@@ -304,37 +339,50 @@ def render_subgraph(patient_id, summary, max_drugs=10):
     return fig
 
 
-def render_ranking_chart(ranking_df, top_n=10):
-    df = ranking_df.dropna(subset=["GNN score"]).head(top_n).iloc[::-1]
+def render_ranking_chart(ranking_df, n_each=5):
+    """
+    Diverging bar chart of GNN scores: the top candidates (bars to the right)
+    and the strongest contraindications (bars to the left), so opposing
+    evidence is visible instead of being pushed out of a plain top-N list.
+    """
+    scored = ranking_df.dropna(subset=["GNN score"])
+    candidates = scored[scored["Status"] == "Candidate"].sort_values("GNN score", ascending=False).head(n_each)
+    contras = scored[scored["Status"] == "Contraindication"].sort_values("GNN score", ascending=True).head(n_each)
+    df = pd.concat([candidates, contras])
     if df.empty:
         return None
-    fig, ax = plt.subplots(figsize=(7, max(2.5, 0.4 * len(df))))
+    df = df.iloc[::-1]   # barh draws bottom-up; keeps candidates on top
+
+    fig, ax = plt.subplots(figsize=(7, max(2.8, 0.42 * len(df) + 1.0)))
     fig.patch.set_facecolor(SURFACE)
     ax.set_facecolor(SURFACE)
 
     colors = [COLOR_GOOD if s == "Candidate" else COLOR_CRITICAL for s in df["Status"]]
     bars = ax.barh(df["Drug"], df["GNN score"], color=colors, height=0.6)
-    ax.axvline(0, color=GRIDLINE, linewidth=1)
+    ax.axvline(0, color=INK_MUTED, linewidth=1)
     ax.set_xlabel("GNN-predicted relevance score", color=INK_SECONDARY, fontsize=9)
     ax.tick_params(colors=INK_SECONDARY, labelsize=9)
     for spine in ("top", "right", "left"):
         ax.spines[spine].set_visible(False)
     ax.spines["bottom"].set_color(GRIDLINE)
+    ax.margins(x=0.18)   # room for the value labels on both sides
 
+    span = float(df["GNN score"].abs().max()) or 1.0
     for bar, val in zip(bars, df["GNN score"]):
         ax.text(
-            val + (0.004 if val >= 0 else -0.004),
+            val + (0.015 * span if val >= 0 else -0.015 * span),
             bar.get_y() + bar.get_height() / 2,
-            f"{val:.3f}",
+            f"{val:+.3f}",
             va="center", ha="left" if val >= 0 else "right",
             fontsize=8, color=INK,
         )
 
     legend_elems = [
-        plt.Rectangle((0, 0), 1, 1, color=COLOR_GOOD, label="Candidate"),
-        plt.Rectangle((0, 0), 1, 1, color=COLOR_CRITICAL, label="Contraindication"),
+        plt.Rectangle((0, 0), 1, 1, color=COLOR_GOOD, label="Candidate (supporting evidence)"),
+        plt.Rectangle((0, 0), 1, 1, color=COLOR_CRITICAL, label="Contraindication (opposing evidence)"),
     ]
-    ax.legend(handles=legend_elems, loc="lower right", frameon=False, fontsize=8, labelcolor=INK_SECONDARY)
+    ax.legend(handles=legend_elems, loc="upper center", bbox_to_anchor=(0.5, -0.2),
+              ncol=2, frameon=False, fontsize=8, labelcolor=INK_SECONDARY)
     fig.tight_layout()
     return fig
 
@@ -481,6 +529,8 @@ with tab_ranking:
         chart_fig = render_ranking_chart(ranking_df)
         if chart_fig is not None:
             st.pyplot(chart_fig, use_container_width=True)
+            st.caption("Shows the 5 highest-scoring candidates and the 5 strongest contraindications "
+                       "(lowest GNN scores). The full list is in the table below.")
     st.dataframe(ranking_df, use_container_width=True, hide_index=True)
 
     st.subheader("Evidence-grounded explanations")
@@ -511,6 +561,8 @@ with tab_ranking:
         top_candidates = [(c["drug"], None, c) for c in summary["candidates"][:3]]
         top_contras = [(c["drug"], None, c) for c in summary["contraindications"][:3]]
 
+    report_sections = []   # filled by explanation_block, used by the export below
+
     def explanation_block(drug, gnn_score, evidence, is_candidate):
         status_label = "CANDIDATE" if is_candidate else "CONTRAINDICATION"
         color = COLOR_GOOD if is_candidate else COLOR_CRITICAL
@@ -528,10 +580,13 @@ with tab_ranking:
             if opposing:
                 st.markdown("**Opposing evidence**")
                 st.table(evidence_table(opposing))
+            render_source_links(supporting + opposing, drug)
 
             st.markdown("**Explanation**")
             state_key = f"explanation_{patient_id}_{drug}"
             exp = st.session_state.get(state_key) or cached_explanations.get(drug)
+            report_sections.append({"drug": drug, "status": status_label, "gnn_score": gnn_score,
+                                    "evidence": evidence, "explanation": exp})
 
             if exp is not None:
                 render_explanation(exp)
@@ -568,6 +623,53 @@ with tab_ranking:
         st.markdown("#### Top contraindications")
         for drug, score, evidence in top_contras:
             explanation_block(drug, score, evidence, is_candidate=False)
+
+    # -- Export -------------------------------------------------------------
+    st.subheader("Export report")
+    st.caption("Exports the drugs shown above with their evidence, source links and claim-level "
+               "verification. Generate any missing explanations first.")
+    ex_pdf, ex_json = st.columns(2)
+
+    if build_pdf is None:
+        ex_pdf.info(f"PDF export needs reportlab. Run: pip install reportlab  ({REPORT_ERROR})")
+    else:
+        try:
+            png = None
+            try:
+                buf = io.BytesIO()
+                fig.savefig(buf, format="png", dpi=150, bbox_inches="tight")
+                png = buf.getvalue()
+            except Exception:  # noqa: BLE001
+                png = None   # report is still useful without the figure
+            pdf_bytes = build_pdf(
+                patient_id, summary, ranking_df.to_dict("records"), report_sections,
+                linker=get_linker(), subgraph_png=png,
+                genes_rows=genes_df.to_dict("records"), coverage_note=coverage_note,
+            )
+            ex_pdf.download_button("Download PDF report", data=pdf_bytes,
+                                   file_name=f"{patient_id}_evidence_report.pdf", mime="application/pdf")
+        except Exception as e:  # noqa: BLE001
+            ex_pdf.error(f"Could not build the PDF report: {e}")
+
+    try:
+        payload = {
+            "patient_id": patient_id,
+            "generated": datetime.date.today().isoformat(),
+            "disclaimer": "Research prototype. Not for clinical use.",
+            "summary": summary,
+            "drugs": [
+                {**sec,
+                 "source_links": {
+                     e["gene"]: links for e, links in get_linker().links_for_entries(
+                         sec["evidence"].get("supporting_genes", []) + sec["evidence"].get("opposing_genes", []),
+                         sec["drug"])}}
+                for sec in report_sections
+            ],
+        }
+        ex_json.download_button("Download data (JSON)", data=json.dumps(payload, indent=2, default=str),
+                                file_name=f"{patient_id}_evidence_report.json", mime="application/json")
+    except Exception as e:  # noqa: BLE001
+        ex_json.error(f"Could not build the JSON export: {e}")
 
 with tab_eval:
     st.subheader("Model evaluation")
