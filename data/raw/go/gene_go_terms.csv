@@ -441,31 +441,6 @@ BRCA2,GO:0030674,protein-macromolecule adaptor activity,MF,IDA
 BRCA2,GO:0042802,identical protein binding,MF,IPI
 BRCA2,GO:0043015,gamma-tubulin binding,MF,IPI
 BRCA2,GO:0140678,molecular function inhibitor activity,MF,IDA
-BRIP1,GO:0000077,DNA damage checkpoint signaling,BP,NAS
-BRIP1,GO:0006281,DNA repair,BP,IEA
-BRIP1,GO:0006281,DNA repair,BP,NAS
-BRIP1,GO:0006289,nucleotide-excision repair,BP,IBA
-BRIP1,GO:0006302,double-strand break repair,BP,NAS
-BRIP1,GO:0006357,regulation of transcription by RNA polymerase II,BP,IDA
-BRIP1,GO:0035825,homologous recombination,BP,NAS
-BRIP1,GO:0106300,protein-DNA covalent cross-linking repair,BP,IDA
-BRIP1,GO:1990918,double-strand break repair involved in meiotic recombination,BP,IBA
-BRIP1,GO:0003676,nucleic acid binding,MF,IEA
-BRIP1,GO:0003677,DNA binding,MF,IEA
-BRIP1,GO:0003677,DNA binding,MF,NAS
-BRIP1,GO:0003678,DNA helicase activity,MF,IBA
-BRIP1,GO:0003678,DNA helicase activity,MF,IEA
-BRIP1,GO:0003678,DNA helicase activity,MF,NAS
-BRIP1,GO:0004386,helicase activity,MF,IEA
-BRIP1,GO:0005515,protein binding,MF,IPI
-BRIP1,GO:0005524,ATP binding,MF,IEA
-BRIP1,GO:0016818,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",MF,IEA
-BRIP1,GO:0016887,ATP hydrolysis activity,MF,EXP
-BRIP1,GO:0016887,ATP hydrolysis activity,MF,IEA
-BRIP1,GO:0043139,5'-3' DNA helicase activity,MF,EXP
-BRIP1,GO:0043139,5'-3' DNA helicase activity,MF,IDA
-BRIP1,GO:0043139,5'-3' DNA helicase activity,MF,IEA
-BRIP1,GO:0160225,G-quadruplex unwinding activity,MF,IDA
 CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IBA
 CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IDA
 CCND1,GO:0000082,G1/S transition of mitotic cell cycle,BP,IEA
@@ -919,6 +894,54 @@ ERCC1,GO:0003697,single-stranded DNA binding,MF,IDA
 ERCC1,GO:0005515,protein binding,MF,IPI
 ERCC1,GO:1990599,3' overhang single-stranded DNA endonuclease activity,MF,IMP
 ERCC1,GO:1990841,promoter-specific chromatin binding,MF,IEA
+FGFR3,GO:0000165,MAPK cascade,BP,TAS
+FGFR3,GO:0001501,skeletal system development,BP,TAS
+FGFR3,GO:0001503,ossification,BP,IEA
+FGFR3,GO:0001958,endochondral ossification,BP,TAS
+FGFR3,GO:0002062,chondrocyte differentiation,BP,TAS
+FGFR3,GO:0003416,endochondral bone growth,BP,TAS
+FGFR3,GO:0007259,cell surface receptor signaling pathway via JAK-STAT,BP,IMP
+FGFR3,GO:0008284,positive regulation of cell population proliferation,BP,IBA
+FGFR3,GO:0008284,positive regulation of cell population proliferation,BP,IEA
+FGFR3,GO:0008284,positive regulation of cell population proliferation,BP,IGI
+FGFR3,GO:0008284,positive regulation of cell population proliferation,BP,IMP
+FGFR3,GO:0008543,fibroblast growth factor receptor signaling pathway,BP,IBA
+FGFR3,GO:0008543,fibroblast growth factor receptor signaling pathway,BP,IDA
+FGFR3,GO:0008543,fibroblast growth factor receptor signaling pathway,BP,IEA
+FGFR3,GO:0008543,fibroblast growth factor receptor signaling pathway,BP,IGI
+FGFR3,GO:0008543,fibroblast growth factor receptor signaling pathway,BP,TAS
+FGFR3,GO:0010518,positive regulation of phospholipase activity,BP,IMP
+FGFR3,GO:0030282,bone mineralization,BP,ISS
+FGFR3,GO:0035988,chondrocyte proliferation,BP,TAS
+FGFR3,GO:0042531,positive regulation of tyrosine phosphorylation of STAT protein,BP,IMP
+FGFR3,GO:0043410,positive regulation of MAPK cascade,BP,IBA
+FGFR3,GO:0043410,positive regulation of MAPK cascade,BP,IEA
+FGFR3,GO:0043410,positive regulation of MAPK cascade,BP,IMP
+FGFR3,GO:0048640,negative regulation of developmental growth,BP,ISS
+FGFR3,GO:0051216,cartilage development,BP,IEA
+FGFR3,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,IMP
+FGFR3,GO:0051897,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,BP,TAS
+FGFR3,GO:0060349,bone morphogenesis,BP,IEA
+FGFR3,GO:0060349,bone morphogenesis,BP,ISS
+FGFR3,GO:0060349,bone morphogenesis,BP,TAS
+FGFR3,GO:0070374,positive regulation of ERK1 and ERK2 cascade,BP,IMP
+FGFR3,GO:0070977,bone maturation,BP,ISS
+FGFR3,GO:1902178,fibroblast growth factor receptor apoptotic signaling pathway,BP,IMP
+FGFR3,GO:0004672,protein kinase activity,MF,IEA
+FGFR3,GO:0004713,protein tyrosine kinase activity,MF,IDA
+FGFR3,GO:0004713,protein tyrosine kinase activity,MF,IEA
+FGFR3,GO:0004714,transmembrane receptor protein tyrosine kinase activity,MF,IEA
+FGFR3,GO:0005007,fibroblast growth factor receptor activity,MF,IBA
+FGFR3,GO:0005007,fibroblast growth factor receptor activity,MF,IEA
+FGFR3,GO:0005007,fibroblast growth factor receptor activity,MF,IMP
+FGFR3,GO:0005007,fibroblast growth factor receptor activity,MF,TAS
+FGFR3,GO:0005515,protein binding,MF,IPI
+FGFR3,GO:0005524,ATP binding,MF,IEA
+FGFR3,GO:0017134,fibroblast growth factor binding,MF,IBA
+FGFR3,GO:0017134,fibroblast growth factor binding,MF,IDA
+FGFR3,GO:0017134,fibroblast growth factor binding,MF,IEA
+FGFR3,GO:0017134,fibroblast growth factor binding,MF,IPI
+FGFR3,GO:0042802,identical protein binding,MF,IPI
 FNTB,GO:0008284,positive regulation of cell population proliferation,BP,IEA
 FNTB,GO:0018343,protein farnesylation,BP,IDA
 FNTB,GO:0045787,positive regulation of cell cycle,BP,IEA
@@ -1448,31 +1471,6 @@ RAD51,GO:0031491,nucleosome binding,MF,IDA
 RAD51,GO:0042802,identical protein binding,MF,IPI
 RAD51,GO:0070182,DNA polymerase binding,MF,IPI
 RAD51,GO:0140664,ATP-dependent DNA damage sensor activity,MF,IEA
-RAD51C,GO:0000707,meiotic DNA recombinase assembly,BP,IBA
-RAD51C,GO:0000722,telomere maintenance via recombination,BP,IEA
-RAD51C,GO:0000724,double-strand break repair via homologous recombination,BP,IMP
-RAD51C,GO:0000724,double-strand break repair via homologous recombination,BP,NAS
-RAD51C,GO:0006281,DNA repair,BP,IDA
-RAD51C,GO:0006281,DNA repair,BP,IEA
-RAD51C,GO:0006281,DNA repair,BP,TAS
-RAD51C,GO:0006302,double-strand break repair,BP,IEA
-RAD51C,GO:0006310,DNA recombination,BP,IDA
-RAD51C,GO:0006310,DNA recombination,BP,TAS
-RAD51C,GO:0007062,sister chromatid cohesion,BP,ISS
-RAD51C,GO:0007131,reciprocal meiotic recombination,BP,IBA
-RAD51C,GO:0010971,positive regulation of G2/M transition of mitotic cell cycle,BP,IMP
-RAD51C,GO:0031297,replication fork processing,BP,IDA
-RAD51C,GO:0097435,supramolecular fiber organization,BP,IDA
-RAD51C,GO:0000400,four-way junction DNA binding,MF,IBA
-RAD51C,GO:0000400,four-way junction DNA binding,MF,IDA
-RAD51C,GO:0003677,DNA binding,MF,IEA
-RAD51C,GO:0003677,DNA binding,MF,TAS
-RAD51C,GO:0005515,protein binding,MF,IPI
-RAD51C,GO:0005524,ATP binding,MF,IEA
-RAD51C,GO:0008821,crossover junction DNA endonuclease activity,MF,IBA
-RAD51C,GO:0008821,crossover junction DNA endonuclease activity,MF,IEA
-RAD51C,GO:0008821,crossover junction DNA endonuclease activity,MF,IMP
-RAD51C,GO:0140664,ATP-dependent DNA damage sensor activity,MF,IEA
 SYK,GO:0001775,cell activation,BP,IEA
 SYK,GO:0001775,cell activation,BP,ISS
 SYK,GO:0001945,lymph vessel development,BP,IEA

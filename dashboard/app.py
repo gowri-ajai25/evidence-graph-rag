@@ -4,12 +4,12 @@ Streamlit front end for the Evidence-Aware Graph-RAG ovarian cancer treatment
 ranking pipeline.
 
 This connects directly to the project's real components -- no mock data:
-  - retrieval/subgraph_retriever.py  -> live Neo4j queries
-  - ranking/gnn_model.py + data/processed/best_gnn_model.pt -> trained GraphSAGE ranker
-  - explanation/llm_explainer.py     -> Groq / Llama-3.3-70B grounded explanations
-      (falls back to the pre-generated data/processed/explanations_*.json
-      files when a live Groq call isn't wanted, and generates fresh ones
-      on demand via a button)
+- retrieval/subgraph_retriever.py  -> live Neo4j queries
+- ranking/gnn_model.py + data/processed/best_gnn_model.pt -> trained GraphSAGE ranker
+- explanation/llm_explainer.py     -> Groq / Llama-3.3-70B grounded explanations
+(falls back to the pre-generated data/processed/explanations_*.json
+files when a live Groq call isn't wanted, and generates fresh ones
+on demand via a button)
 
 Gene Ontology (GO) function terms retrieved from the knowledge graph are
 shown alongside genes as functional context.
