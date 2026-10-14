@@ -9,6 +9,11 @@ uninterpretable to a clinician on its own.
 
 Each gene's Gene Ontology (GO) function terms, retrieved from the knowledge
 graph, are included in the evidence as functional context.
+
+Faithfulness verification: every retrieved evidence line gets an ID (E1, E2, ...)
+and the LLM must return structured claims that cite those IDs. Each claim is then
+checked against the cited graph edges by faithfulness.py, and unsupported claims
+are flagged rather than silently shown.
 """
 
 from dotenv import load_dotenv
@@ -19,11 +24,15 @@ import pickle
 import os
 import sys
 import json
+import re
+import unicodedata
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "retrieval"))
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "ranking"))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from subgraph_retriever import SubgraphRetriever
 from gnn_model import TreatmentRanker
+from faithfulness import verify_explanation
 
 load_dotenv()
 
@@ -31,6 +40,8 @@ NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USER = os.getenv("NEO4J_USER")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# llama-3.3-70b-versatile was retired by Groq on 2026-08-16; override with GROQ_MODEL in .env
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 
 
 def load_gnn_and_graph():
@@ -43,7 +54,7 @@ def load_gnn_and_graph():
     model.load_state_dict(checkpoint["model_state"])
     model.eval()
 
-    return model, data, patient_idx, drug_idx
+    return model, data, patient_idx, drug_idx, gene_idx
 
 
 def get_gnn_ranked_drugs(model, data, patient_idx, drug_idx, patient_id):
@@ -76,12 +87,33 @@ def build_evidence_prompt(patient_id, drug_name, supporting_genes, opposing_gene
     supplied subgraph facts -- never the GNN's raw numeric score, which is
     not independently interpretable -- and is told explicitly whether this
     is being presented as a candidate or a contraindication.
+
+    Every evidence line gets an ID (E1, E2, ...). The LLM must cite these IDs
+    in structured JSON claims so each claim can be verified against the graph.
+
+    Returns (prompt, evidence_index) where evidence_index maps each ID to
+    {"side", "gene", "drug", "evidence_score"} for the verifier.
     """
     evidence_lines = []
+    evidence_index = {}
+
+    def new_id(side, g):
+        eid = f"E{len(evidence_index) + 1}"
+        evidence_index[eid] = {
+            "side": side,
+            "gene": g["gene"],
+            "drug": drug_name,
+            "evidence_score": float(g["evidence_score"]),
+            "source": str(g.get("evidence_source") or ""),
+            "protein_change": (str(g["protein_change"])
+                               if g.get("protein_change") not in (None, "nan", "None", "") else None),
+        }
+        return eid
 
     for g in supporting_genes:
+        eid = new_id("SUPPORTING", g)
         line = (
-            f"- SUPPORTING: Gene {g['gene']} | Mutation: {g['mutation_type']} "
+            f"- [{eid}] SUPPORTING: Gene {g['gene']} | Mutation: {g['mutation_type']} "
             f"({g['protein_change'] or 'protein change not recorded'}) "
             f"-> {g['relationship_type']} -> {drug_name} "
             f"| Evidence score: {g['evidence_score']:.3f} | Source: {g['evidence_source']}"
@@ -95,8 +127,9 @@ def build_evidence_prompt(patient_id, drug_name, supporting_genes, opposing_gene
         evidence_lines.append(line)
 
     for g in opposing_genes:
+        eid = new_id("OPPOSING", g)
         line = (
-            f"- OPPOSING: Gene {g['gene']} | Mutation: {g['mutation_type']} "
+            f"- [{eid}] OPPOSING: Gene {g['gene']} | Mutation: {g['mutation_type']} "
             f"({g['protein_change'] or 'protein change not recorded'}) "
             f"-> {g['relationship_type']} -> {drug_name} "
             f"| Evidence score: {g['evidence_score']:.3f} | Source: {g['evidence_source']}"
@@ -114,8 +147,8 @@ def build_evidence_prompt(patient_id, drug_name, supporting_genes, opposing_gene
             f"Write a concise (3-4 sentence) clinical reasoning explanation for why {drug_name} "
             f"is being suggested as a CANDIDATE treatment worth clinician review for this patient, "
             f"based strictly on the SUPPORTING evidence above. If any OPPOSING evidence is also listed, "
-            f"acknowledge it honestly and note it tempers confidence. End by stating the overall evidence "
-            f"strength (strong/moderate/limited)."
+            f"acknowledge it honestly and note it tempers confidence. Give the overall evidence "
+            f"strength (strong/moderate/limited) in the evidence_strength field."
         )
     else:
         instruction = (
@@ -136,49 +169,121 @@ RETRIEVED EVIDENCE PATHS:
 
 {instruction}"""
 
-    return prompt
+    # Output contract (plain concatenation, so the JSON braces need no escaping)
+    prompt += (
+        "\n\nReturn ONLY valid JSON, with no other text, in exactly this form:\n"
+        '{"claims": [{"text": "<one sentence>", "cites": ["E1"], '
+        '"stance": "supports|opposes|neutral"}], '
+        '"evidence_strength": "strong|moderate|limited"}\n'
+        "Rules: write 3-4 claims, one sentence each; every claim must cite at least one "
+        "evidence ID from the list above and only IDs that exist; use stance \"supports\" or "
+        "\"opposes\" to say which way the cited evidence points for this drug (\"neutral\" only "
+        "for caveats); quote evidence scores exactly as given; name no gene or drug that is "
+        "not listed above."
+    )
+
+    return prompt, evidence_index
 
 
 def generate_explanation(client, prompt):
+    """Returns the raw JSON string produced by the LLM."""
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model=GROQ_MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
-        max_tokens=300
+        max_tokens=2000,   # reasoning models spend part of this budget on hidden reasoning
+        response_format={"type": "json_object"},
     )
     return response.choices[0].message.content
 
 
-def main():
-    print("Generating LLM explanations using GNN-ranked treatments...")
-    print("=" * 60)
+def _clean_text(t):
+    """
+    Models sometimes emit invisible space characters (narrow no-break space, zero-width
+    space, ...) that render as missing spaces. Turn any such separator into a plain
+    space, drop soft hyphens, and make non-breaking hyphens ordinary hyphens.
+    """
+    out = []
+    for ch in str(t):
+        cat = unicodedata.category(ch)
+        if ch == "\u00ad":
+            continue
+        if ch == "\u2011":
+            out.append("-")
+        elif ch in "\t\r\n" or (ch != " " and cat in ("Zs", "Cf")):
+            out.append(" ")
+        else:
+            out.append(ch)
+    return re.sub(r" {2,}", " ", "".join(out)).strip()
 
-    print("\n[1/4] Loading GNN model and graph...")
-    model, data, patient_idx, drug_idx = load_gnn_and_graph()
 
-    print("\n[2/4] Selecting patient...")
-    retriever = SubgraphRetriever(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)
-    target_patient = "TCGA-24-2289"
-    print(f"   Patient: {target_patient}")
+def explain_drug(client, patient_id, drug, supporting, opposing, gnn_score,
+                 is_candidate, known_genes, known_drugs):
+    """
+    Generates a structured explanation for one drug and verifies every claim
+    against the retrieved evidence. Used by both main() and the dashboard.
 
-    print("\n[3/4] Getting GNN-ranked drugs and evidence subgraph...")
-    gnn_ranked = get_gnn_ranked_drugs(model, data, patient_idx, drug_idx, target_patient)
-    summary = retriever.get_patient_subgraph_summary(target_patient)
-    retriever.close()
+    Returns a dict with:
+      explanation       readable text (claims joined)
+      evidence_strength strong / moderate / limited, as stated by the LLM
+      evidence_index    {"E1": {...}} the edges the LLM was allowed to cite
+      verification      per-claim status + overall faithfulness score
+    If the LLM output is not valid JSON, the raw text is returned with
+    verification["faithfulness"] = None and an error message.
+    """
+    prompt, evidence_index = build_evidence_prompt(
+        patient_id, drug, supporting, opposing, gnn_score, is_candidate
+    )
+    raw = generate_explanation(client, prompt)
 
+    try:
+        parsed = json.loads(raw)
+        if not isinstance(parsed.get("claims"), list) or not parsed["claims"]:
+            raise ValueError("no claims in LLM output")
+    except (json.JSONDecodeError, ValueError, AttributeError) as e:
+        return {
+            "explanation": raw,
+            "evidence_index": evidence_index,
+            "verification": {"claims": [], "faithfulness": None,
+                             "error": f"LLM output could not be verified: {e}"},
+        }
+
+    for c in parsed["claims"]:
+        if isinstance(c, dict) and "text" in c:
+            c["text"] = _clean_text(c["text"])
+
+    verification = verify_explanation(parsed, evidence_index, drug, known_genes, known_drugs)
+    return {
+        "explanation": " ".join(str(c.get("text", "")) for c in parsed["claims"] if isinstance(c, dict)),
+        "evidence_strength": parsed.get("evidence_strength"),
+        "evidence_index": evidence_index,
+        "verification": verification,
+    }
+
+
+DEFAULT_PATIENTS = ["TCGA-24-2289", "TCGA-24-1466", "TCGA-13-1497"]
+
+
+def explain_patient(patient_id, retriever, client, model, data, patient_idx, drug_idx,
+                    known_genes, known_drugs):
+    """Generates and verifies explanations for one patient. Returns the result dict, or None."""
+    if patient_id not in patient_idx:
+        print(f"   {patient_id} is not in the exported graph snapshot -- skipping")
+        return None
+
+    gnn_ranked = get_gnn_ranked_drugs(model, data, patient_idx, drug_idx, patient_id)
+    summary = retriever.get_patient_subgraph_summary(patient_id)
     if not summary:
-        print("No subgraph found for this patient.")
-        return
+        print(f"   No subgraph found for {patient_id} -- skipping")
+        return None
 
     candidate_drugs = {c["drug"]: c for c in summary["candidates"]}
     contraindication_drugs = {c["drug"]: c for c in summary["contraindications"]}
 
     # Walk GNN ranking top-down, pick top 2 candidates and top 2 contraindications
-    # that actually have retrievable evidence (GNN ranks ALL 39 drugs, most won't
+    # that actually have retrievable evidence (GNN ranks ALL drugs, most won't
     # have evidence for this specific patient's genes)
-    top_candidates = []
-    top_contraindications = []
-
+    top_candidates, top_contraindications = [], []
     for drug, gnn_score in gnn_ranked:
         if drug in candidate_drugs and len(top_candidates) < 2:
             top_candidates.append((drug, gnn_score, candidate_drugs[drug]))
@@ -187,41 +292,81 @@ def main():
         if len(top_candidates) >= 2 and len(top_contraindications) >= 2:
             break
 
+    results = {"patient_id": patient_id, "candidates": [], "contraindications": []}
+
+    for label, bucket, is_candidate in (
+        ("CANDIDATE", top_candidates, True),
+        ("CONTRAINDICATION", top_contraindications, False),
+    ):
+        for drug, gnn_score, evidence in bucket:
+            print(f"\n{label}: {drug} (GNN score: {gnn_score:.4f})")
+            try:
+                result = explain_drug(
+                    client, patient_id, drug,
+                    evidence.get("supporting_genes", []), evidence.get("opposing_genes", []),
+                    gnn_score, is_candidate, known_genes, known_drugs,
+                )
+            except Exception as e:  # noqa: BLE001  (network / API errors)
+                print(f"   Explanation failed ({type(e).__name__}): {e}")
+                continue
+
+            ver = result["verification"]
+            if ver.get("faithfulness") is None:
+                print(f"   NOT VERIFIED: {ver.get('error')}")
+            else:
+                print(f"   faithfulness {ver['faithfulness']:.0%} "
+                      f"({ver['n_supported']} supported, {ver['n_partial']} partial, "
+                      f"{ver['n_unsupported']} unsupported)")
+                for c in ver["claims"]:
+                    flag = "" if c["status"] == "supported" else f"  <-- {c['status'].upper()}: {'; '.join(c['issues'])}"
+                    print(f"   [{c['status']}] {c['text']}{flag}")
+
+            key = "candidates" if is_candidate else "contraindications"
+            results[key].append({"drug": drug, "gnn_score": gnn_score, **result})
+
+    return results
+
+
+def main():
+    patients = sys.argv[1:] or DEFAULT_PATIENTS
+
+    print("Generating verified LLM explanations using GNN-ranked treatments...")
+    print("=" * 60)
+
+    print("\n[1/3] Loading GNN model and graph...")
+    model, data, patient_idx, drug_idx, gene_idx = load_gnn_and_graph()
+    known_genes, known_drugs = list(gene_idx), list(drug_idx)
+
+    print("\n[2/3] Connecting to Neo4j and Groq...")
+    if not GROQ_API_KEY:
+        print("GROQ_API_KEY is not set in .env")
+        return
+    retriever = SubgraphRetriever(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)
     client = Groq(api_key=GROQ_API_KEY)
-    results = {"patient_id": target_patient, "candidates": [], "contraindications": []}
 
-    print(f"\n[4/4] Generating explanations...")
-    print("-" * 60)
-
-    for drug, gnn_score, evidence in top_candidates:
-        print(f"\nCANDIDATE: {drug} (GNN score: {gnn_score:.4f})")
-        prompt = build_evidence_prompt(
-            target_patient, drug, evidence["supporting_genes"], evidence.get("opposing_genes", []),
-            gnn_score, is_candidate=True
-        )
-        explanation = generate_explanation(client, prompt)
-        print(explanation)
-        results["candidates"].append({
-            "drug": drug, "gnn_score": gnn_score, "explanation": explanation
-        })
-
-    for drug, gnn_score, evidence in top_contraindications:
-        print(f"\nCONTRAINDICATION: {drug} (GNN score: {gnn_score:.4f})")
-        prompt = build_evidence_prompt(
-            target_patient, drug, evidence.get("supporting_genes", []), evidence["opposing_genes"],
-            gnn_score, is_candidate=False
-        )
-        explanation = generate_explanation(client, prompt)
-        print(explanation)
-        results["contraindications"].append({
-            "drug": drug, "gnn_score": gnn_score, "explanation": explanation
-        })
-
-    out_path = f"data/processed/explanations_{target_patient}.json"
-    with open(out_path, "w") as f:
-        json.dump(results, f, indent=2)
-
-    print(f"\n\nSaved to {out_path}")
+    print(f"\n[3/3] Generating explanations for {len(patients)} patient(s)...")
+    os.makedirs("data/processed", exist_ok=True)
+    try:
+        for patient_id in patients:
+            print("\n" + "-" * 60)
+            print(f"Patient: {patient_id}")
+            results = explain_patient(patient_id, retriever, client, model, data,
+                                      patient_idx, drug_idx, known_genes, known_drugs)
+            if results is None:
+                continue
+            if not (results["candidates"] or results["contraindications"]):
+                print(f"\n   No explanations were generated for {patient_id}; "
+                      f"keeping any existing file untouched")
+                continue
+            out_path = f"data/processed/explanations_{patient_id}.json"
+            try:
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(results, f, indent=2)
+                print(f"\n   Saved to {out_path}")
+            except OSError as e:
+                print(f"\n   Could not save {out_path}: {e}")
+    finally:
+        retriever.close()
 
 
 if __name__ == "__main__":

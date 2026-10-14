@@ -2,26 +2,210 @@
   "patient_id": "TCGA-24-2289",
   "candidates": [
     {
-      "drug": "Erlotinib",
-      "gnn_score": 0.01007014699280262,
-      "explanation": "For patient TCGA-24-2289, Erlotinib is suggested as a candidate treatment worth clinician review due to the presence of a missense mutation (p.K716R) in the EGFR gene, which is targeted by Erlotinib. The evidence supporting this suggestion is based on a retrieved path from the DGIdb source, with an evidence score of 0.142. There is no opposing evidence listed to temper the confidence in this suggestion. The overall evidence strength for recommending Erlotinib is limited, primarily due to the relatively low evidence score."
+      "drug": "CHEMBL:CHEMBL267160",
+      "gnn_score": 0.15030886232852936,
+      "explanation": "The patient harbors a TP53 nonsense mutation (p.R196*) that is a known target of CHEMBL:CHEMBL267160. CHEMBL:CHEMBL267160 is linked to targeting TP53 alterations, suggesting potential therapeutic relevance for this tumor. Given TP53\u2019s role in DNA damage response and apoptosis, inhibiting its mutant activity with CHEMBL:CHEMBL267160 may modulate tumor biology.",
+      "evidence_strength": "limited",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "TP53",
+          "drug": "CHEMBL:CHEMBL267160",
+          "evidence_score": 0.142,
+          "source": "DGIdb",
+          "protein_change": "p.R196*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The patient harbors a TP53 nonsense mutation (p.R196*) that is a known target of CHEMBL:CHEMBL267160.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "CHEMBL:CHEMBL267160 is linked to targeting TP53 alterations, suggesting potential therapeutic relevance for this tumor.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Given TP53\u2019s role in DNA damage response and apoptosis, inhibiting its mutant activity with CHEMBL:CHEMBL267160 may modulate tumor biology.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     },
     {
-      "drug": "Gefitinib",
-      "gnn_score": 0.006136139389127493,
-      "explanation": "The patient TCGA-24-2289 has a missense mutation (p.K716R) in the EGFR gene, which is targeted by Gefitinib, according to evidence from DGIdb. This suggests that Gefitinib may be an effective treatment option for this patient. Although the evidence score is relatively low at 0.142, it still provides some support for considering Gefitinib as a candidate treatment. The overall evidence strength for this recommendation is limited, as there is no opposing evidence to temper confidence, but the low evidence score indicates that further review and consideration are necessary."
+      "drug": "CHLORFENAPYR",
+      "gnn_score": 0.15030871331691742,
+      "explanation": "CHLORFENAPYR is predicted to target the TP53 nonsense mutation p.R196* identified in this patient\u2019s tumor. The TP53 p.R196* mutation disrupts DNA damage response, signal transduction, and apoptotic processes, providing a mechanistic rationale for CHLORFENAPYR therapy. DGIdb reports this drug-gene interaction with an evidence score of 0.142, indicating a modest level of supporting data.",
+      "evidence_strength": "limited",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "TP53",
+          "drug": "CHLORFENAPYR",
+          "evidence_score": 0.142,
+          "source": "DGIdb",
+          "protein_change": "p.R196*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "CHLORFENAPYR is predicted to target the TP53 nonsense mutation p.R196* identified in this patient\u2019s tumor.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "The TP53 p.R196* mutation disrupts DNA damage response, signal transduction, and apoptotic processes, providing a mechanistic rationale for CHLORFENAPYR therapy.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "DGIdb reports this drug-gene interaction with an evidence score of 0.142, indicating a modest level of supporting data.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     }
   ],
   "contraindications": [
     {
       "drug": "Doxorubicin",
-      "gnn_score": -0.1444185972213745,
-      "explanation": "The patient TCGA-24-2289 has a missense mutation (p.D2299V) in the LRP1B gene, which has been associated with clinical evidence of resistance to Doxorubicin, as indicated by a negative evidence score of -0.250 from the CIViC source. This opposing evidence suggests that Doxorubicin may not be an effective treatment option for this patient, flagging it as a potential contraindication. Although there is no supporting evidence listed to outweigh this opposition, it is essential to note that this caution flag does not guarantee treatment failure, but rather serves as a warning for clinician review to consider alternative treatment options. As such, clinicians should exercise caution and carefully evaluate the potential risks and benefits of using Doxorubicin in this patient."
+      "gnn_score": 0.00039385256241075695,
+      "explanation": "The missense mutation LRP1B p.D2299V is associated with resistance to Doxorubicin (evidence score -0.250). Because LRP1B functions in calcium ion binding and protein binding, the p.D2299V alteration may impair Doxorubicin efficacy, flagging it as a potential contraindication. Clinicians should review this opposing evidence before prescribing Doxorubicin to this patient.",
+      "evidence_strength": "moderate",
+      "evidence_index": {
+        "E1": {
+          "side": "OPPOSING",
+          "gene": "LRP1B",
+          "drug": "Doxorubicin",
+          "evidence_score": -0.25,
+          "source": "CIViC",
+          "protein_change": "p.D2299V"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The missense mutation LRP1B p.D2299V is associated with resistance to Doxorubicin (evidence score -0.250).",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Because LRP1B functions in calcium ion binding and protein binding, the p.D2299V alteration may impair Doxorubicin efficacy, flagging it as a potential contraindication.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Clinicians should review this opposing evidence before prescribing Doxorubicin to this patient.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     },
     {
       "drug": "Carboplatin",
-      "gnn_score": -0.2925248444080353,
-      "explanation": "The patient TCGA-24-2289 has a TP53 nonsense mutation (p.R196*) that is associated with clinical evidence of resistance to Carboplatin, as indicated by the opposing evidence path with a score of -0.475 from CIViC. Although there is also supporting evidence from DGIdb suggesting that TP53 mutations can be targeted by Carboplatin, the opposing evidence outweighs it due to its direct clinical significance of resistance. This opposing evidence serves as a caution flag, suggesting that Carboplatin may not be the most effective treatment option for this patient, and warrants careful review by the clinician. As a result, Carboplatin is flagged as a potential contraindication for this patient, requiring further evaluation to determine the best course of treatment."
+      "gnn_score": -0.39933913946151733,
+      "explanation": "The TP53 nonsense mutation (p.R196*) is associated with resistance to Carboplatin. Given the resistance evidence (score -0.475), clinicians should exercise caution before prescribing Carboplatin. Overall, the opposing evidence outweighs any potential benefit, flagging Carboplatin as a contraindication for this patient.",
+      "evidence_strength": "moderate",
+      "evidence_index": {
+        "E1": {
+          "side": "OPPOSING",
+          "gene": "TP53",
+          "drug": "Carboplatin",
+          "evidence_score": -0.475,
+          "source": "CIViC",
+          "protein_change": "p.R196*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The TP53 nonsense mutation (p.R196*) is associated with resistance to Carboplatin.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Given the resistance evidence (score -0.475), clinicians should exercise caution before prescribing Carboplatin.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "neutral",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Overall, the opposing evidence outweighs any potential benefit, flagging Carboplatin as a contraindication for this patient.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     }
   ]
 }

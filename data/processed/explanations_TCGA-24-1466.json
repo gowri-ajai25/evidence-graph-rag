@@ -2,21 +2,210 @@
   "patient_id": "TCGA-24-1466",
   "candidates": [
     {
-      "drug": "Olaparib",
-      "gnn_score": 0.3975333273410797,
-      "explanation": "Olaparib is being suggested as a candidate treatment for patient TCGA-24-1466 due to the presence of a missense mutation (p.L996F) in the CDK12 gene, which has clinical evidence supporting its sensitivity/response to Olaparib. Additionally, a missense mutation (p.K486E) in the PALB2 gene is targeted by Olaparib, further supporting its consideration. There is no opposing evidence listed to temper confidence in this suggestion. The overall evidence strength for Olaparib as a treatment candidate is limited, based on the moderate to low evidence scores (0.250 and 0.203) from the CIViC and DGIdb sources."
+      "drug": "CHEMBL:CHEMBL267160",
+      "gnn_score": 0.14404107630252838,
+      "explanation": "The patient harbors a TP53 missense mutation (p.R249G) that is directly targeted by CHEMBL:CHEMBL267160. CHEMBL:CHEMBL267160 shows activity against TP53 mutants with an evidence score of 0.142, indicating a potential therapeutic effect. By targeting TP53, CHEMBL:CHEMBL267160 may influence DNA damage response, signal transduction, and apoptotic processes relevant to ovarian cancer biology.",
+      "evidence_strength": "limited",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "TP53",
+          "drug": "CHEMBL:CHEMBL267160",
+          "evidence_score": 0.142,
+          "source": "DGIdb",
+          "protein_change": "p.R249G"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The patient harbors a TP53 missense mutation (p.R249G) that is directly targeted by CHEMBL:CHEMBL267160.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "CHEMBL:CHEMBL267160 shows activity against TP53 mutants with an evidence score of 0.142, indicating a potential therapeutic effect.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "By targeting TP53, CHEMBL:CHEMBL267160 may influence DNA damage response, signal transduction, and apoptotic processes relevant to ovarian cancer biology.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "drug": "CHLORFENAPYR",
+      "gnn_score": 0.14404092729091644,
+      "explanation": "The patient\u2019s tumor carries a TP53 missense mutation p.R249G that is listed as a target of chlorfenapyr. Chlorfenapyr targets TP53-mutant proteins implicated in DNA damage response, signal transduction, and apoptotic processes, providing a mechanistic rationale for use. The reported evidence score for the TP53-chlorfenapyr interaction is 0.142, indicating modest but present support for clinical consideration.",
+      "evidence_strength": "limited",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "TP53",
+          "drug": "CHLORFENAPYR",
+          "evidence_score": 0.142,
+          "source": "DGIdb",
+          "protein_change": "p.R249G"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The patient\u2019s tumor carries a TP53 missense mutation p.R249G that is listed as a target of chlorfenapyr.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Chlorfenapyr targets TP53-mutant proteins implicated in DNA damage response, signal transduction, and apoptotic processes, providing a mechanistic rationale for use.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "The reported evidence score for the TP53-chlorfenapyr interaction is 0.142, indicating modest but present support for clinical consideration.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     }
   ],
   "contraindications": [
     {
       "drug": "Carboplatin",
-      "gnn_score": -0.3026612401008606,
-      "explanation": "The patient TCGA-24-1466 has a missense mutation (p.R249G) in the TP53 gene, which has clinical evidence suggesting resistance to Carboplatin, as indicated by the opposing evidence path with a score of -0.475 from CIViC. Although there is also supporting evidence from DGIdb with a score of 0.203, the opposing evidence outweighs it, flagging Carboplatin as a potential contraindication for this patient. This caution flag warrants clinician review, as it does not guarantee treatment failure but rather highlights a potential reduced efficacy due to the patient's specific genetic mutation. Clinicians should carefully consider this information when making treatment decisions for the patient."
+      "gnn_score": -0.41591066122055054,
+      "explanation": "The TP53 missense mutation (p.R249G) is associated with resistance to Carboplatin (evidence score -0.475). Because TP53 regulates DNA damage response and apoptotic processes, the p.R249G alteration may reduce carboplatin effectiveness, indicating a potential contraindication. This opposing evidence triggers a caution flag and should prompt clinician review before using carboplatin.",
+      "evidence_strength": "moderate",
+      "evidence_index": {
+        "E1": {
+          "side": "OPPOSING",
+          "gene": "TP53",
+          "drug": "Carboplatin",
+          "evidence_score": -0.475,
+          "source": "CIViC",
+          "protein_change": "p.R249G"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The TP53 missense mutation (p.R249G) is associated with resistance to Carboplatin (evidence score -0.475).",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Because TP53 regulates DNA damage response and apoptotic processes, the p.R249G alteration may reduce carboplatin effectiveness, indicating a potential contraindication.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "This opposing evidence triggers a caution flag and should prompt clinician review before using carboplatin.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "neutral",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     },
     {
       "drug": "Cisplatin",
-      "gnn_score": -0.30582499504089355,
-      "explanation": "The patient TCGA-24-1466 has a missense mutation (p.R249G) in the TP53 gene, which has clinical evidence suggesting resistance to Cisplatin, as indicated by the opposing evidence path with a score of -0.475 from CIViC. Although there is also supporting evidence from DGIdb with a score of 0.203, the opposing evidence outweighs it, indicating a potential contraindication for Cisplatin treatment. This caution flag warrants clinician review, as it suggests that Cisplatin may not be effective for this patient due to the TP53 mutation. The clinician should carefully consider this information when making treatment decisions, as it is a warning sign rather than a guarantee of treatment failure."
+      "gnn_score": -0.419912189245224,
+      "explanation": "The TP53 missense mutation p.R249G is linked to cisplatin resistance (evidence score -0.475), indicating a potential lack of efficacy. Given this resistance association, cisplatin is flagged as a contraindication for the patient. No supporting evidence is listed, so the resistance finding outweighs any unlisted benefit and warrants clinician review.",
+      "evidence_strength": "moderate",
+      "evidence_index": {
+        "E1": {
+          "side": "OPPOSING",
+          "gene": "TP53",
+          "drug": "Cisplatin",
+          "evidence_score": -0.475,
+          "source": "CIViC",
+          "protein_change": "p.R249G"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The TP53 missense mutation p.R249G is linked to cisplatin resistance (evidence score -0.475), indicating a potential lack of efficacy.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Given this resistance association, cisplatin is flagged as a contraindication for the patient.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "No supporting evidence is listed, so the resistance finding outweighs any unlisted benefit and warrants clinician review.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "opposes",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
     }
   ]
 }
