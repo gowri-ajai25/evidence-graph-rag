@@ -1,0 +1,126 @@
+{
+  "patient_id": "TCGA-04-1357",
+  "candidates": [
+    {
+      "drug": "Rucaparib",
+      "gnn_score": 0.033502694219350815,
+      "explanation": "The BRCA1 nonsense mutation p.Q1538* in this tumor is linked to sensitivity/response to Rucaparib. The same BRCA1 p.Q1538* alteration is identified as a direct target of Rucaparib in drug-gene interaction data. Together, these clinical and target evidence support considering Rucaparib as a candidate therapy for this patient.",
+      "evidence_strength": "strong",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "BRCA1",
+          "drug": "Rucaparib",
+          "evidence_score": 0.7685,
+          "source": "CIViC",
+          "protein_change": "p.Q1538*"
+        },
+        "E2": {
+          "side": "SUPPORTING",
+          "gene": "BRCA1",
+          "drug": "Rucaparib",
+          "evidence_score": 0.4534,
+          "source": "DGIdb",
+          "protein_change": "p.Q1538*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The BRCA1 nonsense mutation p.Q1538* in this tumor is linked to sensitivity/response to Rucaparib.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "The same BRCA1 p.Q1538* alteration is identified as a direct target of Rucaparib in drug-gene interaction data.",
+            "cites": [
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Together, these clinical and target evidence support considering Rucaparib as a candidate therapy for this patient.",
+            "cites": [
+              "E1",
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "drug": "Talazoparib",
+      "gnn_score": 0.03339415043592453,
+      "explanation": "The BRCA1 nonsense mutation p.Q1538* is associated with sensitivity/response to Talazoparib (evidence score 0.456). The same BRCA1 mutation is identified as a target of Talazoparib in drug-gene interaction data (evidence score 0.443). The mutation\u2019s roles in cellular response to tumor necrosis factor and chromosome segregation provide a mechanistic basis for PARP inhibition with Talazoparib.",
+      "evidence_strength": "moderate",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "BRCA1",
+          "drug": "Talazoparib",
+          "evidence_score": 0.4563,
+          "source": "CIViC",
+          "protein_change": "p.Q1538*"
+        },
+        "E2": {
+          "side": "SUPPORTING",
+          "gene": "BRCA1",
+          "drug": "Talazoparib",
+          "evidence_score": 0.4429,
+          "source": "DGIdb",
+          "protein_change": "p.Q1538*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The BRCA1 nonsense mutation p.Q1538* is associated with sensitivity/response to Talazoparib (evidence score 0.456).",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "The same BRCA1 mutation is identified as a target of Talazoparib in drug-gene interaction data (evidence score 0.443).",
+            "cites": [
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "The mutation\u2019s roles in cellular response to tumor necrosis factor and chromosome segregation provide a mechanistic basis for PARP inhibition with Talazoparib.",
+            "cites": [
+              "E1",
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
+    }
+  ],
+  "contraindications": []
+}

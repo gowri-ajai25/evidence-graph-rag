@@ -2,24 +2,24 @@
   "patient_id": "TCGA-24-1466",
   "candidates": [
     {
-      "drug": "CHEMBL:CHEMBL267160",
-      "gnn_score": 0.14404107630252838,
-      "explanation": "The patient harbors a TP53 missense mutation (p.R249G) that is directly targeted by CHEMBL:CHEMBL267160. CHEMBL:CHEMBL267160 shows activity against TP53 mutants with an evidence score of 0.142, indicating a potential therapeutic effect. By targeting TP53, CHEMBL:CHEMBL267160 may influence DNA damage response, signal transduction, and apoptotic processes relevant to ovarian cancer biology.",
-      "evidence_strength": "limited",
+      "drug": "Rucaparib",
+      "gnn_score": 0.048143401741981506,
+      "explanation": "The patient harbors a PALB2 missense mutation (p.K486E) that impairs double-strand break repair via homologous recombination, suggesting sensitivity to PARP inhibition. Rucaparib is reported to target PALB2-mutated tumors with an evidence score of 0.358. Therefore, Rucaparib is a candidate treatment worth clinician review for this patient.",
+      "evidence_strength": "moderate",
       "evidence_index": {
         "E1": {
           "side": "SUPPORTING",
-          "gene": "TP53",
-          "drug": "CHEMBL:CHEMBL267160",
-          "evidence_score": 0.142,
+          "gene": "PALB2",
+          "drug": "Rucaparib",
+          "evidence_score": 0.3577,
           "source": "DGIdb",
-          "protein_change": "p.R249G"
+          "protein_change": "p.K486E"
         }
       },
       "verification": {
         "claims": [
           {
-            "text": "The patient harbors a TP53 missense mutation (p.R249G) that is directly targeted by CHEMBL:CHEMBL267160.",
+            "text": "The patient harbors a PALB2 missense mutation (p.K486E) that impairs double-strand break repair via homologous recombination, suggesting sensitivity to PARP inhibition.",
             "cites": [
               "E1"
             ],
@@ -28,7 +28,7 @@
             "issues": []
           },
           {
-            "text": "CHEMBL:CHEMBL267160 shows activity against TP53 mutants with an evidence score of 0.142, indicating a potential therapeutic effect.",
+            "text": "Rucaparib is reported to target PALB2-mutated tumors with an evidence score of 0.358.",
             "cites": [
               "E1"
             ],
@@ -37,7 +37,7 @@
             "issues": []
           },
           {
-            "text": "By targeting TP53, CHEMBL:CHEMBL267160 may influence DNA damage response, signal transduction, and apoptotic processes relevant to ovarian cancer biology.",
+            "text": "Therefore, Rucaparib is a candidate treatment worth clinician review for this patient.",
             "cites": [
               "E1"
             ],
@@ -53,24 +53,24 @@
       }
     },
     {
-      "drug": "CHLORFENAPYR",
-      "gnn_score": 0.14404092729091644,
-      "explanation": "The patient\u2019s tumor carries a TP53 missense mutation p.R249G that is listed as a target of chlorfenapyr. Chlorfenapyr targets TP53-mutant proteins implicated in DNA damage response, signal transduction, and apoptotic processes, providing a mechanistic rationale for use. The reported evidence score for the TP53-chlorfenapyr interaction is 0.142, indicating modest but present support for clinical consideration.",
-      "evidence_strength": "limited",
+      "drug": "Talazoparib",
+      "gnn_score": 0.048034992069005966,
+      "explanation": "The patient harbors a PALB2 missense mutation (p.K486E) that is directly targeted by Talazoparib, supporting its consideration as a therapy. PALB2 participates in double-strand break repair via homologous recombination, so loss-of-function mutations may sensitize the tumor to PARP inhibition by Talazoparib. DGIdb links the PALB2 p.K486E mutation to Talazoparib with an evidence score of 0.357, providing moderate support for clinical benefit.",
+      "evidence_strength": "moderate",
       "evidence_index": {
         "E1": {
           "side": "SUPPORTING",
-          "gene": "TP53",
-          "drug": "CHLORFENAPYR",
-          "evidence_score": 0.142,
+          "gene": "PALB2",
+          "drug": "Talazoparib",
+          "evidence_score": 0.3567,
           "source": "DGIdb",
-          "protein_change": "p.R249G"
+          "protein_change": "p.K486E"
         }
       },
       "verification": {
         "claims": [
           {
-            "text": "The patient\u2019s tumor carries a TP53 missense mutation p.R249G that is listed as a target of chlorfenapyr.",
+            "text": "The patient harbors a PALB2 missense mutation (p.K486E) that is directly targeted by Talazoparib, supporting its consideration as a therapy.",
             "cites": [
               "E1"
             ],
@@ -79,7 +79,7 @@
             "issues": []
           },
           {
-            "text": "Chlorfenapyr targets TP53-mutant proteins implicated in DNA damage response, signal transduction, and apoptotic processes, providing a mechanistic rationale for use.",
+            "text": "PALB2 participates in double-strand break repair via homologous recombination, so loss-of-function mutations may sensitize the tumor to PARP inhibition by Talazoparib.",
             "cites": [
               "E1"
             ],
@@ -88,7 +88,7 @@
             "issues": []
           },
           {
-            "text": "The reported evidence score for the TP53-chlorfenapyr interaction is 0.142, indicating modest but present support for clinical consideration.",
+            "text": "DGIdb links the PALB2 p.K486E mutation to Talazoparib with an evidence score of 0.357, providing moderate support for clinical benefit.",
             "cites": [
               "E1"
             ],
@@ -104,108 +104,5 @@
       }
     }
   ],
-  "contraindications": [
-    {
-      "drug": "Carboplatin",
-      "gnn_score": -0.41591066122055054,
-      "explanation": "The TP53 missense mutation (p.R249G) is associated with resistance to Carboplatin (evidence score -0.475). Because TP53 regulates DNA damage response and apoptotic processes, the p.R249G alteration may reduce carboplatin effectiveness, indicating a potential contraindication. This opposing evidence triggers a caution flag and should prompt clinician review before using carboplatin.",
-      "evidence_strength": "moderate",
-      "evidence_index": {
-        "E1": {
-          "side": "OPPOSING",
-          "gene": "TP53",
-          "drug": "Carboplatin",
-          "evidence_score": -0.475,
-          "source": "CIViC",
-          "protein_change": "p.R249G"
-        }
-      },
-      "verification": {
-        "claims": [
-          {
-            "text": "The TP53 missense mutation (p.R249G) is associated with resistance to Carboplatin (evidence score -0.475).",
-            "cites": [
-              "E1"
-            ],
-            "stance": "opposes",
-            "status": "supported",
-            "issues": []
-          },
-          {
-            "text": "Because TP53 regulates DNA damage response and apoptotic processes, the p.R249G alteration may reduce carboplatin effectiveness, indicating a potential contraindication.",
-            "cites": [
-              "E1"
-            ],
-            "stance": "opposes",
-            "status": "supported",
-            "issues": []
-          },
-          {
-            "text": "This opposing evidence triggers a caution flag and should prompt clinician review before using carboplatin.",
-            "cites": [
-              "E1"
-            ],
-            "stance": "neutral",
-            "status": "supported",
-            "issues": []
-          }
-        ],
-        "n_supported": 3,
-        "n_partial": 0,
-        "n_unsupported": 0,
-        "faithfulness": 1.0
-      }
-    },
-    {
-      "drug": "Cisplatin",
-      "gnn_score": -0.419912189245224,
-      "explanation": "The TP53 missense mutation p.R249G is linked to cisplatin resistance (evidence score -0.475), indicating a potential lack of efficacy. Given this resistance association, cisplatin is flagged as a contraindication for the patient. No supporting evidence is listed, so the resistance finding outweighs any unlisted benefit and warrants clinician review.",
-      "evidence_strength": "moderate",
-      "evidence_index": {
-        "E1": {
-          "side": "OPPOSING",
-          "gene": "TP53",
-          "drug": "Cisplatin",
-          "evidence_score": -0.475,
-          "source": "CIViC",
-          "protein_change": "p.R249G"
-        }
-      },
-      "verification": {
-        "claims": [
-          {
-            "text": "The TP53 missense mutation p.R249G is linked to cisplatin resistance (evidence score -0.475), indicating a potential lack of efficacy.",
-            "cites": [
-              "E1"
-            ],
-            "stance": "opposes",
-            "status": "supported",
-            "issues": []
-          },
-          {
-            "text": "Given this resistance association, cisplatin is flagged as a contraindication for the patient.",
-            "cites": [
-              "E1"
-            ],
-            "stance": "opposes",
-            "status": "supported",
-            "issues": []
-          },
-          {
-            "text": "No supporting evidence is listed, so the resistance finding outweighs any unlisted benefit and warrants clinician review.",
-            "cites": [
-              "E1"
-            ],
-            "stance": "opposes",
-            "status": "supported",
-            "issues": []
-          }
-        ],
-        "n_supported": 3,
-        "n_partial": 0,
-        "n_unsupported": 0,
-        "faithfulness": 1.0
-      }
-    }
-  ]
+  "contraindications": []
 }

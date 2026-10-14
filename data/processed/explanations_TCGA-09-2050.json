@@ -1,0 +1,125 @@
+{
+  "patient_id": "TCGA-09-2050",
+  "candidates": [
+    {
+      "drug": "Rucaparib",
+      "gnn_score": 0.032348062843084335,
+      "explanation": "The BRCA2 nonsense mutation p.S1882* is associated with sensitivity/response to Rucaparib. Clinical evidence from CIViC assigns this association a level A, indicating high confidence. DGIdb identifies Rucaparib as a targeted therapy for the BRCA2 p.S1882* mutation.",
+      "evidence_strength": "strong",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "BRCA2",
+          "drug": "Rucaparib",
+          "evidence_score": 0.7874,
+          "source": "CIViC",
+          "protein_change": "p.S1882*"
+        },
+        "E2": {
+          "side": "SUPPORTING",
+          "gene": "BRCA2",
+          "drug": "Rucaparib",
+          "evidence_score": 0.4833,
+          "source": "DGIdb",
+          "protein_change": "p.S1882*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The BRCA2 nonsense mutation p.S1882* is associated with sensitivity/response to Rucaparib.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "Clinical evidence from CIViC assigns this association a level A, indicating high confidence.",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "DGIdb identifies Rucaparib as a targeted therapy for the BRCA2 p.S1882* mutation.",
+            "cites": [
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
+    },
+    {
+      "drug": "Talazoparib",
+      "gnn_score": 0.03223950415849686,
+      "explanation": "The patient harbors a BRCA2 nonsense mutation p.S1882* that disrupts DNA recombinase assembly, DNA recombination, and double-strand break repair This loss-of-function BRCA2 alteration is linked to sensitivity/response to the PARP inhibitor Talazoparib DGIdb and CIViC each assign moderate evidence scores (~0.47) supporting Talazoparib as a candidate therapy for this mutation",
+      "evidence_strength": "moderate",
+      "evidence_index": {
+        "E1": {
+          "side": "SUPPORTING",
+          "gene": "BRCA2",
+          "drug": "Talazoparib",
+          "evidence_score": 0.4754,
+          "source": "DGIdb",
+          "protein_change": "p.S1882*"
+        },
+        "E2": {
+          "side": "SUPPORTING",
+          "gene": "BRCA2",
+          "drug": "Talazoparib",
+          "evidence_score": 0.4675,
+          "source": "CIViC",
+          "protein_change": "p.S1882*"
+        }
+      },
+      "verification": {
+        "claims": [
+          {
+            "text": "The patient harbors a BRCA2 nonsense mutation p.S1882* that disrupts DNA recombinase assembly, DNA recombination, and double-strand break repair",
+            "cites": [
+              "E1"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "This loss-of-function BRCA2 alteration is linked to sensitivity/response to the PARP inhibitor Talazoparib",
+            "cites": [
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          },
+          {
+            "text": "DGIdb and CIViC each assign moderate evidence scores (~0.47) supporting Talazoparib as a candidate therapy for this mutation",
+            "cites": [
+              "E1",
+              "E2"
+            ],
+            "stance": "supports",
+            "status": "supported",
+            "issues": []
+          }
+        ],
+        "n_supported": 3,
+        "n_partial": 0,
+        "n_unsupported": 0,
+        "faithfulness": 1.0
+      }
+    }
+  ],
+  "contraindications": []
+}

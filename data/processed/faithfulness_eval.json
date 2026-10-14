@@ -1,50 +1,50 @@
 {
   "source": "real explanations",
   "clean": {
-    "claims": 36,
-    "supported": 36,
+    "claims": 18,
+    "supported": 18,
     "partial": 0,
     "unsupported": 0
   },
   "detection": {
     "fake_citation": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "no_citation": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "flipped_stance": {
-      "tested": 32,
-      "caught": 32,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "wrong_number": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "foreign_drug": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "foreign_gene": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "wrong_mutation": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     },
     "wrong_source": {
-      "tested": 36,
-      "caught": 36,
+      "tested": 18,
+      "caught": 18,
       "rate": 1.0
     }
   }
