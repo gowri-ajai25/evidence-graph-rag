@@ -1,0 +1,17 @@
+drug_name,brand_names,source,source_url
+Melphalan,Alkeran,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Bevacizumab,"Avastin; Mvasi; Zirabev; Alymsys",FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Carboplatin,Paraplatin,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Cisplatin,,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Cyclophosphamide,,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Doxorubicin,,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Doxorubicin Liposomal,Doxil,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Mirvetuximab Soravtansine,Elahere,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Gemcitabine,"Gemzar; Infugem",FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Topotecan,Hycamtin,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Relacorilant,Lifyorli,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Olaparib,Lynparza,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Niraparib,Zejula,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Paclitaxel,Taxol,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Rucaparib,Rubraca,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian
+Thiotepa,Tepadina,FDA (NCI approved-drug list),https://www.cancer.gov/about-cancer/treatment/drugs/ovarian

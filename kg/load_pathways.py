@@ -83,18 +83,17 @@ def load_pathways_into_graph(driver):
         skipped_drugs = 0
 
         for _, row in pathway_drug_df.iterrows():
-            # Match pathway by name since curated data uses names not IDs
+            # Match by KEGG pathway ID. Matching on name fails whenever Pathway
+            # nodes were loaded with the raw ID as their name (hsa03440).
             result = session.run(
                 """
-                MATCH (p:Pathway)
-                WHERE toLower(p.name) CONTAINS toLower($pathway_name)
-                   OR toLower($pathway_name) CONTAINS toLower(p.name)
+                MATCH (p:Pathway {id: $pathway_id})
                 MATCH (d:Drug {name: $drug_name})
                 MERGE (p)-[r:ASSOCIATED_WITH_DRUG]->(d)
                 SET r.source = $source
                 RETURN r
                 """,
-                pathway_name=row["pathway_name"],
+                pathway_id=row["pathway_id"],
                 drug_name=row["drug_name"],
                 source=row.get("source", "curated")
             )

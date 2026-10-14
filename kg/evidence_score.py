@@ -80,6 +80,28 @@ def composite_score(evidence_level=None, num_sources=1, has_fda_approval=False, 
     return round(final_score, 3)
 
 
+def dgidb_score(num_sources, approved=False, interaction_pct=0.0, anti_neoplastic=False):
+    """
+    Score for a DGIdb gene-drug interaction (association evidence only).
+
+    DGIdb records that a drug interacts with a gene; it does not state whether
+    the interaction predicts sensitivity or resistance, so the score is capped
+    at 0.5 (the same factor composite_score applies to non-directional
+    categories). Components, before the cap:
+      - 40% independent source databases reporting the pair (saturates at 3)
+      - 25% DGIdb interaction score, as a percentile rank over all pairs
+      - 20% approved drug
+      - 15% annotated anti-neoplastic
+    """
+    base = (
+        0.40 * score_from_source_count(num_sources) +
+        0.25 * max(0.0, min(float(interaction_pct), 1.0)) +
+        0.20 * (1.0 if approved else 0.0) +
+        0.15 * (1.0 if anti_neoplastic else 0.0)
+    )
+    return round(0.5 * base, 3)
+
+
 if __name__ == "__main__":
     print("BRCA1 -> Olaparib (Level A, FDA approved, 3 sources, Sensitivity):")
     print(composite_score(evidence_level="A", num_sources=3, has_fda_approval=True, clinical_significance="Sensitivity/Response"))

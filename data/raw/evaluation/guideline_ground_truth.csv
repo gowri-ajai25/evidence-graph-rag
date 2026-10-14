@@ -1,0 +1,12 @@
+drug,gene_trigger,category,rationale
+Carboplatin,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list); platinum backbone
+Cisplatin,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list); platinum backbone
+Paclitaxel,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list); taxane backbone
+Bevacizumab,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list)
+Gemcitabine,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list)
+Topotecan,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list)
+Doxorubicin,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list)
+Doxorubicin Liposomal,,standard_of_care,FDA-approved ovarian indication (NCI approved-drug list)
+Olaparib,BRCA1;BRCA2,biomarker_directed,PARP inhibitor approved for BRCA-mutated ovarian cancer
+Niraparib,BRCA1;BRCA2,biomarker_directed,PARP inhibitor approved for ovarian cancer; BRCA-mutated subgroup
+Rucaparib,BRCA1;BRCA2,biomarker_directed,PARP inhibitor approved for BRCA-mutated ovarian cancer
